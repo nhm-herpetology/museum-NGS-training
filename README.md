@@ -1,12 +1,21 @@
 # Introduction to short read NGS: Library construction, UCE capture and ddRADseq
-Herpetology Group at the Natural History Museum, London
-Instructor: Jeff Streicher
+Herpetology Group at the Natural History Museum, London 
+**Instructor: Jeff Streicher**
 
 # Contents
 **Overview** 
 >Description will go here.
 
 **Unit 1: Introduction to short read sequencing and library preparation** 
+>Description of lecture and labs. 
+
+**Unit 2: Illumina libraries: Details, de novo assembly and mapping** 
+>Description of lecture and labs. 
+
+**Unit 3: Targeted sequence capture of ultraconserved elements (UCEs)** 
+>Description of lecture and labs. 
+
+**Unit 4: Double digest restriction-site associated DNA sequencing (ddRADseq)** 
 >Description of lecture and labs. 
 
 **Helpful Links: General** 
