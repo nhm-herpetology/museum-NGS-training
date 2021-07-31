@@ -29,4 +29,4 @@ Herpetology Group at the Natural History Museum, London |
 >[Stacks](https://catchenlab.life.illinois.edu/stacks/) | [dDocent](https://www.ddocent.com/)
 
 **Computational Resources @ the NHM**
->[Franklin - maintained by Peter Foster](http://pgfsites.s3-website-eu-west-1.amazonaws.com/H21/franklin.html) | [Crop Diversity Cluster](https://www.cropdiversity.ac.uk/)
+>[Franklin](http://pgfsites.s3-website-eu-west-1.amazonaws.com/H21/franklin.html) | [Crop Diversity Cluster](https://www.cropdiversity.ac.uk/)
