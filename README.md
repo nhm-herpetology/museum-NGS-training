@@ -19,7 +19,7 @@ Herpetology Group at the Natural History Museum, London |
 >Description of lecture and labs. 
 
 **Helpful Links: General** 
->[bcl2fastq](https://emea.support.illumina.com/sequencing/sequencing_software/bcl2fastq-conversion-software.html) |
+>[bcl2fastq](https://emea.support.illumina.com/sequencing/sequencing_software/bcl2fastq-conversion-software.html) | [SRA toolkit](https://github.com/ncbi/sra-tools/wiki) | 
 [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) | [fastx tools](http://hannonlab.cshl.edu/fastx_toolkit/) | [illumiprocessor](https://illumiprocessor.readthedocs.io/en/latest/)
 
 **Helpful Links: UCEs**
