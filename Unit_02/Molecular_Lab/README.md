@@ -1,6 +1,6 @@
 # Molecular Laboratory 2
 
-## NGS Library Construction II (Ligation, Size-selection, PCR and quantification)
+## Shotgun Library Construction II (Ligation, Size-selection, PCR and quantification)
 
 <details>
   <summary>Click to expand protocol!</summary>
