@@ -5,9 +5,9 @@
 <details>
   <summary>Click to expand protocol!</summary>
 
-  >Modified from B. Faircloth and T. Glenn protocol (UCLA, 2011). Original protocol by Rohland and Reich [2012](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3337438/).
+  >Magnetic Beads are valuable for extracting genomic DNA, removing small unwanted nucleic acids (e.g. primers, adapaters), and size selection. Modified from B. Faircloth and T. Glenn protocol (UCLA, 2011). Original protocol by Rohland and Reich [2012](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3337438/).
 
-**Reagents**
+**Materials**
 
 * Sera-Mag Speedbeads
 * PEG-8000
@@ -19,7 +19,6 @@
 * Magnetic tube rack
 * One 1.5 mL microcentifuge tube
 * Two 50 mL conical (falcon) tubes
-* DNA Ladder (for testing beads)
 
 **Protocol**
 1. In a 50 mL conical (falcon) tube using sterile solutions prepare the TE Buffer 
@@ -76,7 +75,21 @@
 <details>
   <summary>Click to expand protocol!</summary>
 
->Magnetic Beads are valuable for extracting genomic DNA, removing small unwanted nucleic acids (e.g. primers, adapaters), and size selection. But we want to be confident they will work before we use them on any of our precious samples. In this section of the lab we will explore how to test the bead mixture you made at the start of the lab. 
+> Before we use any of our precious samples, we want to be confident that the magenetic bead solution works. In this section of the lab we will explore how to test the bead mixture you made at the start of the lab. 
+
+**Materials**
+
+* Agarose
+* 1X TAE Buffer
+* 100% Ethanol
+* Nuclease-free water
+* Scale
+* Microwave
+* DNA Ladder (for testing beads)
+* Magnetic rack
+  
+**Protocol**
+1. First, prepare a 1% TAE gel for electrophoresis. 
   
 </details>
 
