@@ -7,12 +7,11 @@ In this unit participants will learn:
 * To construct NGS shotgun libraries (Molecular Laboratory)
 * To prepare raw Illumina data for downstream analyses (Computer Laboratory) 
 
-
-# Companion instructions
 **Molecular Laboratory** 
 >Description will go here.
 
 **Computer Laboratory** 
+>Description will go here.
 You will need a Unix Command Terminal or PuTTY interface
 
 Example datasets: 
