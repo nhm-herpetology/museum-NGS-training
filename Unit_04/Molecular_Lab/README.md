@@ -1,4 +1,4 @@
-# Molecular Laboratory 2=4
+# Molecular Laboratory 4
 
 ## Restriction digestion of genomic DNA
 
