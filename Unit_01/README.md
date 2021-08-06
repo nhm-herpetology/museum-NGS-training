@@ -19,6 +19,9 @@ Example datasets:
 * Illumina HiSeq (download here)
 * Illumina MiSeq (download here)
 
+```
+cd some_directory
+```
 
 I think you should use an
 `<addr>` element here instead.
