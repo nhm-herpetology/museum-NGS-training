@@ -24,3 +24,46 @@ Modified from B. Faircloth and T. Glenn protocol (UCLA, 2011). Original protocol
       * 100 uL 0.5 M EDTA
       * Fill the tube up to the 50 mL line with nuclease-free water
 >This will create 50 mL of TE Buffer (10 mM Tris-HCL, 1 mM EDTA)
+
+2. Mix Sera-Mag Speedbeads thoroughly and transfer 1 mL to an empty 1.5 mL microcentrifuge tube. 
+
+3. Place the 1.5 mL tube with Speebeads on the magnetic rack until beads are drawn to magnet (~5 minutes)
+
+4. Remove supernatent with a P1000 pipetter and discard. Remove any remaining supernatent with a P100 or P200 pipetter. 
+
+5. Add 1 mL of TE Buffer to the beads, remove from magnet, vortex (mix), and then return to the magenet rack. Allow beads to be drawn to magnent (~5 minutes).
+
+6. Remove supernatent with a P1000 pipetter and discard. Remove any remaining supernatent with a P100 or P200 pipetter. 
+
+7. Add 1 mL of TE Buffer to the beads, remove from magnet, vortex (mix), and then return to the magenet rack. Allow beads to be drawn to magnent (~5 minutes).
+
+8. Remove supernatent with a P1000 pipetter and discard. Remove any remaining supernatent with a P100 or P200 pipetter. 
+
+9. Add 1 mL of TE Buffer to the beads, remove from magnet, vortex (mix), and then place in a normal tube rack.
+>This will clean and prepare the beads for incorporation into the final solution
+
+10. Add 9 g PEG-8000 to a new, sterile 50 mL conical tube.
+
+11. Add 10 mL 5 M NaCl to the conical tube.
+
+12. Add 500 uL 1 M Tris-HCL to conical tube.
+
+13. Add 100 uL 0.5 M EDTA to conical tube. 
+
+14. Fill the tube up to ~49 mL with nuclease-free water. 
+
+15. Place conical tube on a mixer (or mix by hand) for 3-5 minutes until the PEG-8000 goes into solution. 
+
+16. Add 17.5 uL Tween 20 to conical and gently mix. 
+>This will prepare the final solution for the beads.
+
+17. Add the 1 mL Speedbead + TE buffer solution into the 50 mL conical tube. 
+
+18. Fill conical tube up to the 50 mL mark with nuclease-free water (if necessary). Gently mix until entire solution is brown. 
+>This is the final bead mixture for DNA extraction, cleaning, and size selection.
+
+19. Wrap the 50 mL conical tube in aluminium foil to protect it from light. Store at 4 C. 
+
+20. Aliquot the mixture into multiple 1.5 mL microcentrifuge tubes for convenient use and contamination avoidance. 
+   
+
