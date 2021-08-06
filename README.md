@@ -2,7 +2,7 @@
 Herpetology Group at the Natural History Museum, London | 
 **Instructor: Jeff Streicher**
 
-# Contents
+## Contents
 **Overview** 
 >Description will go here.
 
