@@ -1,4 +1,4 @@
-# Unit 2: Introduction to short read sequencing and library preparation
+# Unit 2: Illumina libraries: de novo assembly and reference mapping
 **Summary**
 
 In this unit participants will learn:
