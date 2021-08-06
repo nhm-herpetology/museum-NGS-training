@@ -8,20 +8,7 @@ In this unit participants will learn:
 * To prepare raw Illumina data for downstream analyses (Computer Laboratory) 
 
 **Computer Laboratory** 
->Description will go here.
-You will need a Unix Command Terminal or PuTTY interface
-
-Example datasets: 
-
-* Illumina HiSeq (download here)
-* Illumina MiSeq (download here)
-
-```
-cd some_directory
-```
-
-I think you should use an
-`<addr>` element here instead.
+>Click [here](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_01/Computer_Lab) to access Computer Lab protocols
 
 **Molecular Laboratory** 
->Description will go here.
+>Click [here](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_01/Molecular_Lab) to access Molecular Lab protocols
