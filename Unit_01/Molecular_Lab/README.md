@@ -107,6 +107,6 @@
 <details>
   <summary>Click to expand protocol!</summary>
 
->Here we will build an NGS library of genomic double-stranded DNA (dsDNA) for six samples using starting amounts of 500 ng dsDNA.
+>Here we will start building an NGS library of genomic double-stranded DNA (dsDNA) for six samples using starting amounts of 500 ng dsDNA.
   
 </details>
