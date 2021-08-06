@@ -1,6 +1,6 @@
 # Molecular Laboratory 1
 
-# Serapure Magnetic Beads
+## Serapure Magnetic Beads
 
 <details>
   <summary>Click to expand protocol!</summary>
@@ -71,11 +71,29 @@
    
 </details>
 
-# Testing the Magnetic Beads
+## Testing the Magnetic Beads
 
 <details>
   <summary>Click to expand protocol!</summary>
 
 >Magnetic Beads are valuable for extracting genomic DNA, removing small unwanted nucleic acids (e.g. primers, adapaters), and size selection. But we want to be confident they will work before we use them on any of our precious samples. In this section of the lab we will explore how to test the bead mixture you made at the start of the lab. 
+  
+</details>
+
+## DNA Extraction and Quantification
+
+<details>
+  <summary>Click to expand protocol!</summary>
+
+>Here we will use Magnetic Beads to extract DNA and then quantify DNA extracts using both Qubit flourometry and gel electrophoresis.
+  
+</details>
+
+## Shotgun Library Construction
+
+<details>
+  <summary>Click to expand protocol!</summary>
+
+>Here we will build an NGS library of genomic double-stranded DNA (dsDNA) for six samples using starting amounts of 500 ng dsDNA.
   
 </details>
