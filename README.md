@@ -7,16 +7,16 @@ Herpetology Group at the Natural History Museum, London |
 >Description will go here.
 
 **Unit 1: Introduction to short read sequencing and library preparation** 
->Description of lecture and labs. 
+>Click [here](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_01) to access Unit 1 content.
 
 **Unit 2: Illumina libraries: de novo assembly and reference mapping** 
->Description of lecture and labs. 
+>Click [here](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_02) to access Unit 2 content. 
 
 **Unit 3: Targeted sequence capture of ultraconserved elements (UCEs)** 
->Description of lecture and labs. 
+>Click [here](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_03) to access Unit 3 content.
 
 **Unit 4: Double digest restriction-site associated DNA sequencing (ddRADseq)** 
->Description of lecture and labs. 
+>Click [here](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_04) to access Unit 4 content.
 
 **Helpful Links: General** 
 >[bcl2fastq](https://emea.support.illumina.com/sequencing/sequencing_software/bcl2fastq-conversion-software.html) | [SRA toolkit](https://github.com/ncbi/sra-tools/wiki) | 
