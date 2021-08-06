@@ -13,3 +13,6 @@ Example datasets:
 ```
 cd some_directory
 ```
+
+**Helpful Links**
+>[velvet](https://www.ebi.ac.uk/~zerbino/velvet/) | [phyluce](https://phyluce.readthedocs.io/en/latest/)
