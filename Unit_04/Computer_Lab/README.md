@@ -13,3 +13,7 @@ Example datasets:
 ```
 cd some_directory
 ```
+
+
+**Helpful Links**
+>[Stacks](https://catchenlab.life.illinois.edu/stacks/) | [dDocent](https://www.ddocent.com/)
