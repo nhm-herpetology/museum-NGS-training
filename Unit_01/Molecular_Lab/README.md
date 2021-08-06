@@ -1,6 +1,9 @@
 # Molecular Laboratory 1
 
-**Serapure Magnetic Beads**
+# Serapure Magnetic Beads
+
+<details>
+  <summary>Click to expand protocol!</summary>
 
 Modified from B. Faircloth and T. Glenn protocol (UCLA, 2011). Original protocol by Rohland and Reich [2012](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3337438/).
 
@@ -66,4 +69,4 @@ Modified from B. Faircloth and T. Glenn protocol (UCLA, 2011). Original protocol
 
 20. Aliquot the mixture into multiple 1.5 mL microcentrifuge tubes for convenient use and contamination avoidance. 
    
-
+</details>
