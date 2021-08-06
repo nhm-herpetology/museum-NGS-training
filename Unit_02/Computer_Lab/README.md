@@ -1,4 +1,4 @@
-# Computer Laboratory 1
+# Computer Laboratory 2
 
 **Some commands to go with programs**
 >Description will go here.
