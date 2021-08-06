@@ -8,3 +8,6 @@ Molecular and computer modules |
 
 **Computer Laboratory** 
 >Description of lecture and labs. 
+
+I think you should use an
+`<addr>` element here instead.
