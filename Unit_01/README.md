@@ -7,9 +7,6 @@ In this unit participants will learn:
 * To construct NGS shotgun libraries (Molecular Laboratory)
 * To prepare raw Illumina data for downstream analyses (Computer Laboratory) 
 
-**Molecular Laboratory** 
->Description will go here.
-
 **Computer Laboratory** 
 >Description will go here.
 You will need a Unix Command Terminal or PuTTY interface
@@ -25,3 +22,6 @@ cd some_directory
 
 I think you should use an
 `<addr>` element here instead.
+
+**Molecular Laboratory** 
+>Description will go here.
