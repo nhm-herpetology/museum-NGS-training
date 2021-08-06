@@ -18,11 +18,5 @@ Herpetology Group at the Natural History Museum, London |
 **Unit 4: Double digest restriction-site associated DNA sequencing (ddRADseq)** 
 >Click [here](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_04) to access Unit 4 content.
 
-**Helpful Links: UCEs**
->[velvet](https://www.ebi.ac.uk/~zerbino/velvet/) | [phyluce](https://phyluce.readthedocs.io/en/latest/)
-
-**Helpful Links: ddRADseq**
->[Stacks](https://catchenlab.life.illinois.edu/stacks/) | [dDocent](https://www.ddocent.com/)
-
 **Computational Resources @ the NHM**
 >[Franklin](http://pgfsites.s3-website-eu-west-1.amazonaws.com/H21/franklin.html) | [Crop Diversity Cluster](https://www.cropdiversity.ac.uk/)
