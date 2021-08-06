@@ -102,7 +102,7 @@
   
 </details>
 
-## Shotgun Library Construction (Fragmentation, End-Repair, A-tailing)
+## Shotgun Library Construction I (Fragmentation, End-Repair, A-tailing)
 
 <details>
   <summary>Click to expand protocol!</summary>
