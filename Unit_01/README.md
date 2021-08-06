@@ -1,5 +1,8 @@
 # Unit 1: Introduction to short read sequencing and library preparation
-Molecular and computer modules | 
+In this unit participants will learn:
+-The basics of short read sequencing (Lecture)
+-To construct NGS libraries (Molecular Laboratroy)
+-To prepare raw Illumina data for downstream analyses (Computer Laboratory) 
 **links to programs here**
 
 # Contents
