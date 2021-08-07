@@ -5,7 +5,7 @@
 <details>
   <summary>Click to expand protocol!</summary>
 
-  >Magnetic Beads are valuable for extracting genomic DNA, removing small unwanted nucleic acids (e.g. primers, adapaters), and size selection. Modified from B. Faircloth and T. Glenn protocol (UCLA, 2011). Original protocol by Rohland and Reich [2012](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3337438/).
+  >Magnetic Beads are used for extracting genomic DNA, removing small unwanted nucleic acids (e.g. primers, adapaters), and size selection. Modified from B. Faircloth and T. Glenn protocol (UCLA, 2011). Original protocol by Rohland and Reich [2012](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3337438/).
 
 **Materials**
 
@@ -87,9 +87,23 @@
 * Microwave
 * DNA Ladder (for testing beads)
 * Magnetic rack
+* 50 mL conical (falcon) tubes
+* 1.5 mL microcentrifuge tubes
   
 **Protocol**
-1. First, prepare a 1% TAE gel for electrophoresis. 
+1. Prepare a 1% TAE gel for electrophoresis. At the NHM, we can use a small gel casting frame which will require:
+      * 0.75 g Agarose
+      * 75 mL 1X TAE Buffer
+      * 3 uL of SYBR safe or Gel Red DNA stain
+
+2. Mix the Agarose and TAE Buffer in a glass flask. Microwave the flask until the the Agarose goes into solution (Don't let the flask boil over!)
+  
+3. Use hot pads to remove the flask from the microwave and allow to cool on the lab bench until you can safely touch the glass. Add the SYBR safe stain to the flask using a pipetter. Mix gently by hand.  
+
+4. Carefully pour the solution into the casting tray and allow to solidify (usually ~20-30 mins)
+>This will create the gel needed to test the beads
+
+5. Prepare fresh aliquots of 70% Ethanol. This can be done using the 50 mL conical tubes. Fill the conical up to the 35 mL mark using 100% ethanol. Then fill to the 50 mL mark using sterile nuclease-free water.    
   
 </details>
 
