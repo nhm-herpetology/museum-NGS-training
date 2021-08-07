@@ -145,7 +145,7 @@
 
 19. Load the 7 uL of Serapure-processed DNA Ladder + loading dye into your gel (which should now be placed in the Electrophoresis Rig) and run using the Power Source.   
   
->If the bead solution is effective we should see that we small ladder fragments (<150 bp), were lost when using dilute concentrations of beads (e.g. 0.5X), but retained when using higher concentrations of beads (e.g. 3.0X).  
+>If the bead solution is effective we should see that small ladder fragments (<150 bp), were lost when using dilute concentrations of beads (e.g. 0.5X), but retained when using higher concentrations of beads (e.g. 3.0X).  
   
 </details>
 
@@ -154,7 +154,33 @@
 <details>
   <summary>Click to expand protocol!</summary>
 
->Here we will use Magnetic Beads to extract DNA and then quantify DNA extracts using both Qubit flourometry and gel electrophoresis.
+>Here we will use Magnetic Beads to extract DNA and then quantify DNA extracts using two different methods. Protocol modified from M. Fujita (UTA, 2013). 
+
+**Materials**
+
+* Proteinase K
+* NaCl
+* Tris
+* EDTA
+* SDS
+* Agarose
+* 1X TAE Buffer
+* 100% Ethanol
+* Nuclease-free water
+* Scale
+* Microwave
+* Electrophoresis rig with power source
+* DNA Ladder (for testing beads)
+* Gel loading dye  
+* Parafilm
+* Magnetic rack
+* 50 mL conical (falcon) tubes
+* 1.5 mL microcentrifuge tubes
+  
+**Protocol**
+1. Prepare Lysis Buffer for tissue digestion...
+  
+2. Place ~3 mg of tissue in a 1.5 mL microcentrifuge tube containing 100 uL Lysis Buffer and 5 uL of Proteinase K. 
   
 </details>
 
