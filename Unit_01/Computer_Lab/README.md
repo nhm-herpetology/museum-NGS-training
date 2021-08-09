@@ -84,6 +84,15 @@ AAGTAGGTCTCGTCTGTGTTTTCTACGAGCTTGTGTTCCAGCTGACCCACTCCCTGGGTGGGGGGACTGGGT
 ```
 ./fasterq-dump SRR3284185
 ```
+  
+You shoud see the following output: 
+  
+```
+spots read:     115,128
+reads read:     230,256
+reads written:  230.256
+```
+
 
 </details>
 
