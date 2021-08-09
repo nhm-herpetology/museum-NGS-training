@@ -1,5 +1,14 @@
 # Molecular Laboratory 2
 
+## Shotgun Library Construction I (Fragmentation, End-Repair, A-tailing)
+
+<details>
+  <summary>Click to expand protocol!</summary>
+
+>Here we will start building an NGS library of genomic double-stranded DNA (dsDNA) for six samples using starting amounts of 500 ng dsDNA.
+  
+</details>
+
 ## Shotgun Library Construction II (Ligation, Size-selection and PCR)
 
 <details>
