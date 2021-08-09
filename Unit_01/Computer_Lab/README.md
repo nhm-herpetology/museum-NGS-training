@@ -84,8 +84,11 @@ rm fastqc_v0.11.9.zip
 cd FastQC 
 ```  
 ```
-./FastQC
+chmod 755 fastqc
 ``` 
+```  
+Download example files
+```  
   
  1. Using Illumiprocessor to remove adapter contamination is helpful when you have multiplexed samples. A congiguration file is needed. The configuration file looks like this:
 
