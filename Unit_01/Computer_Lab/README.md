@@ -44,7 +44,16 @@ Phred Quality Score | Probability of Incorrect Base Call  | Base Call Accuracy
 
 >If you want to obtain previously published data, you will want to use the SRA toolkit from NCBI. 
 
- 1. Download some data:
+ 1. Download and install the SRA Toolkit from NCBI/Github:
+>For Ubuntu (e.g. Franklin@NHM)    
+```
+wget http://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/current/sratoolkit.current-ubuntu64.tar.gz  
+```
+```
+gunzip sratoolkit.current-ubuntu64.tar.gz
+```
+  
+ 2. Download some data:
 
 ```
 prefetch --type fastq SRR11180057
