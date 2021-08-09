@@ -50,13 +50,39 @@ Phred Quality Score | Probability of Incorrect Base Call  | Base Call Accuracy
 wget http://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/current/sratoolkit.current-ubuntu64.tar.gz  
 ```
 ```
-gunzip sratoolkit.current-ubuntu64.tar.gz
+tar -xf sratoolkit.current-ubuntu64.tar.gz
 ```
+```
+cd sratoolkit.current-ubuntu64
+```
+```
+cd bin
+```
+```
+./vdb-config --interactive
+```
+This will open the SRA configuration. Use the Configuration Guide [here](https://github.com/ncbi/sra-tools/wiki/03.-Quick-Toolkit-Configuration). Then test with the following command:
+```
+./fastq-dump --stdout -X 2 SRR390728
+```
+You should see this output:
+```
+Read 2 spots for SRR390728
+Written 2 spots for SRR390728
+@SRR390728.1 1 length=72
+CATTCTTCACGTAGTTCTCGAGCCTTGGTTTTCAGCGATGGAGAATGACTTTGACAAGCTGAGAGAAGNTNC
++SRR390728.1 1 length=72
+;;;;;;;;;;;;;;;;;;;;;;;;;;;9;;665142;;;;;;;;;;;;;;;;;;;;;;;;;;;;;96&&&&(
+@SRR390728.2 2 length=72
+AAGTAGGTCTCGTCTGTGTTTTCTACGAGCTTGTGTTCCAGCTGACCCACTCCCTGGGTGGGGGGACTGGGT
++SRR390728.2 2 length=72
+;;;;;;;;;;;;;;;;;4;;;;3;393.1+4&&5&&;;;;;;;;;;;;;;;;;;;;;<9;<;;;;;464262
+```  
   
- 2. Download some data:
+  2. Download some data using the SRA toolkit. As an example we will use Illumina MiSeq data from an individual of *Cylindrophis* *ruffus*:
 
 ```
-prefetch --type fastq SRR11180057
+./fasterq-dump SRR3284185
 ```
 
 </details>
