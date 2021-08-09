@@ -5,18 +5,25 @@
 <details>
   <summary>Click to expand content!</summary>
 
->NGS files can be rather large and are used by most phylogenetics and populations genetics software packages as FASTQ files.
+>NGS files can be rather large and most phylogenetics and populations genetics software packages import Illumina data as FASTQ files. The individual sequences in a FASTQ file are called 'reads'. There can be millions of reads in a single FASTQ file. 
 
-Each DNA sequence in a FASTQ file is formatted like this: 
+Each DNA sequence in a FASTQ file looks like this: 
 ```
 @M01811:34:000000000-ACGFH:1:1101:10492:1210 1:N:0:15
 ACTTGTATTAAGACTAATGTTCATTATTACCCCAACTTCTTTTGAAGCTGGCAAAATTTCAAAAATTATAACACACTCAGAAACTATTTTAATTGCAAAGATGGTTCTGAGAGGCTGCCTTAAATGCAGAGATCTAGCTATCTTTCTTTCTCCCCTCTCTAGGGATTCTTCAGAAGGAGTCAGCAGAACAATGCCTCATATTCCTGCCCAAGGCAGAGAAACTGTTTAATTGACAGAACCAACAGAAATCGCTGCCAACACTGCCGTCTGCAGAAGTGTCTTGCCCTAGGAATGTCTCGAGATGG
 +
 CCCCCGGGFGGFGGGGGGGCFGGGGGGGGGGGGGGGGGGGGGGDGFGGGGGGGGGGGFGGCFGFGE<EAFGGGGGDFFGFG<FGGFFFGGGGGFFGGGGGGGGFAFFCFGGGGDCGGGGCDFFGGGFC,FFGAF9FFGGGGGGGGGGGGGFGG?FFGGGGGGGGGGGGFGGFFEGF@>EFGGGGGGFGGGGGDG?;DDEFGGGGFGG,@FGFFGG>FGGFGGFG?DGGGFGGFGGGGGGGGFFFFFCFFFDFFFFFFFFFFFFFFFFFFD6@;CFFF=CEEFEFF303,()1;;EECF4)62=A3
 ```  
-The individual sequences in a FASTQ file are called 'reads'. There can be millions of reads in a single FASTQ file. The first line provides information from the sequencer, the second the inferred DNA sequence and the third the quality score (=PHRED). 
+The first line provides information from the sequencer (flow cell), the second the inferred DNA sequence, and the third the Phred quality score (Q score). 
 
-PHRED scoring is important, because not all Illumina calls are equally reliable. How can we... 
+Phred Quality Score | Probability of Incorrect Base Call  | Base Call Accuracy
+------------ | -------------  | -------------
+10 | 1 in 10 | 90%
+20 | 1 in 100  | 99%
+30 | 1 in 1,000  | 99.9%
+40 | 1 in 10,000  | 99.99%
+50 | 1 in 100,000  | 99.999%
+  
   
 
 </details>
@@ -53,6 +60,33 @@ prefetch --type fastq SRR11180057
 
 >There are several things we want to do to a FASTQ file before we analyse it including removing bad quality bases and the adapter contamination we discussed in lecture.   
 
+Let's return to the example FASTQ read we saw earlier: 
+  
+```
+@M01811:34:000000000-ACGFH:1:1101:10492:1210 1:N:0:15
+ACTTGTATTAAGACTAATGTTCATTATTACCCCAACTTCTTTTGAAGCTGGCAAAATTTCAAAAATTATAACACACTCAGAAACTATTTTAATTGCAAAGATGGTTCTGAGAGGCTGCCTTAAATGCAGAGATCTAGCTATCTTTCTTTCTCCCCTCTCTAGGGATTCTTCAGAAGGAGTCAGCAGAACAATGCCTCATATTCCTGCCCAAGGCAGAGAAACTGTTTAATTGACAGAACCAACAGAAATCGCTGCCAACACTGCCGTCTGCAGAAGTGTCTTGCCCTAGGAATGTCTCGAGATGG
++
+CCCCCGGGFGGFGGGGGGGCFGGGGGGGGGGGGGGGGGGGGGGDGFGGGGGGGGGGGFGGCFGFGE<EAFGGGGGDFFGFG<FGGFFFGGGGGFFGGGGGGGGFAFFCFGGGGDCGGGGCDFFGGGFC,FFGAF9FFGGGGGGGGGGGGGFGG?FFGGGGGGGGGGGGFGGFFEGF@>EFGGGGGGFGGGGGDG?;DDEFGGGGFGG,@FGFFGG>FGGFGGFG?DGGGFGGFGGGGGGGGFFFFFCFFFDFFFFFFFFFFFFFFFFFFD6@;CFFF=CEEFEFF303,()1;;EECF4)62=A3
+```  
+
+First, we want to figure out what kind of Q-scores we are dealing with. Older Illumina machines used a system called phred-64 scoring whereas newer Illumina (and other sequencing platforms) use phred-33 scoring. Let's start by downloading and installing the FASTX Toolkit: 
+  
+```
+git clone https://github.com/agordon/fastx_toolkit
+```
+```
+cd fastx_toolkit  
+```  
+```  
+./reconf
+``` 
+```
+./configure  
+```  
+```
+make  
+``` 
+  
  1. Using Illumiprocessor to remove adapter contamination is helpful when you have multiplexed samples. A congiguration file is needed. The configuration file looks like this:
 
 ```
