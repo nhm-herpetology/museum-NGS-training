@@ -144,7 +144,7 @@ Now that both of the FASTQ files have been moved. Let's navigate to the FastQC d
 ```
 ./fastqc SRR3284185_1.fastq SRR3284185_2.fastq  
 ```  
-This will produce several output files. If not working locally, you can use WinSCP to access the HTML output. There are also copies in the Example Folder. 
+This will produce several output files. If not working locally, you can use WinSCP to access the HTML output. There are also copies in the [Example Files](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_01/Computer_Lab/Example_Files) directory. 
   
  3. Using Illumiprocessor to remove adapter contamination is helpful when you have multiplexed samples. A congiguration file is needed. The configuration file looks like this:
 
