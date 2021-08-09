@@ -4,7 +4,7 @@
 In this unit participants will learn:
 
 * The basics of short read sequencing (Lecture)
-* To begin constructing NGS shotgun libraries (Molecular Laboratory)
+* To make and use Serapure magnetic beads (Molecular Laboratory)
 * To prepare raw Illumina data for downstream analyses (Computer Laboratory) 
 
 **Computer Laboratory** 
