@@ -93,7 +93,7 @@ You shoud see the following output:
 ```
 spots read:     115,128
 reads read:     230,256
-reads written:  230.256
+reads written:  230,256
 ```
 >Read 1 (SRR3284185_1.fastq) and Read 2 (SRR3284185_2.fastq) data are now in your working directory.
 
@@ -125,7 +125,7 @@ cd FastQC
 chmod 755 fastqc
 ``` 
 
- 2. Let's use the MiSeq files from *Cylindrophis* *ruffus* as example data. First, let's navigate to the SRA toolkit ```bin``` directory. Then determine the $PATH:
+ 2. Let's use the MiSeq files from *Cylindrophis* *ruffus* we downloaded from the SRA as example data. First, let's navigate to the SRA toolkit ```bin``` directory. Then determine the $PATH:
   
 ```
 pwd  
@@ -140,9 +140,12 @@ mv SRR3284185_1.fastq /home/jefs/NGS_course/FastQC
 ```  
 mv SRR3284185_2.fastq /home/jefs/NGS_course/FastQC
 ```    
-Now that both of the FASTQ files have been moved. Let's navigate to the FastQC directory. 
+Now that both of the FASTQ files have been moved. Let's navigate to the FastQC directory. Once in the FastQC directory, run the following command:
+```
+./fastqc SRR3284185_1.fastq SRR3284185_2.fastq  
+```  
+This will produce several output files. If not working locally, you can use WinSCP to access the HTML output. There are also copies in the Example Folder. 
   
-
  3. Using Illumiprocessor to remove adapter contamination is helpful when you have multiplexed samples. A congiguration file is needed. The configuration file looks like this:
 
 ```
