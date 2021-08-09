@@ -4,7 +4,7 @@
 In this unit participants will learn:
 
 * The basics of genome assembly and reference mapping (Lecture)
-* To finish constructing NGS shotgun libraries (Molecular Laboratory)
+* To constrt NGS shotgun libraries (Molecular Laboratory)
 * To assemble cleaned Illumina data in velvet and map it with BWA (Computer Laboratory) 
 
 **Computer Laboratory** 
