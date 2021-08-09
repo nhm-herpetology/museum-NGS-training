@@ -75,16 +75,16 @@ First, we want to figure out what kind of Q-scores we are dealing with. Older Il
 wget https://www.bioinformatics.babraham.ac.uk/projects/fastqc/fastqc_v0.11.9.zip
 ```
 ```
-cd fastx_toolkit  
+unzip fastqc_v0.11.9.zip
 ```  
 ```  
-./reconf
+rm fastqc_v0.11.9.zip
 ``` 
 ```
-./configure  
+cd FastQC 
 ```  
 ```
-make  
+./FastQC
 ``` 
   
  1. Using Illumiprocessor to remove adapter contamination is helpful when you have multiplexed samples. A congiguration file is needed. The configuration file looks like this:
