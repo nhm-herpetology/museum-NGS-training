@@ -14,7 +14,7 @@ ACTTGTATTAAGACTAATGTTCATTATTACCCCAACTTCTTTTGAAGCTGGCAAAATTTCAAAAATTATAACACACTCAG
 +
 CCCCCGGGFGGFGGGGGGGCFGGGGGGGGGGGGGGGGGGGGGGDGFGGGGGGGGGGGFGGCFGFGE<EAFGGGGGDFFGFG<FGGFFFGGGGGFFGGGGGGGGFAFFCFGGGGDCGGGGCDFFGGGFC,FFGAF9FFGGGGGGGGGGGGGFGG?FFGGGGGGGGGGGGFGGFFEGF@>EFGGGGGGFGGGGGDG?;DDEFGGGGFGG,@FGFFGG>FGGFGGFG?DGGGFGGFGGGGGGGGFFFFFCFFFDFFFFFFFFFFFFFFFFFFD6@;CFFF=CEEFEFF303,()1;;EECF4)62=A3
 ```  
-The first line provides information from the sequencer (flow cell), the second the inferred DNA sequence, and the third the Phred quality score (Q score). 
+The first line provides information from the sequencer (flow cell), the second the inferred DNA sequence, the third a standard +, and the fourth the Phred quality score (Q score). 
 
 Phred Quality Score | Probability of Incorrect Base Call  | Base Call Accuracy
 ------------ | -------------  | -------------
@@ -53,6 +53,9 @@ wget http://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/current/sratoolkit.current-ubuntu
 tar -xf sratoolkit.current-ubuntu64.tar.gz
 ```
 ```
+rm sratoolkit.current-ubuntu64.tar.gz
+```  
+```
 cd sratoolkit.current-ubuntu64
 ```
 ```
@@ -79,7 +82,7 @@ AAGTAGGTCTCGTCTGTGTTTTCTACGAGCTTGTGTTCCAGCTGACCCACTCCCTGGGTGGGGGGACTGGGT
 ;;;;;;;;;;;;;;;;;4;;;;3;393.1+4&&5&&;;;;;;;;;;;;;;;;;;;;;<9;<;;;;;464262
 ```  
   
-  2. Download some data using the SRA toolkit. As an example we will use Illumina MiSeq data from an individual of *Cylindrophis* *ruffus*:
+  2. Download some data using the SRA toolkit. As an example we will use Illumina MiSeq data from an individual of *Cylindrophis* *ruffus* used in Streicher & Wiens [2016](https://www.sciencedirect.com/science/article/abs/pii/S1055790316300495?via%3Dihub):
 
 ```
 ./fasterq-dump SRR3284185
@@ -92,7 +95,7 @@ spots read:     115,128
 reads read:     230,256
 reads written:  230.256
 ```
-
+>Read 1 (SRR3284185_1.fastq) and Read 2 (SRR3284185_2.fastq) data are now in your working directory.
 
 </details>
 
@@ -102,18 +105,9 @@ reads written:  230.256
 <details>
   <summary>Click to expand content!</summary>
 
->There are several things we want to do to a FASTQ file before we analyse it including removing bad quality bases and the adapter contamination we discussed in lecture.   
+>There are several things we want to do to a FASTQ file before we analyse it including removing bad quality bases and the adapter contamination we discussed in lecture.     
 
-Let's return to the example FASTQ read we saw earlier: 
-  
-```
-@M01811:34:000000000-ACGFH:1:1101:10492:1210 1:N:0:15
-ACTTGTATTAAGACTAATGTTCATTATTACCCCAACTTCTTTTGAAGCTGGCAAAATTTCAAAAATTATAACACACTCAGAAACTATTTTAATTGCAAAGATGGTTCTGAGAGGCTGCCTTAAATGCAGAGATCTAGCTATCTTTCTTTCTCCCCTCTCTAGGGATTCTTCAGAAGGAGTCAGCAGAACAATGCCTCATATTCCTGCCCAAGGCAGAGAAACTGTTTAATTGACAGAACCAACAGAAATCGCTGCCAACACTGCCGTCTGCAGAAGTGTCTTGCCCTAGGAATGTCTCGAGATGG
-+
-CCCCCGGGFGGFGGGGGGGCFGGGGGGGGGGGGGGGGGGGGGGDGFGGGGGGGGGGGFGGCFGFGE<EAFGGGGGDFFGFG<FGGFFFGGGGGFFGGGGGGGGFAFFCFGGGGDCGGGGCDFFGGGFC,FFGAF9FFGGGGGGGGGGGGGFGG?FFGGGGGGGGGGGGFGGFFEGF@>EFGGGGGGFGGGGGDG?;DDEFGGGGFGG,@FGFFGG>FGGFGGFG?DGGGFGGFGGGGGGGGFFFFFCFFFDFFFFFFFFFFFFFFFFFFD6@;CFFF=CEEFEFF303,()1;;EECF4)62=A3
-```  
-
-First, we want to figure out what kind of Q-scores we are dealing with. Older Illumina machines used a system called phred-64 scoring whereas newer Illumina (and other sequencing platforms) use phred-33 scoring. Let's start by downloading and installing FastQC: 
+ 1. We want to figure out what kind of Q-scores we are dealing with. Older Illumina machines used a system called phred-64 scoring whereas newer Illumina (and other sequencing platforms) use phred-33 scoring. Let's start by downloading and installing FastQC: 
   
 ```
 wget https://www.bioinformatics.babraham.ac.uk/projects/fastqc/fastqc_v0.11.9.zip
@@ -130,11 +124,26 @@ cd FastQC
 ```
 chmod 755 fastqc
 ``` 
-```  
-Download example files
-```  
+
+ 2. Let's use the MiSeq files from *Cylindrophis* *ruffus* as example data. First, let's navigate to the SRA toolkit ```bin``` directory. Then determine the $PATH:
   
- 1. Using Illumiprocessor to remove adapter contamination is helpful when you have multiplexed samples. A congiguration file is needed. The configuration file looks like this:
+```
+pwd  
+```  
+Your directory structure will differ from mine based on your user name. On Franklin, mine is: 
+```
+/home/jefs/NGS_course/sratoolkit.2.11.0-ubuntu64/bin  
+```
+```  
+mv SRR3284185_1.fastq /home/jefs/NGS_course/FastQC
+```
+```  
+mv SRR3284185_2.fastq /home/jefs/NGS_course/FastQC
+```    
+Now that both of the FASTQ files have been moved. Let's navigate to the FastQC directory. 
+  
+
+ 3. Using Illumiprocessor to remove adapter contamination is helpful when you have multiplexed samples. A congiguration file is needed. The configuration file looks like this:
 
 ```
 [adapters]
