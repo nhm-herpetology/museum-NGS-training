@@ -149,12 +149,12 @@
   
 </details>
 
-## DNA Extraction and Quantification
+## DNA Extraction using Magnetic Beads
 
 <details>
   <summary>Click to expand protocol!</summary>
 
->Here we will use Magnetic Beads to extract DNA and then quantify DNA extracts using two different methods. Protocol modified from M. Fujita (UTA, 2013). 
+>Here we will use Magnetic Beads to extract DNA. Protocol modified from M. Fujita (UTA, 2013). 
 
 **Materials**
 
@@ -167,12 +167,6 @@
 * 1X TAE Buffer
 * 100% Ethanol
 * Nuclease-free water
-* Scale
-* Microwave
-* Electrophoresis rig with power source
-* DNA Ladder (for testing beads)
-* Gel loading dye  
-* Parafilm
 * Magnetic rack
 * 50 mL conical (falcon) tubes
 * 1.5 mL microcentrifuge tubes
@@ -224,4 +218,24 @@
 21. Remove 200 uL extracted DNA and place in a new, sterile 1.5 mL microcentifuge tube. 
   
 </details>
+  
+## Quantification of double-stranded DNA (dsDNA)  
 
+<details>
+  <summary>Click to expand protocol!</summary>
+
+>Here we will quantify DNA extracts using two different methods.
+
+**Materials**
+  
+* Extracted DNA  
+* Scale
+* Microwave
+* Electrophoresis rig with power source
+* DNA Ladder (for testing beads)
+* Gel loading dye  
+* Parafilm
+
+**Protocol**
+  
+</details>
