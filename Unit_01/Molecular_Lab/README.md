@@ -14,7 +14,7 @@
 * 0.5 M EDTA, pH 8.0
 * 1.0 M Tris, pH 8.0
 * Tween 20
-* 5 M NaCl
+* 5.0 M NaCl
 * Nuclease-free water
 * Magnetic tube rack
 * One 1.5 mL microcentifuge tube
@@ -159,10 +159,10 @@
 **Materials**
 
 * Proteinase K
-* NaCl
-* Tris
-* EDTA
-* SDS
+* 5.0 M NaCl
+* 1.0 M Tris, pH 8.0
+* 0.5 M EDTA, pH 8.0
+* 20% SDS
 * Agarose
 * 1X TAE Buffer
 * 100% Ethanol
@@ -178,9 +178,26 @@
 * 1.5 mL microcentrifuge tubes
   
 **Protocol**
-1. Prepare Lysis Buffer for tissue digestion...
+1. Prepare Lysis Buffer for tissue digestion in a new, sterile 50 mL conical (falcon) tube.
   
-2. Place ~3 mg of tissue in a 1.5 mL microcentrifuge tube containing 100 uL Lysis Buffer and 5 uL of Proteinase K. 
+2. Add 1 mL of 5.0 M NaCL to the empty conical tube.
+
+3. Add 5 mL of 1.0 M Tris to the conical tube. 
+
+4. Add 2.5 mL of 0.5 M EDTA to the conical tube.
+  
+5. Add 1.25 mL of 20% SDS to the conical tube.
+  
+6. Using sterile, nuclease-free water fill the conical tube up to the 50 mL line. 
+>This will make a Lysis Buffer with the following concentrations: 100 mM NaCL, 100 mM Tris, 25 mM EDTA, 0.5% SDS. 
+  
+7. Place ~3 mg of tissue in a 1.5 mL microcentrifuge tube containing 100 uL Lysis Buffer and 5 uL of Proteinase K.
+  
+8. Incubate at 55 C for a few hours (or overnight if necessary). During the digestion phase, occasionally remove the 1.5 mL tube and vortex to agitate the dissolving tissue. Once the tissue is digested into solution, move onto Step 9. 
+
+9. Add 180 uL of Serapure bead solution to the digested tissue. Make sure the Serapure beads are resuspended and the solution is dark brown before adding it to the sample.
+  
+ 10.
   
 </details>
 
