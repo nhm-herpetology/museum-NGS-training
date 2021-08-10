@@ -194,10 +194,34 @@
 7. Place ~3 mg of tissue in a 1.5 mL microcentrifuge tube containing 100 uL Lysis Buffer and 5 uL of Proteinase K.
   
 8. Incubate at 55 C for a few hours (or overnight if necessary). During the digestion phase, occasionally remove the 1.5 mL tube and vortex to agitate the dissolving tissue. Once the tissue is digested into solution, move onto Step 9. 
+>At this point the cells have been lysed and the DNA is in solution with other macromolecules
 
-9. Add 180 uL of Serapure bead solution to the digested tissue. Make sure the Serapure beads are resuspended and the solution is dark brown before adding it to the sample.
+9. Remove sample from incubator and allow to reach room temperature.   
   
- 10.
+10. Add 180 uL of Serapure bead solution to the digested tissue. Make sure the Serapure beads are resuspended and the solution is dark brown before adding it to the sample.
+  
+11. After adding the Serapure beads incubate at room temperature for 5 mins.
+
+12. Place 1.5 mL tube on magnet rack. Allow beads to seperate (~5 min)
+
+13. Remove supernatent with a P1000 pipetter and discard. Remove any remaining supernatent with a P100 or P200 pipetter.
+
+14. Add 500 uL of 70% ethanol and let stand for 1 min (Wash No. 1)
+
+15. Remove supernatent as in Step 13.
+
+16. Add 500 uL of 70% ethanol and let stand for 1 min (Wash No. 2)
+  
+17. Remove supernatent as in Step 13.
+  
+18. Allow beads to sit until there is no residual ethanol on the sides of the tube. This usually takes about 2-3 mins. 
+
+19. Add 200 uL 10 mM Tris to dried beads and resuspend the beads in solution by removing the tube from the magnet rack. This may require gently flicking the tube to get the beads back into solution. You may then need to centrifuge the tube to return the beads to the solution to the bottom of the tube. 
+
+20. Place 1.5 mL tube on magnet rack. Allow beads to seperate (~5 min)
+>The purified DNA is now in the supernatent.
+  
+21. Remove 200 uL extracted DNA and place in a new, sterile 1.5 mL microcentifuge tube. 
   
 </details>
 
