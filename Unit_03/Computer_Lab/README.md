@@ -1,13 +1,20 @@
 # Computer Laboratory 3
+>You will need a Unix Command Terminal or PuTTY interface to complete this lab. 
 
-**Some commands to go with programs**
->Description will go here.
-You will need a Unix Command Terminal or PuTTY interface
+## Processing UCE data with phyluce
+
+<details>
+  <summary>Click to expand content!</summary>
+
+>Phyluce is a really helpful program for processing targeted sequence capture data. There are seveal tutorials avialable here [here](https://phyluce.readthedocs.io/en/latest/tutorials/index.html)
+
 
 Example datasets: 
 
 * Illumina HiSeq (download here)
 * Illumina MiSeq (download here)
+
+
 
 
 ```
