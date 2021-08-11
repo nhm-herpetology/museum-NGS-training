@@ -5,8 +5,11 @@
 ## *de novo* assembly of shotgun libraries
 
 <detail>
- Click here to expand! 
+<summary>Click to expand content!</summary>
+ 
 >There are several different ways to assemble contigs from your raw Illumina data. In this lab we will compare two different assemblers. 
+ 
+</detail>
 
 Example datasets: 
 
