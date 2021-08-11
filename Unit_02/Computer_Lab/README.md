@@ -4,19 +4,28 @@
 
 ## *de novo* assembly of shotgun libraries
 
-<detail>
-<summary>Click to expand content!</summary>
+<details>
+ <summary>Click to expand content!</summary>
  
 >There are several different ways to assemble contigs from your raw Illumina data. In this lab we will compare two different assemblers. 
- 
-</detail>
-
-Example datasets: 
-
-* Illumina HiSeq (download here)
-* Illumina MiSeq (download here)
-
 
 ```
 cd some_directory
 ```
+
+</details>
+
+## Reference sequence mapping
+
+<details>
+ <summary>Click to expand content!</summary>
+ 
+>Reference-based assemblies can be useful when you have low coverage data (e.g. museum specimen shotgun sequencing) and a good reference genome.  
+
+```
+cd some_directory
+```
+
+</details>
+
+
