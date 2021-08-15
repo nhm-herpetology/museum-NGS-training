@@ -224,18 +224,47 @@
 <details>
   <summary>Click to expand protocol!</summary>
 
->Here we will quantify DNA extracts using two different methods.
+>Here we will quantify DNA extracts using a fluorometer. This is important because only double-stranded DNAs will be used in the NGS library preparations. 
 
 **Materials**
   
-* Extracted DNA  
-* Scale
-* Microwave
-* Electrophoresis rig with power source
-* DNA Ladder (for testing beads)
-* Gel loading dye  
-* Parafilm
+* Extracted DNA from five samples  
+* Qubit HS dsDNA reagent kit
+  * HS Buffer
+  * Fluorecent Dye
+  * Size Standard 1
+  * Size Standard 2
+* Qubit fluorometer
+* Crystal-clear Axygen microcentrifuge tubes
 
-**Protocol**
+**Protocol**  
+>This protocol is written for use with 1 uL of DNA extract. For samples that are likely to have very little dsDNA, it can be modified so that more template is used. 
+
+1. First we need to make a Master Mix from the Qubit reagents. For each sample (+ the two size standards) we need to combine 1 uL of Dye with 199 uL of buffer. 
+>In our case this means we add 7 uL of dye with 1393 uL of buffer
+
+2. Add 190 uL of Master Mix to two Axygen tubes (these will be used for the Size Standard DNA).
+
+3. Add 10 uL of Size Standard 1 to the first Axygen tube.
+  
+4. Add 10 uL of Size Standard 2 to the second Axygen tube. 
+  
+5. Add 199 uL of Master Mix to five Axygen tubes (these will be used for the sample DNA).
+  
+6. To each of the five sample tubes, add 1 uL of your DNA extract from each sample. 
+>At this point, you should have seven tubes, each with 200 uL of liquid in them (two size standards and five samples). 
+
+7. Vortex each of the tubes and then spin down using a lab bench mini-centrifuge. Allow to sit at room temperature for 5 mins. 
+  
+8. Turn on the Qubit fluorometer. Select the appropriate assay kit from the home menu. 
+  
+9. Follow the instructions for inserting the size standards. 
+  
+10. Once calibrated, conduct a reading on each of the DNA extract samples and note the concentrations (in ng/uL) 
+>Note: In order to get the concentrations in ng/uL format, you may need to modify the units on the Qubit fluorometer. 
+  
+11. These concentrations will be used to determine how many uL of DNA extract we use for the start of our library preparation protocol in the next Molecular Laboratory (Unit 2). 
+
+12. Discard the used Axygen tubes at the end of the laboratory session. 
   
 </details>
