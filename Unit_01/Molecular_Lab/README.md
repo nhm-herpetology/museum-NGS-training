@@ -263,7 +263,7 @@
 10. Once calibrated, conduct a reading on each of the DNA extract samples and note the concentrations (in ng/uL) 
 >Note: In order to get the concentrations in ng/uL format, you may need to modify the units on the Qubit fluorometer. 
   
-11. These concentrations will be used to determine how many uL of DNA extract we use for the start of our library preparation protocol in the next Molecular Laboratory (Unit 2). 
+11. These concentrations will be used to determine how many uL of DNA extract we use for the start of our library preparation protocol in the next Molecular Laboratory [Unit 2](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_02/Molecular_Lab). 
 
 12. Discard the used Axygen tubes at the end of the laboratory session. 
   
