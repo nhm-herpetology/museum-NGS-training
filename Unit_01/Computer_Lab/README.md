@@ -144,9 +144,9 @@ Now that both of the FASTQ files have been moved. Let's navigate to the FastQC d
 ```
 ./fastqc SRR3284185_1.fastq SRR3284185_2.fastq  
 ```  
-This will produce several output files. If not working locally, you can use WinSCP to access the HTML output. There are also copies in the [Example Files](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_01/Computer_Lab/Example_Files) directory. 
+This will produce several output files. If not working locally, you can use WinSCP to access the HTML output. There are also copies in the [Example Files](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_01/Computer_Lab/Example_Files) directory. The FastQC summaries let us see that quality decreases (as expected) near the end of the sequences: around 185 bp in Read 1 and 135 bp in Read 2. They also reveal that adapter contamination is present in >10% of the sequences near the end of the sequence. We want to remove low quality bases and adapter contamination and we can do both of those things using [Illumiprocessor](https://github.com/faircloth-lab/illumiprocessor) 
   
- 3. Using Illumiprocessor to remove adapter contamination is helpful when you have multiplexed samples. A congiguration file is needed. The configuration file looks like this:
+ 3. To use Illumiprocessor, a congiguration file is needed. The configuration file looks like this:
 
 ```
 [adapters]
@@ -155,17 +155,17 @@ i5:AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTAGATCTCGGTGGTCGCCGTATCATT
 
 [tag sequences]  
 INDEX-01:ATCACG
-INDEX-02:CGATGT
-INDEX-03:TTAGGC
-INDEX-04:TGACCA
+
   
 [tag map]
 1_S1:INDEX-01
-2_S2:INDEX-02
-3_S3:INDEX-03
-4_S4:INDEX-04  
+
+  
+[names]
+1_Cylindrophis_ruffus_FMNH_258674
+  
 ```
-The adapter section identifies the universal adapter sequences, the tag sequences are the unique barcodes for each sample; the tag map is used to name output files. 
+The different sections of the configuration file are (1) the adapter section which identifies the universal adapter sequences (in our case these are i5 and i7 Illumina TruSeq adapters), (2) the tag sequences are the unique barcodes for each sample, (3) the tag map is used to name output files, and (4) the name of the sample that we want to be used in downstream analyses. 
   
 </details>
 
