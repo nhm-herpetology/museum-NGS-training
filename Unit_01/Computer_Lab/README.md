@@ -152,7 +152,7 @@ This will produce several output files. If not working locally, you can use WinS
 install-conda
 ```  
 
-4. Install phyluce: 
+4. Install phyluce (instructions here for Linux version, other versions available [here](https://github.com/faircloth-lab/phyluce/releases): 
 
 ```
 wget https://raw.githubusercontent.com/faircloth-lab/phyluce/v1.7.1/distrib/phyluce-1.7.1-py36-Linux-conda.yml
@@ -160,8 +160,13 @@ wget https://raw.githubusercontent.com/faircloth-lab/phyluce/v1.7.1/distrib/phyl
 ```  
 conda env create -n phyluce-1.7.1 --file phyluce-1.7.1-py36-Linux-conda.yml
 ```   
+>Dependencies for Illumiprocessor are now in place
   
- 4. To use Illumiprocessor, a congiguration file is needed. The configuration file looks like this:
+5. Install Illumiprocessor
+ ```  
+ conda create --name illumiprocessor illumiprocessor
+ ``` 
+6. To use Illumiprocessor, a congiguration file is needed. The configuration file looks like this:
 
 ```
 [adapters]
