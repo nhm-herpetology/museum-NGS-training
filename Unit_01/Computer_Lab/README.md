@@ -146,7 +146,22 @@ Now that both of the FASTQ files have been moved. Let's navigate to the FastQC d
 ```  
 This will produce several output files. If not working locally, you can use WinSCP to access the HTML output. There are also copies in the [Example Files](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_01/Computer_Lab/Example_Files) directory. The FastQC summaries let us see that quality decreases (as expected) near the end of the sequences: around 185 bp in Read 1 and 135 bp in Read 2. They also reveal that adapter contamination is present in >10% of the sequences near the end of the sequence. We want to remove low quality bases and adapter contamination and we can do both of those things using [Illumiprocessor](https://github.com/faircloth-lab/illumiprocessor) 
   
- 3. To use Illumiprocessor, a congiguration file is needed. The configuration file looks like this:
+ 3. To use Illumiprocessor we need to install phyluce which requires miniconda for installation. On Franklin or Crop Diversity Cluster we just need to type:
+
+```
+install-conda
+```  
+
+4. Install phyluce: 
+
+```
+wget https://raw.githubusercontent.com/faircloth-lab/phyluce/v1.7.1/distrib/phyluce-1.7.1-py36-Linux-conda.yml
+``` 
+```  
+conda env create -n phyluce-1.7.1 --file phyluce-1.7.1-py36-Linux-conda.yml
+```   
+  
+ 4. To use Illumiprocessor, a congiguration file is needed. The configuration file looks like this:
 
 ```
 [adapters]
