@@ -144,9 +144,33 @@ Now that both of the FASTQ files have been moved. Let's navigate to the FastQC d
 ```
 ./fastqc SRR3284185_1.fastq SRR3284185_2.fastq  
 ```  
-This will produce several output files. If not working locally, you can use WinSCP to access the HTML output. There are also copies in the [Example Files](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_01/Computer_Lab/Example_Files) directory. The FastQC summaries let us see that quality decreases (as expected) near the end of the sequences: around 185 bp in Read 1 and 135 bp in Read 2. They also reveal that adapter contamination is present in >10% of the sequences near the end of the sequence. We want to remove low quality bases and adapter contamination and we can do both of those things using [Illumiprocessor](https://github.com/faircloth-lab/illumiprocessor) 
+This will produce several output files. If not working locally, you can use WinSCP to access the HTML output. There are also copies in the [Example Files](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_01/Computer_Lab/Example_Files) directory. The FastQC summaries let us see that quality decreases (as expected) near the end of the sequences: around 185 bp in Read 1 and 135 bp in Read 2. They also reveal that adapter contamination is present in >10% of the sequences near the end of the sequence. 
+
+3. Let's copy the FASTQ files to a new directory for cleaning and processing:
+```
+cp SRR3284185_1.fastq /home/jefs/NGS_course/Data/raw-fastq
+```  
+```
+cp SRR3284185_2.fastq /home/jefs/NGS_course/Data/raw-fastq
+```  
   
- 3. To use Illumiprocessor we need to install phyluce which requires miniconda for installation. On Franklin or Crop Diversity Cluster we just need to type:
+Now navigate to the 'Data/raw-fastq' directory. Let's prepare the files for cleaning by renaming them and compressing them: 
+```
+mv SRR3284185_1.fastq SRR3284185_S1_L001_R1_001.fastq
+```  
+```
+mv SRR3284185_2.fastq SRR3284185_S1_L001_R2_001.fastq
+``` 
+```
+gzip SRR3284185_S1_L001_R1_001.fastq
+```  
+```
+gzip SRR3284185_S1_L001_R2_001.fastq
+``` 
+  
+We want to remove low quality bases and adapter contamination and we can do both of those things using [Illumiprocessor](https://github.com/faircloth-lab/illumiprocessor) 
+  
+4. To use Illumiprocessor we need to install phyluce which requires miniconda for installation. On Franklin or Crop Diversity Cluster we just need to type:
 
 ```
 install-conda
@@ -160,11 +184,11 @@ wget https://raw.githubusercontent.com/faircloth-lab/phyluce/v1.7.1/distrib/phyl
 ```  
 conda env create -n phyluce-1.7.1 --file phyluce-1.7.1-py36-Linux-conda.yml
 ```   
->Dependencies for Illumiprocessor are now in place
+>Dependencies and Illumiprocessor are now installed
   
-5. Install Illumiprocessor
+5. Activate phyluce
  ```  
- conda create --name illumiprocessor illumiprocessor
+  conda activate phyluce-1.7.1
  ``` 
 6. To use Illumiprocessor, a congiguration file is needed. The configuration file looks like this:
 
@@ -174,18 +198,63 @@ i7:AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC*ATCTCGTATGCCGTCTTCTGCTTG
 i5:AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTAGATCTCGGTGGTCGCCGTATCATT
 
 [tag sequences]  
-INDEX-01:ATCACG
+INDEX-16:CCGTCCCG
 
   
 [tag map]
-1_S1:INDEX-01
+SRR3284185_S1:INDEX-16
 
   
 [names]
-1_Cylindrophis_ruffus_FMNH_258674
+SRR3284185_S1:Cylindrophis_ruffus_FMNH_258674
   
 ```
 The different sections of the configuration file are (1) the adapter section which identifies the universal adapter sequences (in our case these are i5 and i7 Illumina TruSeq adapters), (2) the tag sequences are the unique barcodes for each sample, (3) the tag map is used to name output files, and (4) the name of the sample that we want to be used in downstream analyses. 
+
+7. To make the configuration text file let's use the command line: 
+ 
+ ```  
+  cat > illumiprocessor.conf
+ ```   
+ Now paste the configuration text (from Step 6) into your terminal and then press CTRL + SHIFT + D. 
+ 
+8. We are now ready to run Illumiprocessor to trim low quality bases + remove adapter contamiantion: 
+ ```   
+illumiprocessor \
+    --input raw-fastq/ \
+    --output clean-fastq \
+    --config illumiprocessor.conf \
+    --cores 1  
+ ```    
+
+9. Now let's navigate to the cleaned read directory and examine the stats:
+  
+```  
+cd clean-fastq
+```  
+```  
+cd Cylindrophis_ruffus_FMNH_258674
+```
+```  
+cd stats
+```
+When we look at the summary statistics files using the ```cat``` command, we should see something lik the following output: 
+  
+```
+TrimmomaticPE: Started with arguments:
+ -phred33 /home/jefs/NGS_course/Data/clean-fastq/Cylindrophis_ruffus_FMNH_258674/raw-reads/Cylindrophis_ruffus_FMNH_258674-READ1.fastq.gz /home/jefs/NGS_course/Data/clean-fastq/Cylindrophis_ruffus_FMNH_258674/raw-reads/Cylindrophis_ruffus_FMNH_258674-READ2.fastq.gz /home/jefs/NGS_course/Data/clean-fastq/Cylindrophis_ruffus_FMNH_258674/split-adapter-quality-trimmed/Cylindrophis_ruffus_FMNH_258674-READ1.fastq.gz /home/jefs/NGS_course/Data/clean-fastq/Cylindrophis_ruffus_FMNH_258674/split-adapter-quality-trimmed/Cylindrophis_ruffus_FMNH_258674-READ1-single.fastq.gz /home/jefs/NGS_course/Data/clean-fastq/Cylindrophis_ruffus_FMNH_258674/split-adapter-quality-trimmed/Cylindrophis_ruffus_FMNH_258674-READ2.fastq.gz /home/jefs/NGS_course/Data/clean-fastq/Cylindrophis_ruffus_FMNH_258674/split-adapter-quality-trimmed/Cylindrophis_ruffus_FMNH_258674-READ2-single.fastq.gz ILLUMINACLIP:/home/jefs/NGS_course/Data/clean-fastq/Cylindrophis_ruffus_FMNH_258674/adapters.fasta:2:30:10 LEADING:5 TRAILING:15 SLIDINGWINDOW:4:15 MINLEN:40
+Using Long Clipping Sequence: 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTAGATCTCGGTGGTCGCCGTATCATT'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCACACGTCTGAACTCCAGTCACCCGTCCCGATCTCGTATGCCGTCTTCTGCTTG'
+ILLUMINACLIP: Using 0 prefix pairs, 2 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 115128 Both Surviving: 106854 (92.81%) Forward Only Surviving: 7653 (6.65%) Reverse Only Surviving: 334 (0.29%) Dropped: 287 (0.25%)
+TrimmomaticPE: Completed successfully
+```  
+
+We can see that Illumiprocessor dropped about 8% of the read pairs. Let's now have a look and see how this changed the quality using FASTQC: 
+  
+
+  
+  
   
 </details>
 
