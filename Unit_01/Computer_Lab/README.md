@@ -238,7 +238,7 @@ cd Cylindrophis_ruffus_FMNH_258674
 ```  
 cd stats
 ```
-When we look at the summary statistics files using the ```cat``` command, we should see something lik the following output: 
+When we look at the summary statistics file using the ```cat``` command, we should see something like the following output: 
   
 ```
 TrimmomaticPE: Started with arguments:
@@ -250,11 +250,35 @@ Input Read Pairs: 115128 Both Surviving: 106854 (92.81%) Forward Only Surviving:
 TrimmomaticPE: Completed successfully
 ```  
 
-We can see that Illumiprocessor dropped about 8% of the read pairs. Let's now have a look and see how this changed the quality using FASTQC: 
-  
+We can see that Illumiprocessor dropped about 8% of the read pairs. Let's now have a look at the cleaned output files:
+```  
+cd ..  
+```
+```
+cd split-adapter-quality-trimmed  
+```
+There will be three sets of fastq.gz files present: 
+```  
+Cylindrophis_ruffus_FMNH_258674-READ1.fastq.gz
+Cylindrophis_ruffus_FMNH_258674-READ2.fastq.gz
+Cylindrophis_ruffus_FMNH_258674-READ-singleton.fastq.gz
+```  
 
-  
-  
+In addition to retaining paired-end reads, Illumiprocessor also keeps 'singleton' reads that can be used to maximize coverage for *de novo* assembly. 
+
+10. Let's use FASTQC to see how the cleaned FASTQ.GZ files compare to the raw FASTQ files.   
+
+```
+cp Cylindrophis_ruffus_FMNH_258674-READ1.fastq.gz /home/jefs/NGS_course/FastQC
+```  
+```
+cp Cylindrophis_ruffus_FMNH_258674-READ2.fastq.gz /home/jefs/NGS_course/FastQC
+```    
+Now navigate to your FASTQC directory. 
+```
+./fastqc Cylindrophis_ruffus_FMNH_258674-READ1.fastq.gz Cylindrophis_ruffus_FMNH_258674-READ2.fastq.gz  
+```
+This will produce output filesas we saw in Step 2. There are also copies in the [Example Files](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_01/Computer_Lab/Example_Files) directory.  
   
 </details>
 
