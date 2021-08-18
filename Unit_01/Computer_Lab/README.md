@@ -278,7 +278,9 @@ Now navigate to your FASTQC directory.
 ```
 ./fastqc Cylindrophis_ruffus_FMNH_258674-READ1.fastq.gz Cylindrophis_ruffus_FMNH_258674-READ2.fastq.gz  
 ```
-This will produce output filesas we saw in Step 2. There are also copies in the [Example Files](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_01/Computer_Lab/Example_Files) directory.  
+This will produce output files as we saw in Step 2. There are also copies in the [Example Files](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_01/Computer_Lab/Example_Files) directory. You can see from the resulting HTML output that the cleaning has improved the quality and adapter content of the read sets. Much better!  
+
+>The cleaned FASTQ.GZ files are now ready for use in a variety of downstream applications. We will learn how to use them for *de novo* assembly and read mapping in [Unit 2](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_01/Computer_Lab).  
   
 </details>
 
