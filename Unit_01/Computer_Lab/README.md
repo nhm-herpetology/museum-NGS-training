@@ -28,16 +28,62 @@ Phred Quality Score | Probability of Incorrect Base Call  | Base Call Accuracy
 
 </details>
 
-## Retrieving Illumina data directly from the sequencer
+## Retrieving FASTQ data directly from the Illumina sequencer
 
 <details>
   <summary>Click to expand content!</summary>
 
->If you are getting sequence data back from the NHM NextSeq or MiSeq, you will need to use...
+>If you are retrieving sequence data directly from the NHM NextSeq or MiSeq, you will need to convert the Illumina Base Call data into the FASTQ format. This can be done using the Illumina program [bcl2fastq](https://emea.support.illumina.com/sequencing/sequencing_software/bcl2fastq-conversion-software.html).
+
+1. First, let's download bcl2fastq:
+```
+wget https://support.illumina.com/softwaredownload.html?assetId=82660c4c-f46c-4743-8566-2437755e4329&assetDetails=bcl2fastq2-v2-20-0-tar.zip  
+```  
+>At 211 MB this is a rather large file so the download may take a moment.  
+
+2. Illumina datasets can be very large, so for this lab we are going to work with an unpublished dataset of 10 shotgun-sequenced museum specimens (XXX GB) which was generated on the NHM Illumina NextSeq.
+  
+3. The software uses a configuration file which is always named ```SampleSheet.csv``` that is formatted like this: 
+```
+[Header]			
+IEMFileVersion	4		
+Investigator Name	JS		
+Experiment Name	JS		
+Date	02/04/2019		
+Workflow	GenerateFASTQ		
+Application	NextSeq FASTQ Only		
+Assay	TruSeq LT		
+Description	Brewer_Wilkinson_Streicher_caecilian_DNA		
+Chemistry	Default		
+			
+[Reads]			
+151			
+151			
+			
+[Settings]			
+Adapter	AGATCGGAAGAGCACACGTCTGAACTCCAGTCA		
+AdapterRead2	AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT		
+			
+[Data]			
+Sample_ID	Sample_Name	I7_Index_ID	index
+3	3	i3	TTAGGC
+4	4	i4	TGACCA
+5	5	i5	ACAGTG
+6	6	i6	GCCAAT
+8	8	i8	ACTTGA
+10	10	i10	TAGCTT
+12	12	i12	CTTGTA
+15	15	i15	ATGTCA
+24	24	i24	AGCAGG
+27	27	i27	ATTGAG
+  
+```
+This configuration file will be used by the software to process the Base Call data and transform them into FASTQ data.
+  
   
 </details>
 
-## Retrieving Illumina data from the Sequence Read Archive (SRA)
+## Retrieving FASTQ data from the Sequence Read Archive (SRA)
 
 <details>
   <summary>Click to expand content!</summary>
