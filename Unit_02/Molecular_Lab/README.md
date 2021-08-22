@@ -17,6 +17,7 @@
 * 1.5 mL microcentrifuge tubes
 * PCR-grade water
 * Fresh 70% ethanol
+* 10 mM Tris (DNA Storage Buffer from Unit 1)
 * PCR tubes
 * Thermal cycler, water bath, or heat block  
 
@@ -152,7 +153,7 @@ Sample 4 | 80.0  | 6.3  | 53.7
 * 5.0M NaCl 
 * 0.5M EDTA
 * Purified dA-tailed reactions
-* Adapter Oligonucleotides
+* Adapter Oligonucleotides (Indexed + Universal)
 * NEBNext Quick Ligation Module (E6056)
 * NEBNext Q5 HotStart HiFi PCR Master Mix (M0543)
 * Illumina TruSeq primers
@@ -174,59 +175,92 @@ Sample 4 | 80.0  | 6.3  | 53.7
   * 1 mL 0.5M EDAT
   * 39 mL nuclease-free water
 >This is your annealing buffer
-    
-2. To each tube with 25 uL of dA-tailed DNA, add the following: 
+
+2. Turn a heat block to 95 C (if using a water bath use extra care as this is obviously quite hot)
+  
+3. In clean 1.5 mL tubes combine the following for as many indexes as you have:
+  * 10 uL 100 uM Oligo 1 (Indexed)
+  * 10 uL 100 uM Oligo 2 (Universal)
+  * 5 uL Annealing Buffer
+  * 25 uL nuclease-free water 
+  >This should create 40 uM adapter working stocks
+
+Illumina adapters look like this (5' to 3'): 
+  
+```
+Indexed:    P*GATCGGAAGAGCACACGTCTGAACTCCAGTCACATCACGATCTCGTATGCCGTCTTCTGCTTG
+Universal:  AATGATACGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGCTCTTCCGATC*T    
+  
+4. Spin down and place the 1.5 mL adapter tubes on the 95 C heat block. Let sit at 95 C for 1 min and then turn off the heat block and allow it to return to room temperature over 30 to 45 minutes. 
+>The goal here is to slowly decrease the heat (~1 C per minute) to allow the adapter oligos to anneal to one another.
+
+5. Once back to room temperature, remove from the heat block (and if not using right away) store at -20 C.  
+  
+6. To make 1 uM concentrations for use in the ligation step below, combine the following in a clean 1.5 mL tube:
+   * 2.5 uL of 40 uM annealed adapter solution
+   * 97.5 ul nuclease-free water
+  
+7. To each tube with 25 uL of dA-tailed DNA, add the following: 
   * 2.5 uL 5X Ligation Buffer
   * 1.25 uL T4 DNA Ligase
   * 2.5 uL 1 uM Illumina adapter (made previously).  
 
-3. Mix each reaction by pippeting gently up and down and then spin down in a mini-centrifuge.
+I like to keep track of which barcodes were used on which samples as follows: 
+  
+Sample ID | Index  | Barcode ID 
+------------ | -------------  | ------------- 
+Sample 1 | 1  | ATCACG  
+Sample 2 | 2  | CGATGT 
+Sample 3 | 3  | TTAGGC 
+Sample 4 | 4  | TGACCA  
+  
+8. Mix each reaction by pippeting gently up and down and then spin down in a mini-centrifuge.
 
-4. Transfer the PCR tubes to a thermal cycler and run the 'Ligation' program which will keep the samples at 20 C for 15 minutes.  
+9. Transfer the PCR tubes to a thermal cycler and run the 'Ligation' program which will keep the samples at 20 C for 15 minutes.  
 >Following ligation, your samples will all be uniquely barcoded and can be separated bioinformatically, so it is safe to now combine them into a single pool. 
   
-5. Pool all eight samples together in a single 1.5 mL tube. This should result in a total volume of ~240 uL.
+10. Pool all eight samples together in a single 1.5 mL tube. This should result in a total volume of ~240 uL.
   
-6. Add 400 uL of Serapure bead solution to the pooled sample and mix. 
+11. Add 400 uL of Serapure bead solution to the pooled sample and mix. 
   
-7. After adding the Serapure beads incubate at room temperature for 5 mins.
+12. After adding the Serapure beads incubate at room temperature for 5 mins.
 
-8. Place 1.5 mL tube on magnet rack. Allow beads to seperate (~5 min)
+13. Place 1.5 mL tube on magnet rack. Allow beads to seperate (~5 min)
 
-9. Remove supernatent with a P1000 pipetter and discard. Remove any remaining supernatent with a P100 or P200 pipetter.
+14. Remove supernatent with a P1000 pipetter and discard. Remove any remaining supernatent with a P100 or P200 pipetter.
 
-10. Add 500 uL of 70% ethanol and let stand for 1 min (Wash No. 1)
+15. Add 500 uL of 70% ethanol and let stand for 1 min (Wash No. 1)
 
-11. Remove supernatent as in Step 13.
+16. Remove supernatent as in Step 13.
 
-12. Add 500 uL of 70% ethanol and let stand for 1 min (Wash No. 2)
+17. Add 500 uL of 70% ethanol and let stand for 1 min (Wash No. 2)
   
-13. Remove supernatent as in Step 13.
+18. Remove supernatent as in Step 13.
   
-14. Allow beads to sit until there is no residual ethanol on the sides of the tube. This usually takes about 2-3 mins. 
+19. Allow beads to sit until there is no residual ethanol on the sides of the tube. This usually takes about 2-3 mins. 
 
-15. Add 31 uL 10 mM Tris to dried beads and resuspend the beads in solution by removing the tube from the magnet rack. This may require gently flicking the tube to get the beads back into solution. You may then need to centrifuge the tube to return the beads to the solution to the bottom of the tube. 
+20. Add 31 uL 10 mM Tris to dried beads and resuspend the beads in solution by removing the tube from the magnet rack. This may require gently flicking the tube to get the beads back into solution. You may then need to centrifuge the tube to return the beads to the solution to the bottom of the tube. 
 
-16. Place 1.5 mL tube on magnet rack. Allow beads to seperate (~5 min)
+21. Place 1.5 mL tube on magnet rack. Allow beads to seperate (~5 min)
 >The purified pooled, ligated sample is now ready for size selection.
 
-17. Transfer 30 uL of ligated sample into a clean 1.5 mL tube.
+22. Transfer 30 uL of ligated sample into a clean 1.5 mL tube.
   
-18. Assemble (1) sample (~30 uL), (2) Blue Pippin cartridge, and (3) Blue Pippin size standard. Take them to the Blue Pippin. 
+23. Assemble (1) sample (~30 uL), (2) Blue Pippin cartridge, and (3) Blue Pippin size standard. Take them to the Blue Pippin. 
   
-19. Mix 10 uL of Blue Pippin size standad with the 30 uL cleaned, pooled ligations. 
+24. Mix 10 uL of Blue Pippin size standad with the 30 uL cleaned, pooled ligations. 
   
-20. Turn on Blue Pippin and let software load. Select the 2% internal standard template and enter sample names accordingly. 
+25. Turn on Blue Pippin and let software load. Select the 2% internal standard template and enter sample names accordingly. 
   
-21. Follow the steps for cartridge preparation and device calibration listed in the Blue Pippin [manual](https://web.uri.edu/gsc/files/BluePippin-Operations-Manual-v58-CD81.pdf)
+26. Follow the steps for cartridge preparation and device calibration listed in the Blue Pippin [manual](https://web.uri.edu/gsc/files/BluePippin-Operations-Manual-v58-CD81.pdf)
 
-22. Set the machine to size select between 438 and 538 base pairs in size. 
+27. Set the machine to size select between 438 and 538 base pairs in size. 
   
-23. Allow the Blue Pippin to run, this should take ~1.5 hours. 
+28. Allow the Blue Pippin to run, this should take ~1.5 hours. 
   
-24. Remove the size-selected sample from the Blue Pippin Cartridge Sample Well(s) and place in a clean 1.5 mL tube. 
+29. Remove the size-selected sample from the Blue Pippin Cartridge Sample Well(s) and place in a clean 1.5 mL tube. 
   
-25. Prepare a PCR Master Mix with the following recipe: 
+30. Prepare a PCR Master Mix with the following recipe: 
     * 6 uL PCR-grade water (96 uL for 16 rxns)
     * 1 uL TruSeq primer 1 (16 uL for 16 rxns)
     * 1 uL TruSeq primer 2 (16 uL for 16 rxns)
@@ -239,34 +273,34 @@ Primer 1: AAT GAT ACG GCG ACC ACC GAG A
 Primer 2: CAA GCA GAA GAC GGC ATA CGA G
 ```  
   
-26. Alliquot 18 uL the master mix into 16 clean PCR tubes and then add 2 uL of Blue Pippin size-selected sample to 15 of the tubes. The 16th PCR tube will be our negative control.
+31. Alliquot 18 uL the master mix into 16 clean PCR tubes and then add 2 uL of Blue Pippin size-selected sample to 15 of the tubes. The 16th PCR tube will be our negative control.
 
-27. Mix and spin down the samples, then run using the 'Ilumina-PCR' program on the thermal cycler. 
+32. Mix and spin down the samples, then run using the 'Ilumina-PCR' program on the thermal cycler. 
   
-28. Once completed, pool all of the PCRs into a single 1.5 mL tube (except the negative control). Add 540 uL of SearPure bead solution to the 1.5 mL tube. This is a 1.8X concentration. 
+33. Once completed, pool all of the PCRs into a single 1.5 mL tube (except the negative control). Add 540 uL of SearPure bead solution to the 1.5 mL tube. This is a 1.8X concentration. 
 
-29. After adding the Serapure beads incubate at room temperature for 5 mins.
+34. After adding the Serapure beads incubate at room temperature for 5 mins.
 
-30. Place 1.5 mL tube on magnet rack. Allow beads to seperate (~5 min)
+35. Place 1.5 mL tube on magnet rack. Allow beads to seperate (~5 min)
 
-31. Remove supernatent with a P1000 pipetter and discard. Remove any remaining supernatent with a P100 or P200 pipetter.
+36. Remove supernatent with a P1000 pipetter and discard. Remove any remaining supernatent with a P100 or P200 pipetter.
 
-32. Add 500 uL of 70% ethanol and let stand for 1 min (Wash No. 1)
+37. Add 500 uL of 70% ethanol and let stand for 1 min (Wash No. 1)
 
-33. Remove supernatent as in Step 13.
+38. Remove supernatent as in Step 13.
 
-34. Add 500 uL of 70% ethanol and let stand for 1 min (Wash No. 2)
+39. Add 500 uL of 70% ethanol and let stand for 1 min (Wash No. 2)
   
-35. Remove supernatent as in Step 13.
+40. Remove supernatent as in Step 13.
   
-36. Allow beads to sit until there is no residual ethanol on the sides of the tube. This usually takes about 2-3 mins. 
+41. Allow beads to sit until there is no residual ethanol on the sides of the tube. This usually takes about 2-3 mins. 
 
-37. Add 16 uL 10 mM Tris to dried beads and resuspend the beads in solution by removing the tube from the magnet rack. This may require gently flicking the tube to get the beads back into solution. You may then need to centrifuge the tube to return the beads to the solution to the bottom of the tube. 
+42. Add 16 uL 10 mM Tris to dried beads and resuspend the beads in solution by removing the tube from the magnet rack. This may require gently flicking the tube to get the beads back into solution. You may then need to centrifuge the tube to return the beads to the solution to the bottom of the tube. 
 
-38. Place 1.5 mL tube on magnet rack. Allow beads to seperate (~5 min)
+43. Place 1.5 mL tube on magnet rack. Allow beads to seperate (~5 min)
 >The cleaned, enriched Illumina library is now ready for quantification.
 
-39. Transfer 15 uL of the shotgun Illumina library into a clean 1.5 mL tube.  
+44. Transfer 15 uL of the shotgun Illumina library into a clean 1.5 mL tube.  
   
 </details>
 
