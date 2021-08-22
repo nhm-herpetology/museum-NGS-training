@@ -10,14 +10,19 @@
 **Materials**
 
 * Illumina shotgun library
-* MyBaits 5k Tetrapod kit
+* MyBaits 5k Tetrapod kit (Arbor BioSciences)
 * 1.5 mL microcentrifuge tubes
 * Nuclease-free water
 * Magnetic tube rack
 
 
 **Protocol**
-1. Using the shotgun libraries from the last unit...
+>This protocol is based on the Arbor BioSciences MyBaits v5 [manual](https://arborbiosci.com/wp-content/uploads/2021/03/myBaits_v5.01_Manual.pdf)
+  
+1. We should have recieved the following kit components from Arbor Biosciences: 
+  
+
+  
 </details>
 
 ## Quantification of capture library using Agilent TapeStation
