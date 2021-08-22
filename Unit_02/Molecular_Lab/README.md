@@ -133,7 +133,10 @@ Sample 4 | 80.0  | 6.3  | 53.7
 45. Add 26 uL 10 mM Tris to dried beads and resuspend the beads in solution by removing the tube from the magnet rack. This may require gently flicking the tube to get the beads back into solution. You may then need to centrifuge the tube to return the beads to the solution to the bottom of the tube. 
 
 46. Place 1.5 mL tube on magnet rack. Allow beads to seperate (~5 min)
->The purified dA-tailed DNA is now in the supernatent.    
+>The purified dA-tailed DNA is now in the supernatent.
+  
+47. Transfer 25 uL of fragmented DNA into clean PCR tubes. These will be used for ligation in the next module. 
+  
 </details>
 
 ## Shotgun Library Construction II (Ligation, Size-selection and PCR)
@@ -157,9 +160,55 @@ Sample 4 | 80.0  | 6.3  | 53.7
 * Blue Pippin (Sage Science)
 * 2% Agarose cartridge w/ internal standard for Blue Pippin
 * Thermal cycler
+* 1.5 mL microcentrifuge tubes
 
 **Protocol**
-1. Using the a-tailed reactions from the last unit...
+
+1. We will start by constructing our own adapters that will be used to barcode (=index) each of the eight dA-tailed reactions. First, we will take... 
+    
+2. To each tube with 25 uL of dA-tailed DNA, add the following: 
+  * 2.5 uL 5X Ligation Buffer
+  * 1.25 uL T4 DNA Ligase
+  * 2.5 uL 1 uM Illumina adapter (made previously).  
+
+3. Mix each reaction by pippeting gently up and down and then spin down in a mini-centrifuge.
+
+4. Transfer the PCR tubes to a thermal cycler and run the 'Ligation' program which will keep the samples at 20 C for 15 minutes.  
+>Following ligation, your samples will all be uniquely barcoded and can be separated bioinformatically, so it is safe to now combine them into a single pool. 
+  
+5. Pool all eight samples together in a single 1.5 mL tube. This should result in a total volume of ~240 uL.
+  
+6. Add 400 uL of Serapure bead solution to the pooled sample and mix. 
+  
+7. After adding the Serapure beads incubate at room temperature for 5 mins.
+
+8. Place 1.5 mL tube on magnet rack. Allow beads to seperate (~5 min)
+
+9. Remove supernatent with a P1000 pipetter and discard. Remove any remaining supernatent with a P100 or P200 pipetter.
+
+10. Add 500 uL of 70% ethanol and let stand for 1 min (Wash No. 1)
+
+11. Remove supernatent as in Step 13.
+
+12. Add 500 uL of 70% ethanol and let stand for 1 min (Wash No. 2)
+  
+13. Remove supernatent as in Step 13.
+  
+14. Allow beads to sit until there is no residual ethanol on the sides of the tube. This usually takes about 2-3 mins. 
+
+15. Add 31 uL 10 mM Tris to dried beads and resuspend the beads in solution by removing the tube from the magnet rack. This may require gently flicking the tube to get the beads back into solution. You may then need to centrifuge the tube to return the beads to the solution to the bottom of the tube. 
+
+16. Place 1.5 mL tube on magnet rack. Allow beads to seperate (~5 min)
+>The purified pooled, ligated sample is now ready for size selection.
+  
+17. Assemble (1) sample (~30 uL), (2) Blue Pippin cartridge, and (3) Blue Pippin size standard. Take them to the Blue Pippin. 
+  
+18. Mix 10 uL of Blue Pippin size standad with the 30 uL cleaned, pooled ligations. 
+  
+19. Turn on Blue Pippin and let software load. Select the 2% internal standard template and enter sample names accordingly. 
+  
+20. Calibrate
+  
 </details>
 
 ## Quantification of Illumina Libraries using Agilent TapeStation
