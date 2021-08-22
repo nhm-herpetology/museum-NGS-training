@@ -190,6 +190,7 @@ Illumina adapters look like this (5' to 3'):
 ```
 Indexed:    P*GATCGGAAGAGCACACGTCTGAACTCCAGTCACATCACGATCTCGTATGCCGTCTTCTGCTTG
 Universal:  AATGATACGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGCTCTTCCGATC*T    
+```
   
 4. Spin down and place the 1.5 mL adapter tubes on the 95 C heat block. Let sit at 95 C for 1 min and then turn off the heat block and allow it to return to room temperature over 30 to 45 minutes. 
 >The goal here is to slowly decrease the heat (~1 C per minute) to allow the adapter oligos to anneal to one another.
@@ -271,7 +272,7 @@ Illumina TruSeq pimer sequences are (5' to 3'):
 ```
 Primer 1: AAT GAT ACG GCG ACC ACC GAG A
 Primer 2: CAA GCA GAA GAC GGC ATA CGA G
-```  
+```
   
 31. Alliquot 18 uL the master mix into 16 clean PCR tubes and then add 2 uL of Blue Pippin size-selected sample to 15 of the tubes. The 16th PCR tube will be our negative control.
 
