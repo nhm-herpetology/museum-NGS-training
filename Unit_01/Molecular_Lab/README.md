@@ -208,14 +208,19 @@
   
 17. Remove supernatent as in Step 13.
   
-18. Allow beads to sit until there is no residual ethanol on the sides of the tube. This usually takes about 2-3 mins. 
+18. Allow beads to sit until there is no residual ethanol on the sides of the tube. This usually takes about 2-3 mins.
+  
+19. While waiting for the final bead drying, let's make a solution 10 mM Tris (this will be used substantially to elute DNA throughout the course). In a 50 mL conical (falcon) tube mix the following:
+  * 500 uL 1M TRIS
+  * 49.5 mL nuclease-free water
+>This is your DNA storage buffer
+  
+20. Add 200 uL 10 mM Tris to dried beads and resuspend the beads in solution by removing the tube from the magnet rack. This may require gently flicking the tube to get the beads back into solution. You may then need to centrifuge the tube to return the beads to the solution to the bottom of the tube. 
 
-19. Add 200 uL 10 mM Tris to dried beads and resuspend the beads in solution by removing the tube from the magnet rack. This may require gently flicking the tube to get the beads back into solution. You may then need to centrifuge the tube to return the beads to the solution to the bottom of the tube. 
-
-20. Place 1.5 mL tube on magnet rack. Allow beads to seperate (~5 min)
+21. Place 1.5 mL tube on magnet rack. Allow beads to seperate (~5 min)
 >The purified DNA is now in the supernatent.
   
-21. Remove 200 uL extracted DNA and place in a new, sterile 1.5 mL microcentifuge tube. 
+22. Remove 200 uL extracted DNA and place in a new, sterile 1.5 mL microcentifuge tube. 
   
 </details>
   
