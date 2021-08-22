@@ -24,7 +24,7 @@ Phred Quality Score | Probability of Incorrect Base Call  | Base Call Accuracy
 40 | 1 in 10,000  | 99.99%
 50 | 1 in 100,000  | 99.999%
   
->Note: Depending on the files, we will need to figure out what kind of Q-scores we are dealing with. Older Illumina machines used a system called phred-64 scoring whereas newer Illumina (and other sequencing platforms) use phred-33 scoring. Some downstream software packages auto-detect this, but others do not.   
+>Note: Depending on the FASTQ file, we will need to figure out what kind of Q-scores we are dealing with. Older Illumina machines used a system called phred-64 scoring whereas newer Illumina (and other sequencing platforms) use phred-33 scoring. Some downstream software packages auto-detect this, but others do not.   
 
 </details>
 
