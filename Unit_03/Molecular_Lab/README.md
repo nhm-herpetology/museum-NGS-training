@@ -5,7 +5,7 @@
 <details>
   <summary>Click to expand protocol!</summary>
 
-  >In Unit 2 we learned how to construct shotgun genomic libraries for Illumina platforms. The shotgun library is what we will use for the targeted-seqeunce capture of UCEs. 
+  >In Unit 2 we learned how to construct shotgun genomic libraries for Illumina platforms. The shotgun library is what we will use for the targeted sequence capture of UCEs. 
 
 **Materials**
 
