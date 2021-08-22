@@ -5,7 +5,21 @@
 <details>
   <summary>Click to expand protocol!</summary>
 
->Here we will start building an NGS library of genomic double-stranded DNA (dsDNA) for six samples using starting amounts of 500 ng dsDNA.
+>Here we will start building an NGS library of genomic double-stranded DNA (dsDNA) for six samples using starting amounts of 500 ng dsDNA and NEBNext Master Mixes. 
+
+**Materials**
+
+* NEBNext dsDNA Fragmentase (M0348S/L)
+* Serapure magnetic bead solution (from Unit 1)
+* NEBNext End Repair Module (E6050)
+* NEBNext dA-tailing Module (E6053)  
+* 1.5 mL microcentrifuge tubes
+* PCR tubes
+* Thermal cycler, water bath, or heat block  
+
+1. Using the DNA extractions from Unit 1, we are now going to prepare the DNA for library construction. First, we need to prepare 500 ng from the DNA isolates. I use a spreadsheet with three columns to do this: 
+  
+
   
 </details>
 
