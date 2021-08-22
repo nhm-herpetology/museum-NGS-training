@@ -38,7 +38,7 @@ Sample 4 | 80.0  | 6.3  | 53.7
 
 4. Place the 1.5 mL tubes in the 37 C heat block/water bath for 25 minutes. 
   
-5. Remove Serapure magnetic bead solution from 4 C storage and agitate/vortex so that beads are suspended in the solution. It should look the same as when we made the neads in Unit 1. 
+5. Remove Serapure magnetic bead solution from 4 C storage and agitate/vortex so that beads are suspended in the solution. It should look the same as when we made the beads in Unit 1. 
   
 6. Remove the fragmented DNA samples from the 37 C incubation and add 126 uL of Serapure beads to each sample. This is a 1.8X concentration.   
 
