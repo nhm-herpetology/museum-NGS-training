@@ -41,7 +41,7 @@ wget https://support.illumina.com/softwaredownload.html?assetId=82660c4c-f46c-47
 ```  
 >At 211 MB this is a rather large file so the download may take a moment.  
 
-2. Illumina datasets can be very large, so for this lab we are going to work with an unpublished dataset of 10 shotgun-sequenced museum specimens (XXX GB) which was generated on the NHM Illumina NextSeq.
+2. Illumina datasets can be very large, so for this lab we are going to work with an unpublished dataset of 10 shotgun-sequenced museum specimens (16 GB) which was generated on the NHM Illumina NextSeq.
   
 3. The software uses a configuration file which is always named ```SampleSheet.csv``` that is formatted like this: 
 ```
@@ -53,7 +53,7 @@ Date	02/04/2019
 Workflow	GenerateFASTQ		
 Application	NextSeq FASTQ Only		
 Assay	TruSeq LT		
-Description	Brewer_Wilkinson_Streicher_caecilian_DNA		
+Description	Museum_specimen_data		
 Chemistry	Default		
 			
 [Reads]			
