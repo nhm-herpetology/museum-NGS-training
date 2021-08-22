@@ -200,14 +200,57 @@ Sample 4 | 80.0  | 6.3  | 53.7
 
 16. Place 1.5 mL tube on magnet rack. Allow beads to seperate (~5 min)
 >The purified pooled, ligated sample is now ready for size selection.
+
+17. Transfer 30 uL of ligated sample into a clean 1.5 mL tube.
   
-17. Assemble (1) sample (~30 uL), (2) Blue Pippin cartridge, and (3) Blue Pippin size standard. Take them to the Blue Pippin. 
+18. Assemble (1) sample (~30 uL), (2) Blue Pippin cartridge, and (3) Blue Pippin size standard. Take them to the Blue Pippin. 
   
-18. Mix 10 uL of Blue Pippin size standad with the 30 uL cleaned, pooled ligations. 
+19. Mix 10 uL of Blue Pippin size standad with the 30 uL cleaned, pooled ligations. 
   
-19. Turn on Blue Pippin and let software load. Select the 2% internal standard template and enter sample names accordingly. 
+20. Turn on Blue Pippin and let software load. Select the 2% internal standard template and enter sample names accordingly. 
   
-20. Calibrate
+21. Follow the steps for cartridge preparation and device calibration listed in the Blue Pippin [manual](https://web.uri.edu/gsc/files/BluePippin-Operations-Manual-v58-CD81.pdf)
+
+22. Set the machine to size select between 438 and 538 base pairs in size. 
+  
+23. Allow the Blue Pippin to run, this should take ~1.5 hours. 
+  
+24. Remove the size-selected sample from the Blue Pippin Cartridge Sample Well(s) and place in a clean 1.5 mL tube. 
+  
+25. Prepare a PCR Master Mix with the following recipe: 
+    * 6 uL PCR-grade water (96 uL for 16 rxns)
+    * 1 uL TruSeq primer 1 (16 uL for 16 rxns)
+    * 1 uL TruSeq primer 2 (16 uL for 16 rxns)
+    * 10 uL Q5 PCR Master Mix (160 uL for 16 rxns)
+ 
+26. Alliquot 18 uL the master mix into 16 clean PCR tubes and then add 2 uL of Blue Pippin size-selected sample to 15 of the tubes. The 16th PCR tube will be our negative control.
+
+27. Mix and spin down the samples, then run using the 'Ilumina-PCR' program on the thermal cycler. 
+  
+28. Once completed, pool all of the PCRs into a single 1.5 mL tube (except the negative control). Add 540 uL of SearPure bead solution to the 1.5 mL tube. This is a 1.8X concentration. 
+
+29. After adding the Serapure beads incubate at room temperature for 5 mins.
+
+30. Place 1.5 mL tube on magnet rack. Allow beads to seperate (~5 min)
+
+31. Remove supernatent with a P1000 pipetter and discard. Remove any remaining supernatent with a P100 or P200 pipetter.
+
+32. Add 500 uL of 70% ethanol and let stand for 1 min (Wash No. 1)
+
+33. Remove supernatent as in Step 13.
+
+34. Add 500 uL of 70% ethanol and let stand for 1 min (Wash No. 2)
+  
+35. Remove supernatent as in Step 13.
+  
+36. Allow beads to sit until there is no residual ethanol on the sides of the tube. This usually takes about 2-3 mins. 
+
+37. Add 16 uL 10 mM Tris to dried beads and resuspend the beads in solution by removing the tube from the magnet rack. This may require gently flicking the tube to get the beads back into solution. You may then need to centrifuge the tube to return the beads to the solution to the bottom of the tube. 
+
+38. Place 1.5 mL tube on magnet rack. Allow beads to seperate (~5 min)
+>The cleaned, enriched Illumina library is now ready for quantification.
+
+39. Transfer 15 uL of the shotgun Illumina library into a clean 1.5 mL tube.  
   
 </details>
 
@@ -220,7 +263,7 @@ Sample 4 | 80.0  | 6.3  | 53.7
 
 **Materials**
 
-* Cleaned, pooled, and PCR enriched Illumina library 
+* Cleaned, pooled, size-selected and PCR-enriched Illumina library 
 * Agilent TapeStation
 * Agilent D1000 Tape cartridge
 * Agilent D1000 Sample Buffer
