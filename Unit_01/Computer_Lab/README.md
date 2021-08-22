@@ -24,7 +24,7 @@ Phred Quality Score | Probability of Incorrect Base Call  | Base Call Accuracy
 40 | 1 in 10,000  | 99.99%
 50 | 1 in 100,000  | 99.999%
   
-  
+>Note: Depending on the files, we will need to figure out what kind of Q-scores we are dealing with. Older Illumina machines used a system called phred-64 scoring whereas newer Illumina (and other sequencing platforms) use phred-33 scoring. Some downstream software packages auto-detect this, but others do not.   
 
 </details>
 
@@ -153,7 +153,7 @@ reads written:  230,256
 
 >There are several things we want to do to a FASTQ file before we analyse it including removing bad quality bases and the adapter contamination we discussed in lecture.     
 
- 1. We want to figure out what kind of Q-scores we are dealing with. Older Illumina machines used a system called phred-64 scoring whereas newer Illumina (and other sequencing platforms) use phred-33 scoring. Let's start by downloading and installing FastQC: 
+ 1. Let's start by downloading and installing FastQC: 
   
 ```
 wget https://www.bioinformatics.babraham.ac.uk/projects/fastqc/fastqc_v0.11.9.zip
