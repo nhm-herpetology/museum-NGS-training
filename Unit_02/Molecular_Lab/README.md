@@ -86,21 +86,52 @@ Sample 4 | 80.0  | 6.3  | 53.7
 
 25. Add 500 uL of 70% ethanol and let stand for 1 min (Wash No. 1)
 
-26.. Remove supernatent as in Step 13.
+26. Remove supernatent as in Step 13.
 
 27. Add 500 uL of 70% ethanol and let stand for 1 min (Wash No. 2)
   
-28.. Remove supernatent as in Step 13.
+28. Remove supernatent as in Step 13.
   
-29.. Allow beads to sit until there is no residual ethanol on the sides of the tube. This usually takes about 2-3 mins. 
+29. Allow beads to sit until there is no residual ethanol on the sides of the tube. This usually takes about 2-3 mins. 
 
-30. Add 36 uL 10 mM Tris to dried beads and resuspend the beads in solution by removing the tube from the magnet rack. This may require gently flicking the tube to get the beads back into solution. You may then need to centrifuge the tube to return the beads to the solution to the bottom of the tube. 
+30. Add 31 uL 10 mM Tris to dried beads and resuspend the beads in solution by removing the tube from the magnet rack. This may require gently flicking the tube to get the beads back into solution. You may then need to centrifuge the tube to return the beads to the solution to the bottom of the tube. 
 
 31. Place 1.5 mL tube on magnet rack. Allow beads to seperate (~5 min)
 >The purified End-repaired DNA is now in the supernatent.   
+
+32. Transfer 30 uL of fragmented DNA into clean PCR tubes. We will now begin the dA-tail reactions. 
+
+33. To each tube with 30 uL of end-repaired DNA, add the following: 
+  * 1.25 uL 10X dA-tailing Buffer
+  * 0.75 uL Klenow fragment
+  * 8 uL PCR-grade water 
+
+34. Mix each reaction by pippeting gently up and down and then spin down in a mini-centrifuge.
+
+35. Transfer the PCR tubes to a thermal cycler and run the 'A-tailing' program which will keep the samples at 37 C for 30 minutes. 
   
+36. Once complete, remove the PCR tubes from the thermal cylcer and transfer each sample (~40 uL) to new 1.5 mL tubes and add 72 uL of Serapure magnetic bead solution. This is a 1.8X concentration.
   
+37. After adding the Serapure beads incubate at room temperature for 5 mins.
+
+38. Place 1.5 mL tube on magnet rack. Allow beads to seperate (~5 min)
+
+39. Remove supernatent with a P1000 pipetter and discard. Remove any remaining supernatent with a P100 or P200 pipetter.
+
+40. Add 500 uL of 70% ethanol and let stand for 1 min (Wash No. 1)
+
+41. Remove supernatent as in Step 13.
+
+42. Add 500 uL of 70% ethanol and let stand for 1 min (Wash No. 2)
   
+43. Remove supernatent as in Step 13.
+  
+44. Allow beads to sit until there is no residual ethanol on the sides of the tube. This usually takes about 2-3 mins. 
+
+45. Add 26 uL 10 mM Tris to dried beads and resuspend the beads in solution by removing the tube from the magnet rack. This may require gently flicking the tube to get the beads back into solution. You may then need to centrifuge the tube to return the beads to the solution to the bottom of the tube. 
+
+46. Place 1.5 mL tube on magnet rack. Allow beads to seperate (~5 min)
+>The purified dA-tailed DNA is now in the supernatent.    
 </details>
 
 ## Shotgun Library Construction II (Ligation, Size-selection and PCR)
