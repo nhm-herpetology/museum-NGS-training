@@ -21,7 +21,23 @@
   
 1. We should have recieved the following kit components from Arbor Biosciences: 
   
+Reagent | Cap Colour  | Storage temperature
+------------ | -------------  | -------------
+Hyb N | Red | 4 C (Box 1)
+Hyb S | Teal  | 4 C (Box 1)
+Beads | Clear  | 4 C (Box 1)
+Binding Buffer | NA  | 4 C (Box 1)
+Wash Buffer | NA  | 4 C (Box 1)
+Hyb D | Yellow | -20 C (Box 2)
+Hyb R | Purple  | -20 C (Box 2)
+Block C | Dark Green  | -20 C (Box 2)
+Block O | Blue  | -20 C (Box 2)
+Block X* | Orange  | -20 C (Box 2)  
+Buffer E | Light Green  | -20 C (Box 2)
+RNA Baits | White  | -80 C (Box 3)  
+>The blocking oligos (Block X) will need to be matched to the TruSeq Illumina adapters we made in Unit 2
 
+2. 
   
 </details>
 
