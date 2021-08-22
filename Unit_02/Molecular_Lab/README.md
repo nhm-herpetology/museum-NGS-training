@@ -148,6 +148,9 @@ Sample 4 | 80.0  | 6.3  | 53.7
 
 **Materials**
 
+* 1.0M TRIS
+* 5.0M NaCl 
+* 0.5M EDTA
 * Purified dA-tailed reactions
 * Adapter Oligonucleotides
 * NEBNext Quick Ligation Module (E6056)
@@ -161,10 +164,16 @@ Sample 4 | 80.0  | 6.3  | 53.7
 * 2% Agarose cartridge w/ internal standard for Blue Pippin
 * Thermal cycler
 * 1.5 mL microcentrifuge tubes
+* 50 mL conical (falcon) tube for the annealing buffer
 
 **Protocol**
 
-1. We will start by constructing our own adapters that will be used to barcode (=index) each of the eight dA-tailed reactions. First, we will take... 
+1. We will start by constructing our own adapters that will be used to barcode (=index) each of the eight dA-tailed reactions. First, we need to make the annealing buffer. In a 50 mL conical tube mix the following: 
+  * 5 mL 1M TRIS
+  * 5 mL 5M NaCl
+  * 1 mL 0.5M EDAT
+  * 39 mL nuclease-free water
+>This is your annealing buffer
     
 2. To each tube with 25 uL of dA-tailed DNA, add the following: 
   * 2.5 uL 5X Ligation Buffer
@@ -222,7 +231,14 @@ Sample 4 | 80.0  | 6.3  | 53.7
     * 1 uL TruSeq primer 1 (16 uL for 16 rxns)
     * 1 uL TruSeq primer 2 (16 uL for 16 rxns)
     * 10 uL Q5 PCR Master Mix (160 uL for 16 rxns)
- 
+
+Illumina TruSeq pimer sequences are (5' to 3'): 
+  
+```
+Primer 1: AAT GAT ACG GCG ACC ACC GAG A
+Primer 2: CAA GCA GAA GAC GGC ATA CGA G
+```  
+  
 26. Alliquot 18 uL the master mix into 16 clean PCR tubes and then add 2 uL of Blue Pippin size-selected sample to 15 of the tubes. The 16th PCR tube will be our negative control.
 
 27. Mix and spin down the samples, then run using the 'Ilumina-PCR' program on the thermal cycler. 
