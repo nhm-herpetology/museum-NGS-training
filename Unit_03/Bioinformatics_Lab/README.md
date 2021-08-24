@@ -1,4 +1,4 @@
-# Computer Laboratory 3
+# Bioinformatics Laboratory 3
 >You will need a Unix Command Terminal or PuTTY interface to complete this lab. 
 
 **Overvew**
