@@ -8,7 +8,7 @@ In this unit participants will learn:
 * To construct NGS shotgun libraries (Molecular Laboratory)
 
 **Bioinformatics Laboratory** 
->Click [here](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_02/Bioinformatics_Lab) to access Computer Lab protocols
+>Click [here](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_02/Bioinformatics_Lab) to access Bioinformatics protocols
 
 **Molecular Laboratory** 
->Click [here](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_02/Molecular_Lab) to access Molecular Lab protocols
+>Click [here](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_02/Molecular_Lab) to access Molecular protocols
