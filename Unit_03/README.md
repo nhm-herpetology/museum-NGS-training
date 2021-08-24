@@ -8,7 +8,7 @@ In this unit participants will learn:
 * To perform targeted sequence capture (Molecular Laboratory)
 
 **Bioinformatics Laboratory** 
->Click [here](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_03/Bioinformatics_Lab) to access Computer Lab protocols
+>Click [here](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_03/Bioinformatics_Lab) to access Bioinformatics protocols
 
 **Molecular Laboratory** 
->Click [here](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_03/Molecular_Lab) to access Molecular Lab protocols
+>Click [here](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_03/Molecular_Lab) to access Molecular protocols
