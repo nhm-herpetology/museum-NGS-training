@@ -1,4 +1,4 @@
-# Computer Laboratory 1
+# Bioinformatics Laboratory 1
 >You will need a Unix Command Terminal or PuTTY interface to complete this lab
 ## The FASTQ format, your new best friend
 
