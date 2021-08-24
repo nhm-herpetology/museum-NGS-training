@@ -8,7 +8,7 @@ In this unit participants will learn:
 * To prepare raw Illumina data for downstream analyses (Computer Laboratory) 
 
 **Bioinformatics Laboratory** 
->Click [here](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_01/Computer_Lab) to access Bioinformatics protocols
+>Click [here](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_01/Bioinformatics_Lab) to access Bioinformatics protocols
 
 **Molecular Laboratory** 
 >Click [here](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_01/Molecular_Lab) to access Molecular protocols
