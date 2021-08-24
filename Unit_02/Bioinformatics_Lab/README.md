@@ -1,4 +1,4 @@
-# Computer Laboratory 2
+# Bioinformatics Laboratory 2
 
 >You will need a Unix Command Terminal or PuTTY interface to complete this lab.
 
