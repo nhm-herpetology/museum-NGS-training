@@ -4,10 +4,10 @@
 In this unit participants will learn:
 
 * The basics and applications of RADseq and ddRADseq (Lecture)
-* To analyse ddRADseq data using Stacks (Computer Laboratory) 
+* To analyse ddRADseq data using Stacks (Bioinformatics Laboratory) 
 * To prepare ddRADseq libraries (Molecular Laboratory)
 
-**Computer Laboratory** 
+**Bioinformatics Laboratory** 
 >Click [here](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_04/Bioinformatics_Lab) to access Bioinformatics Lab protocols
 
 **Molecular Laboratory** 
