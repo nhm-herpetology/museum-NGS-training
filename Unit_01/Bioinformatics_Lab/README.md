@@ -94,11 +94,9 @@ Sample_ID	Sample_Name	I7_Index_ID	index
 
 5. Now let's run the program:
 ```
-bcl2fastq -i NHM_Illumina_Data -O FASTQ_output_data --barcode-mismatches 1 --no-lane-splitting 
+bcl2fastq -i 190403_NS500271_0141_AHKW3VAFXY -O FASTQ_output_data --barcode-mismatches 1 --no-lane-splitting 
 ``` 	
-
-	
-  
+	  
 </details>
 
 ## Retrieving FASTQ data from the Sequence Read Archive (SRA)
