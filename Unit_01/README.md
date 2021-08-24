@@ -4,8 +4,8 @@
 In this unit participants will learn:
 
 * The basics of short read sequencing (Lecture)
-* To make and use Serapure magnetic beads (Molecular Laboratory)
-* To prepare raw Illumina data for downstream analyses (Bioinformatics Laboratory) 
+* To prepare raw Illumina data for downstream analyses (Bioinformatics Laboratory)
+* To make and use Serapure magnetic beads (Molecular Laboratory) 
 
 **Bioinformatics Laboratory** 
 >Click [here](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_01/Bioinformatics_Lab) to access Bioinformatics protocols
