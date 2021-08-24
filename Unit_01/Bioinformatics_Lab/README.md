@@ -222,7 +222,7 @@ We want to remove low quality bases and adapter contamination and we can do both
 install-conda
 ```  
 
-4. Install phyluce (instructions here for Linux version, other versions available [here](https://github.com/faircloth-lab/phyluce/releases): 
+4. Install phyluce (instructions here for Linux version, other versions available [here](https://github.com/faircloth-lab/phyluce/releases)): 
 
 ```
 wget https://raw.githubusercontent.com/faircloth-lab/phyluce/v1.7.1/distrib/phyluce-1.7.1-py36-Linux-conda.yml
