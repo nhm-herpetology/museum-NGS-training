@@ -8,7 +8,7 @@ In this unit participants will learn:
 * To prepare ddRADseq libraries (Molecular Laboratory)
 
 **Bioinformatics Laboratory** 
->Click [here](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_04/Bioinformatics_Lab) to access Bioinformatics Lab protocols
+>Click [here](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_04/Bioinformatics_Lab) to access Bioinformatics protocols
 
 **Molecular Laboratory** 
->Click [here](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_04/Molecular_Lab) to access Molecular Lab protocols
+>Click [here](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_04/Molecular_Lab) to access Molecular protocols
