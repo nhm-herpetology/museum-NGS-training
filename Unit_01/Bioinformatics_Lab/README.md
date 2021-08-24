@@ -35,15 +35,27 @@ Phred Quality Score | Probability of Incorrect Base Call  | Base Call Accuracy
 
 >If you are retrieving sequence data directly from the NHM NextSeq or MiSeq, you will need to convert the Illumina Base Call data into the FASTQ format. This can be done using the Illumina program [bcl2fastq](https://emea.support.illumina.com/sequencing/sequencing_software/bcl2fastq-conversion-software.html).
 
-1. First, let's download bcl2fastq:
+1. First, let's download and install bcl2fastq using conda:
 ```
-wget https://support.illumina.com/softwaredownload.html?assetId=82660c4c-f46c-4743-8566-2437755e4329&assetDetails=bcl2fastq2-v2-20-0-tar.zip  
-```  
->At 211 MB this is a rather large file so the download may take a moment.  
+conda install -c dranew bcl2fastq  
+```   
+ 
+2. Let's check to see if the program installed successfully: 
+```
+bcl2fastq -h 
+``` 
+>This should initiate the help screen	
+	
+3. Illumina datasets can be very large, so for this lab we are going to work with an unpublished dataset of 10 shotgun-sequenced museum specimens (16 GB) which was generated on the NHM Illumina NextSeq 500. The input data we need to run bcl2fastq are:
+	* Base call files (*.bcl.gz)
+	* Statistics files (*.stats)
+	* Filter files (*.filter)
+	* Cluster location files (*.locs)
+	* RunInfo.xml
+	* Configuration files
+	* Sample sheet (*.csv)	
 
-2. Illumina datasets can be very large, so for this lab we are going to work with an unpublished dataset of 10 shotgun-sequenced museum specimens (16 GB) which was generated on the NHM Illumina NextSeq.
-  
-3. The software uses a configuration file which is always named ```SampleSheet.csv``` that is formatted like this: 
+4. We will need to make the file called ```SampleSheet.csv``` because it is a configuration file specific to the adapters and indexes we used. It is formatted like this: 
 ```
 [Header]			
 IEMFileVersion	4		
@@ -78,8 +90,14 @@ Sample_ID	Sample_Name	I7_Index_ID	index
 27	27	i27	ATTGAG
   
 ```
-This configuration file will be used by the software to process the Base Call data and transform them into FASTQ data.
-  
+>This configuration file will be used by the software to process the Base Call data and transform them into FASTQ data.
+
+5. Now let's run the program:
+```
+bcl2fastq -i NHM_Illumina_Data -O FASTQ_output_data --barcode-mismatches 1 --no-lane-splitting 
+``` 	
+
+	
   
 </details>
 
