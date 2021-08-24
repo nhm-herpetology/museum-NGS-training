@@ -190,7 +190,7 @@ Now that both of the FASTQ files have been moved. Let's navigate to the FastQC d
 ```
 ./fastqc SRR3284185_1.fastq SRR3284185_2.fastq  
 ```  
-This will produce several output files. If not working locally, you can use WinSCP to access the HTML output. There are also copies in the [Example Files](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_01/Bioinformatics_Lab_Lab/Example_Files) directory. The FastQC summaries let us see that quality decreases (as expected) near the end of the sequences: around 185 bp in Read 1 and 135 bp in Read 2. They also reveal that adapter contamination is present in >10% of the sequences near the end of the sequence. 
+This will produce several output files. If not working locally, you can use WinSCP to access the HTML output. There are also copies in the [Example Files](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_01/Bioinformatics_Lab/Example_Files) directory. The FastQC summaries let us see that quality decreases (as expected) near the end of the sequences: around 185 bp in Read 1 and 135 bp in Read 2. They also reveal that adapter contamination is present in >10% of the sequences near the end of the sequence. 
 
 3. Let's copy the FASTQ files to a new directory for cleaning and processing:
 ```
