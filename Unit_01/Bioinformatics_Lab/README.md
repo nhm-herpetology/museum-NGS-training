@@ -101,9 +101,9 @@ InterOp  RTALogs               RunInfo.xml
 Logs     RTARead1Complete.txt  RunParameters.xml
 ``` 
 	
-5. Now let's run the program:
+5. Navigate to the run folder. Now let's run the program:
 ```
-bcl2fastq -i 190403_NS500271_0141_AHKW3VAFXY -O FASTQ_output_data --barcode-mismatches 1 --no-lane-splitting 
+bcl2fastq -o FASTQ_output_data --barcode-mismatches 1 --no-lane-splitting 
 ``` 	
 	  
 </details>
