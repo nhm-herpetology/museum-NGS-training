@@ -190,7 +190,7 @@ Now that both of the FASTQ files have been moved. Let's navigate to the FastQC d
 ```
 ./fastqc SRR3284185_1.fastq SRR3284185_2.fastq  
 ```  
-This will produce several output files. If not working locally, you can use WinSCP to access the HTML output. There are also copies in the [Example Files](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_01/Computer_Lab/Example_Files) directory. The FastQC summaries let us see that quality decreases (as expected) near the end of the sequences: around 185 bp in Read 1 and 135 bp in Read 2. They also reveal that adapter contamination is present in >10% of the sequences near the end of the sequence. 
+This will produce several output files. If not working locally, you can use WinSCP to access the HTML output. There are also copies in the [Example Files](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_01/Bioinformatics_Lab_Lab/Example_Files) directory. The FastQC summaries let us see that quality decreases (as expected) near the end of the sequences: around 185 bp in Read 1 and 135 bp in Read 2. They also reveal that adapter contamination is present in >10% of the sequences near the end of the sequence. 
 
 3. Let's copy the FASTQ files to a new directory for cleaning and processing:
 ```
@@ -324,7 +324,7 @@ Now navigate to your FASTQC directory.
 ```
 ./fastqc Cylindrophis_ruffus_FMNH_258674-READ1.fastq.gz Cylindrophis_ruffus_FMNH_258674-READ2.fastq.gz  
 ```
-This will produce output files as we saw in Step 2. There are also copies in the [Example Files](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_01/Computer_Lab/Example_Files) directory. You can see from the resulting HTML output that the cleaning has improved the quality and adapter content of the read sets. Much better!  
+This will produce output files as we saw in Step 2. There are also copies in the [Example Files](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_01/Bioinformatics_Lab/Example_Files) directory. You can see from the resulting HTML output that the cleaning has improved the quality and adapter content of the read sets. Much better!  
 
 >The cleaned FASTQ.GZ files are now ready for use in a variety of downstream applications. We will learn how to use them for *de novo* assembly and read mapping in [Unit 2](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_02/Computer_Lab).  
   
