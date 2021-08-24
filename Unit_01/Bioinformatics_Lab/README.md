@@ -105,7 +105,20 @@ Logs     RTARead1Complete.txt  RunParameters.xml
 ```
 bcl2fastq -o FASTQ_output_data --barcode-mismatches 1 --no-lane-splitting 
 ``` 	
-	  
+
+6. Once the analysis is completed, navigate to the output directory ```FASTQ_output_data```. It should contain the following files: 
+ ```
+10_S6_R1_001.fastq.gz  27_S10_R1_001.fastq.gz  6_S4_R1_001.fastq.gz
+10_S6_R2_001.fastq.gz  27_S10_R2_001.fastq.gz  6_S4_R2_001.fastq.gz
+12_S7_R1_001.fastq.gz  3_S1_R1_001.fastq.gz    8_S5_R1_001.fastq.gz
+12_S7_R2_001.fastq.gz  3_S1_R2_001.fastq.gz    8_S5_R2_001.fastq.gz
+15_S8_R1_001.fastq.gz  4_S2_R1_001.fastq.gz    Reports
+15_S8_R2_001.fastq.gz  4_S2_R2_001.fastq.gz    Stats
+24_S9_R1_001.fastq.gz  5_S3_R1_001.fastq.gz    Undetermined_S0_R1_001.fastq.gz
+24_S9_R2_001.fastq.gz  5_S3_R2_001.fastq.gz    Undetermined_S0_R2_001.fastq.gz
+```
+>These are demultiplexed FASTQ files that can now be used in downstream analyses. 	
+	
 </details>
 
 ## Retrieving FASTQ data from the Sequence Read Archive (SRA)
