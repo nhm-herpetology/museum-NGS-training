@@ -92,6 +92,15 @@ Sample_ID	Sample_Name	I7_Index_ID	index
 ```
 >This configuration file will be used by the software to process the Base Call data and transform them into FASTQ data.
 
+The contents of the post-sequencing NextSeq 500 run folder (input directory for bcl2fastq) should look something like this:
+```
+Config   Recipe                RTARead2Complete.txt     SampleSheet.csv
+Data     RTAComplete.txt       RTARead3Complete.txt     Thumbnail_Images
+Images   RTAConfiguration.xml  RunCompletionStatus.xml
+InterOp  RTALogs               RunInfo.xml
+Logs     RTARead1Complete.txt  RunParameters.xml
+``` 
+	
 5. Now let's run the program:
 ```
 bcl2fastq -i 190403_NS500271_0141_AHKW3VAFXY -O FASTQ_output_data --barcode-mismatches 1 --no-lane-splitting 
