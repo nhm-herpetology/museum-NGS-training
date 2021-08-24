@@ -1,4 +1,4 @@
-# Computer Laboratory 4
+# Bioinformatics Laboratory 4
 
 **Some commands to go with programs**
 >Description will go here.
