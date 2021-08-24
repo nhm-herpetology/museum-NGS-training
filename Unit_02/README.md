@@ -4,7 +4,7 @@
 In this unit participants will learn:
 
 * The basics of genome assembly and reference mapping (Lecture)
-* To assemble cleaned Illumina data using *de novo* assembly and reference mapping (Bioinformatics Laboratory) 
+* To assemble and map cleaned Illumina data (Bioinformatics Laboratory) 
 * To construct NGS shotgun libraries (Molecular Laboratory)
 
 **Bioinformatics Laboratory** 
