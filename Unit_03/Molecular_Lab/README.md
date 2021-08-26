@@ -1,11 +1,10 @@
 # Molecular Laboratory 3
+>In Unit 2 we learned how to construct shotgun genomic libraries for Illumina platforms. We will now use our shotgun libraries for the targeted sequence capture of UCEs. 
 
-## Targeted sequence Capture of UCEs
+## Hybridization of RNA probes to UCEs
 
 <details>
   <summary>Click to expand protocol!</summary>
-
-  >In Unit 2 we learned how to construct shotgun genomic libraries for Illumina platforms. The shotgun library is what we will use for the targeted sequence capture of UCEs. 
 
 **Materials**
 
@@ -37,10 +36,54 @@ Buffer E | Light Green  | -20 C (Box 2)
 RNA Baits | White  | -80 C (Box 3)  
 >The blocking oligos (Block X) will need to be matched to the TruSeq Illumina adapters we made in Unit 2
 
-2. 
+2. Select the appropriate bait hybridization temperature:
   
+Temperature | Target sequence max. divergence 
+------------ | -------------  
+65 C | < 10% 
+62 C | 10% - 15%  
+60 C | 15% - 25%
+>For the purpose of this protocol we will use 65 C because we expect the UCEs to be very similar across taxa
+  
+3. Make Master Mix #1, the **Hybrid Mix** in a 1.5 mL tube: 
+  * 9.25 uL of Hyb N
+  * 3.5 uL of Hyb D
+  * 0.5 uL of Hyb S
+  * 1.25 uL of Hyb R
+  * 5.5 uL of RNA Baits
+ 
+4. Incubate the **Hybrid Mix** at 60 C for 1 minute on a heat block, vortexing occasionally. Remove from the heat block and allow to sit at room temperature for 5 minutes. 
+
+5. Transfer 18.5 uL of the **Hybrid Mix** to a PCR tube.
+
+6. Make Master Mix #2, the **Block Mix** in a 1.5 mL tube:
+  * 2.5 uL of Block O
+  * 2.5 uL of Block C
+  * 0.5 uL of Block X
+            
+ 7. Mix the **Block Mix** by pipetting. Transfer 5 uL to a fresh PCR tube.
+            
+ 8. Add 7 uL of the Illumina shotgun library from Unit 2 to the PCR tube with 5 uL of **Block Mix**. This mixture will now be referred to as the **LIB**.
+ 
+ 9. Program a thermal cycler with the following steps: (1) 95 C for 5 minutes, (2) 65 C for 5 minutes, and (3) 65 C for infinity (or 16-24 hours).
+  
+ 10. Place the **LIB** samples into the thermal cycler and start the program listed above. Close the lid and allow Step 1 (95 C for 5 minutes) to complete. This will denature the libraries so that the blockers can hybridize before capture. 
+  
+ 11. After Step 1, open the lid of the thermal cycler and place the **Hybrid Mix** PCR tube into the thermal cycler. Close the lid and allow Step 2 to (65 C for 5 minutes) complete. This will allow the blockers to hybridize to the library DNA and for the **Hybrid Mix** to heat up to the reaction temperature. 
+ 
+ 12. After Step 2, open the lid of the termal cycler and carefully transfer 18 uL of **Hybrid Mix** to the **LIB** tube. Gently mix by pipetting up and down 5 times. Seal the PCR tube conating the **Hybrid Mix** and the **LIB** and remove the used **Hybrid Mix** PCR tube. Close the lid and allow Step 3 to commence (65 C for 16-24 hours).
+>Normally you would leave this step to run overnight.   
+  
+            
 </details>
 
+## Binding, washing and PCR enrichment of capture libraries 
+
+<details>
+  <summary>Click to expand protocol!</summary>  
+ 
+</details>  
+  
 ## Quantification of capture library using Agilent TapeStation
 
 <details>
