@@ -1,5 +1,5 @@
 # Molecular Laboratory 3
->In Unit 2 we learned how to construct shotgun genomic libraries for Illumina platforms. We will now use our shotgun libraries for the targeted sequence capture of UCEs. 
+>In [Unit 2](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_02/Molecular_Lab) we learned how to construct shotgun genomic libraries for Illumina platforms. We will now use our shotgun libraries for the targeted sequence capture of UCEs. 
 
 ## Hybridization of RNA probes to UCEs
 
@@ -63,7 +63,7 @@ Temperature | Target sequence max. divergence
             
  7. Mix the **Block Mix** by pipetting. Transfer 5 uL to a fresh PCR tube.
             
- 8. Add 7 uL of the Illumina shotgun library from Unit 2 to the PCR tube with 5 uL of **Block Mix**. This mixture will now be referred to as the **LIB**.
+ 8. Add 7 uL of the Illumina shotgun library from [Unit 2](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_02/Molecular_Lab) to the PCR tube with 5 uL of **Block Mix**. This mixture will now be referred to as the **LIB**.
  
  9. Program a thermal cycler with the following steps: (1) 95 C for 5 minutes, (2) 65 C for 5 minutes, and (3) 65 C for infinity (or 16-24 hours).
   
