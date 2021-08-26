@@ -202,6 +202,7 @@ Temperature | Target sequence max. divergence
 * Thermal Cycler
 * Serapure bead solution
 * Nuclease-free water
+* 10 mM Tris
 * Magnetic tube rack
 
 **Protocol**  
@@ -231,7 +232,26 @@ Step | Temperature  | Time
 4. Insert the PCR mixture into the thermal cycler and run the program. Once completed, remove from the thermal cycler and transfer to a 1.5 mL tube. 
   
 5. Add 90 uL of Serapure solution to the post-PCR sample.  
+
+6. After adding the Serapure beads incubate at room temperature for 5 mins.
+
+7. Place 1.5 mL tube on magnet rack. Allow beads to seperate (~5 min)
+
+8. Remove supernatant with a P1000 pipetter and discard. Remove any remaining supernatent with a P100 or P200 pipetter.
+
+9. Add 500 uL of 70% ethanol and let stand for 1 min (Wash No. 1)
+
+10. Remove supernatent as in Step 10.
+
+11. Add 500 uL of 70% ethanol and let stand for 1 min (Wash No. 2)
   
+12. Remove supernatant as in Step 10.
+  
+13. Allow beads to sit until there is no residual ethanol on the sides of the tube. This usually takes about 2-3 mins. 
+
+14. Add 20 uL 10mM Tris to dried beads and resuspend the beads  
+  
+15. Place back on the magnetic rack and allow to beads to separate. Transfer the supernatant to a clean tube - this is your final **PCR-amplified enriched capture library** 
   </details> 
   
 ## Quantification of capture library using Agilent TapeStation
