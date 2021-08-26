@@ -6,7 +6,7 @@
 <details>
   <summary>Click to expand protocol!</summary>
 
->ddRADseq makes use of dual indexs (=barcodes), so we need to plan ahead for how we will process samples. The first barcode is added during the ligation step of the library construction, and the second is added during PCR amplification of the libraries. As such, we can use the same core set of adapters for a small number of individuals, and then use PCR-barcode to greatly increase the number of individuals that can be mulitplexed.  
+>ddRADseq makes use of dual indexEs (=barcodes), so we need to plan ahead for how we will process samples. The first barcode is added during the ligation step of the library construction, and the second is added during PCR amplification of the libraries. As such, we can use the same core set of adapters for a small number of individuals, and then use PCR-barcode to greatly increase the number of individuals that can be mulitplexed.  
   
 **Materials**
 
@@ -15,7 +15,83 @@
 
 
 **Protocol**
-1. Here is an example from Streicher et al. ([2014](https://onlinelibrary.wiley.com/doi/abs/10.1111/mec.12814)) for how we set up the barcode design. We had 10 unique ddRADseq adapter barcodes and multiple PCR-barcodes.  
+1. Here is an example from Streicher et al. ([2014](https://onlinelibrary.wiley.com/doi/abs/10.1111/mec.12814)) for how we set up the barcode design. We had 10 unique ddRADseq adapter barcodes and multiple PCR-barcodes. We wanted to include 50 different anurans in the study, so we organised things into five sets of 10, each with a unique PCR barcode.   
+
+Library Pool 1:
+  
+Sample ID | Adapter Index/Barcode | PCR Index/Barcode
+------------ | -------------  | -------------
+JAC 23544 | Index 1 (ACTAGG) | Index 1 (ATCACG)
+JAC 23564 | Index 2 (GACCAA) | Index 1 (ATCACG)
+JAC 29189 | Index 3 (TGTTGG)  | Index 1 (ATCACG)
+JAC 23344 | Index 4 (CGAAAC)  | Index 1 (ATCACG)
+JAC 23345 | Index 5 (AGCATT) | Index 1 (ATCACG)  
+JAC 23346 | Index 6 (CATCTC) | Index 1 (ATCACG)  
+JAC 23347 | Index 7 (GTCTAT) | Index 1 (ATCACG)   
+JRM 4651 |Index 8 (TGGGAT) | Index 1 (ATCACG)
+JHM 1 | Index 9 (TCTGCT) | Index 1 (ATCACG)  
+JAC 28298 | Index 10 (AACGGT)  | Index 1 (ATCACG)   
+ 
+Library Pool 2:  
+
+Sample ID | Adapter Index/Barcode | PCR Index/Barcode
+------------ | -------------  | -------------
+JAC 30108 | Index 1 (ACTAGG) | Index 2 (CGATGT)
+JAC 30105 | Index 2 (GACCAA) | Index 2 (CGATGT)
+JWS 253 | Index 3 (TGTTGG)  | Index 2 (CGATGT)
+JWS 277 | Index 4 (CGAAAC)  | Index 2 (CGATGT)
+JWS 292 | Index 5 (AGCATT) | Index 2 (CGATGT) 
+JWS 295 | Index 6 (CATCTC) | Index 2 (CGATGT)  
+JWS 284 | Index 7 (GTCTAT) | Index 2 (CGATGT)   
+JWS 296 |Index 8 (TGGGAT) | Index 2 (CGATGT)
+JWS 294 | Index 9 (TCTGCT) | Index 2 (CGATGT)  
+JMM 151 | Index 10 (AACGGT)  | Index 2 (CGATGT)   
+  
+Library Pool 3:  
+  
+Sample ID | Adapter Index/Barcode | PCR Index/Barcode
+------------ | -------------  | -------------
+JMM 152 | Index 1 (ACTAGG) | Index 3 (TTAGGC)
+TJD 770 | Index 2 (GACCAA) | Index 3 (TTAGGC)
+TJD 777 | Index 3 (TGTTGG)  | Index 3 (TTAGGC)
+TJD 830 | Index 4 (CGAAAC)  | Index 3 (TTAGGC)
+TJD 847 | Index 5 (AGCATT) | Index 3 (TTAGGC)
+TJD 877 | Index 6 (CATCTC) | Index 3 (TTAGGC)  
+BF 36 | Index 7 (GTCTAT) | Index 3 (TTAGGC))   
+BF 58 |Index 8 (TGGGAT) | Index 3 (TTAGGC))
+BF 45 | Index 9 (TCTGCT) | Index 3 (TTAGGC)  
+BF 53 | Index 10 (AACGGT)  | Index 3 (TTAGGC)     
+  
+Library Pool 4:  
+
+Sample ID | Adapter Index/Barcode | PCR Index/Barcode
+------------ | -------------  | -------------
+BF 55 | Index 1 (ACTAGG) | Index 4 (TGACCA)
+BF 81 | Index 2 (GACCAA) | Index 4 (TGACCA)
+BF 82 | Index 3 (TGTTGG)  | Index 4 (TGACCA)
+BF 86 | Index 4 (CGAAAC)  | Index 4 (TGACCA)
+BF 88 | Index 5 (AGCATT) | Index 4 (TGACCA)
+BF Kitt Peak | Index 6 (CATCTC) | Index 4 (TGACCA) 
+MF 3806 | Index 7 (GTCTAT) | Index 4 (TGACCA)  
+MF 3811 |Index 8 (TGGGAT) | Index 4 (TGACCA)
+MF 4226 | Index 9 (TCTGCT) | Index 4 (TGACCA)  
+MF 4395 | Index 10 (AACGGT)  | Index 4 (TGACCA)    
+  
+Library Pool 5:
+  
+Sample ID | Adapter Index/Barcode | PCR Index/Barcode
+------------ | -------------  | -------------
+MF 4398 | Index 1 (ACTAGG) | Index 5 (ACAGTG)
+MF 5085 | Index 2 (GACCAA) | Index 5 (ACAGTG)
+MF 6101 | Index 3 (TGTTGG)  | Index 5 (ACAGTG)
+MF 6115 | Index 4 (CGAAAC)  | Index 5 (ACAGTG)
+MF 6203 | Index 5 (AGCATT) | Index 5 (ACAGTG)
+MF 6205 | Index 6 (CATCTC) | Index 5 (ACAGTG)
+MVZ 226838 | Index 7 (GTCTAT) | Index 5 (ACAGTG) 
+MVZ 226839 |Index 8 (TGGGAT) | Index 5 (ACAGTG)
+JAC 30517 | Index 9 (TCTGCT) | Index 5 (ACAGTG)  
+ENS 9494 | Index 10 (AACGGT)  | Index 5 (ACAGTG)   
+
 
 </details>
 
