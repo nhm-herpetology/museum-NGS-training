@@ -1,11 +1,28 @@
 # Molecular Laboratory 4
+>The protocols we will follow are based on those of Peterson et al. ([2012](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0037135)). Minor modifications of the protocol correspond to this paper: Streicher et al. ([2014](https://onlinelibrary.wiley.com/doi/abs/10.1111/mec.12814)). 
+
+## Experimental design and sample organization
+
+<details>
+  <summary>Click to expand protocol!</summary>
+
+>ddRADseq makes use of dual indexs (=barcodes), so we need to plan ahead for how we will process samples. The first barcode is added during the ligation step of the library construction, and the second is added during PCR amplification of the libraries. As such, we can use the same core set of adapters for a small number of individuals, and then use PCR-barcode to greatly increase the number of individuals that can be mulitplexed.  
+  
+**Materials**
+
+* List of samples to be included in the final pooled RADseq library
+* Spreadsheet software
+
+
+**Protocol**
+1. Here is an example from Streicher et al. ([2014](https://onlinelibrary.wiley.com/doi/abs/10.1111/mec.12814)) for how we set up the barcode design. We had 10 unique ddRADseq adapter barcodes and multiple PCR-barcodes.  
+
+</details>
 
 ## Restriction digestion of genomic DNA
 
 <details>
   <summary>Click to expand protocol!</summary>
-
-  >Magnetic Beads are valuable for extracting genomic DNA, removing small unwanted nucleic acids (e.g. primers, adapaters), and size selection. Modified from B. Faircloth and T. Glenn protocol (UCLA, 2011). Original protocol by Rohland and Reich [2012](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3337438/).
 
 **Materials**
 
