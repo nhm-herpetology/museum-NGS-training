@@ -11,9 +11,12 @@
 * Illumina shotgun library
 * MyBaits 5k Tetrapod kit (Arbor BioSciences)
 * 1.5 mL microcentrifuge tubes
+* 0.2 mL PCR tubes
+* 50 mL conical tube
+* Thermal Cycler
+* Heat Block or water bath
 * Nuclease-free water
 * Magnetic tube rack
-
 
 **Protocol**
 >This protocol is based on the Arbor BioSciences MyBaits v5 [manual](https://arborbiosci.com/wp-content/uploads/2021/03/myBaits_v5.01_Manual.pdf)
@@ -82,6 +85,18 @@ Temperature | Target sequence max. divergence
 <details>
   <summary>Click to expand protocol!</summary>  
  
+1. Select the appropriate wash temperature:
+  
+Temperature | Target sequence max. divergence 
+------------ | -------------  
+65 C | < 10% 
+62 C | 10% - 15%  
+60 C | 15% - 25%
+>For the purpose of this UCE protocol we will use 65 C to match the hybridization reaction
+
+2. Prepare the **Wash Buffer** in a 50 mL conical (falcon) tube.   
+    
+  
 </details>  
   
 ## Quantification of capture library using Agilent TapeStation
