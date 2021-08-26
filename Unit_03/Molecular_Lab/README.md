@@ -200,6 +200,7 @@ Temperature | Target sequence max. divergence
 * Illumina TruSeq primers (i5 and i7)
 * 0.2 mL PCR tubes
 * Thermal Cycler
+* Serapure bead solution
 * Nuclease-free water
 * Magnetic tube rack
 
@@ -227,9 +228,9 @@ Step | Temperature  | Time
 6 | 8 C| Infinity
 >*Steps 3-5 should be repeated 12 times. 
 
-4. Insert the PCR mixture into the thermal cycler and run the program. Once completed, remove from the thermal cyvler and transfer to a 1.5 mL tube. 
+4. Insert the PCR mixture into the thermal cycler and run the program. Once completed, remove from the thermal cycler and transfer to a 1.5 mL tube. 
   
-5. 
+5. Add 90 uL of Serapure solution to the post-PCR sample.  
   
   </details> 
   
