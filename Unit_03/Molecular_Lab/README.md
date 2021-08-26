@@ -12,7 +12,6 @@
 * MyBaits 5k Tetrapod kit (Arbor BioSciences)
 * 1.5 mL microcentrifuge tubes
 * 0.2 mL PCR tubes
-* 50 mL conical tube
 * Thermal Cycler
 * Heat Block or water bath
 * Nuclease-free water
@@ -80,24 +79,159 @@ Temperature | Target sequence max. divergence
             
 </details>
 
-## Binding, washing and PCR enrichment of capture libraries 
+## Binding, washing and enrichment of capture libraries 
 
 <details>
   <summary>Click to expand protocol!</summary>  
- 
-1. Select the appropriate wash temperature:
+  
+**Materials**
+
+* Hybridized capture libraries from the previous step
+* MyBaits 5k Tetrapod kit (Arbor BioSciences)
+* 1.5 mL microcentrifuge tubes
+* 0.2 mL PCR tubes
+* 50 mL conical tube
+* Thermal Cycler
+* Heat Block or water bath
+* Nuclease-free water
+* Magnetic tube rack
+
+**Protocol**
+>This protocol is based on the Arbor BioSciences MyBaits v5 [manual](https://arborbiosci.com/wp-content/uploads/2021/03/myBaits_v5.01_Manual.pdf)
+  
+1. As a reminder, we should have recieved the following kit components from Arbor Biosciences: 
+  
+Reagent | Cap Colour  | Storage temperature
+------------ | -------------  | -------------
+Hyb N | Red | 4 C (Box 1)
+Hyb S | Teal  | 4 C (Box 1)
+Beads | Clear  | 4 C (Box 1)
+Binding Buffer | NA  | 4 C (Box 1)
+Wash Buffer | NA  | 4 C (Box 1)
+Hyb D | Yellow | -20 C (Box 2)
+Hyb R | Purple  | -20 C (Box 2)
+Block C | Dark Green  | -20 C (Box 2)
+Block O | Blue  | -20 C (Box 2)
+Block X* | Orange  | -20 C (Box 2)  
+Buffer E | Light Green  | -20 C (Box 2)
+RNA Baits | White  | -80 C (Box 3)  
+>The blocking oligos (Block X) will need to be matched to the TruSeq Illumina adapters we made in Unit 2
+
+2. Select the appropriate wash temperature:
   
 Temperature | Target sequence max. divergence 
 ------------ | -------------  
 65 C | < 10% 
 62 C | 10% - 15%  
 60 C | 15% - 25%
->For the purpose of this UCE protocol we will use 65 C to match the hybridization reaction
+>For the purpose of this UCE protocol we will use 65 C to match the hybridization reaction, so turn on and set a heat block to 65 C
 
-2. Prepare the **Wash Buffer** in a 50 mL conical (falcon) tube.   
-    
+3. Prepare the **Wash Buffer X** in a 50 mL conical (falcon) tube:
+  * 400 uL Hyb S
+  * 10 mL Wash Buffer
+  * 39.6 mL Nuclease-free Water
+ >Once made this buffer can be stored at 4 C for 1 month
+
+4. Transfer 500 uL of **Wash Buffer X** to three 1.5 mL tubes. Place all three tubes on the 65 C heat block. 
+>The buffer needs to be warmed for the bead washing we will do later  
   
-</details>  
+5. Prepare the **Beads** from the Arbor BioSciences kit by alliquoting 30 uL of **Beads** into a 1.5 mL tube.
+ 
+6. Place the tube on a magnetic rack and allow the beads to separate for 2 minutes. Once separated, remove and discard the supernatant.
+  
+7. Add 200 uL of **Binding Buffer** to the beads. Remove from the magnetic rack and resuspend the beads by vortexing. Spin down and return to the magnetic rack. 
+
+8. Allow the beads to separate for 2 minutes and then remove the supernatant. 
+
+9. Add 200 uL of **Binding Buffer** to the beads. Remove from the magnetic rack and resuspend the beads by vortexing. Spin down and return to the magnetic rack. 
+
+10. Allow the beads to separate for 2 minutes and then remove the supernatant.  
+
+11. Add 200 uL of **Binding Buffer** to the beads. Remove from the magnetic rack and resuspend the beads by vortexing. Spin down and return to the magnetic rack. 
+
+12. Allow the beads to separate for 2 minutes and then remove the supernatant.  
+> You should have just washed the beads with **Binding Buffer** three times
+  
+13. Resuspend the beads in 70 uL of **Binding Buffer**.
+  
+14. Place the the **Beads** + **Binding Buffer** solution on teh heat block and hold at 65 C for 2 minutes.
+  
+15. Add the Hybridized capture library to the **Beads** + **Binding Buffer** solution while still on the heat block. 
+
+16. Incubate the libraries + beads for 5 minutes at 65 C. Halfway through (2.5 minutes) remove, invert, then return the 1.5 mL tube so that the beads stay suspended. 
+>The probe captured library fragments are now bound to the biotin beads. 
+  
+17. Remove the libraries + beads 1.5 mL tube from the heat block and place on the magnetic rack. Allow the beads to separate for 5 minutes. Once separated, remove and discard the supernatant.
+
+18. Add 375 uL of warmed **Wash Buffer X** (tube #1) to the beads on the magnetic rack. Briefly vortex and centrifuge the solution. 
+  
+19. Place the 1.5 mL tube on the 65 C heat block for 5 minutes. Halfway through (2.5 minutes) remove, invert, then return the 1.5 mL tube so that the beads stay suspended.
+
+20. Remove the libraries + beads 1.5 mL tube from the heat block and place on the magnetic rack. Allow the beads to separate for 5 minutes. Once separated, remove and discard the supernatant.
+
+21. Add 375 uL of fresh warmed **Wash Buffer X** (tube #2) to the beads on the magnetic rack. Briefly vortex and centrifuge the solution. 
+  
+22. Place the 1.5 mL tube on the 65 C heat block for 5 minutes. Halfway through (2.5 minutes) remove, invert, then return the 1.5 mL tube so that the beads stay suspended.
+ 
+23. Remove the libraries + beads 1.5 mL tube from the heat block and place on the magnetic rack. Allow the beads to separate for 5 minutes. Once separated, remove and discard the supernatant.
+
+24. Add 375 uL of warmed **Wash Buffer X** (tube #3) to the beads on the magnetic rack. Briefly vortex and centrifuge the solution. 
+  
+25. Place the 1.5 mL tube on the 65 C heat block for 5 minutes. Halfway through (2.5 minutes) remove, invert, then return the 1.5 mL tube so that the beads stay suspended.
+> You should have just washed the beads with **Wash Buffer X** three times   
+  
+26. After the last wash and pelleting, remove as much liquid as possible without disturbing the bead pellet. 
+  
+27. Add 30 uL **Buffer E** to the tube with the bead pellet.   
+  
+ >We will now proceed to the final stage of targeted sequence capture, PCR enrichment.   
+
+  </details>  
+
+## PCR amplification of capture libraries 
+
+<details>
+  <summary>Click to expand protocol!</summary>  
+  
+**Materials**
+
+* Enriched libraries from the previous step
+* Q5 DNA polymerase (NEB)
+* Illumina TruSeq primers (i5 and i7)
+* 0.2 mL PCR tubes
+* Thermal Cycler
+* Nuclease-free water
+* Magnetic tube rack
+
+**Protocol**  
+>There are two main approaches to amplifying capture libraries following the last module. First, the PCR can be done using the **Buffer E** + bead solution as template or alternatively, the PCR can be done after eluting the enriched libraries into solution.
+
+1. Remove the 30 uL of **Buffer E** + bead solution from the magnetic rack, vortex and spin down. 
+  
+2. Mix the following together in a 1.5 mL tube:
+  * 5 uL of nucleas-free water
+  * 25 uL Q5 DNA polymerase
+  * 2.5 uL TruSeq P5 (10 uM)
+  * 2.5 uL TruSeq P7 (10 uM)
+  * 15 uL **Buffer E** + bead solution (= enriched library)
+  
+3. Program the following into a thermal cycler: 
+
+Step | Temperature  | Time
+------------ | -------------  | -------------
+1 | 98 C | 2 minutes
+2 | 98 C  | 20 seconds
+3* | 60 C  | 30 seconds
+4* | 72 C | 45 seconds
+5* | 72 C  | 5 minutes
+6 | 8 C| Infinity
+>*Steps 3-5 should be repeated 12 times. 
+
+4. Insert the PCR mixture into the thermal cycler and run the program. Once completed, remove from the thermal cyvler and transfer to a 1.5 mL tube. 
+  
+5. 
+  
+  </details> 
   
 ## Quantification of capture library using Agilent TapeStation
 
@@ -108,7 +242,7 @@ Temperature | Target sequence max. divergence
 
 **Materials**
 
-* 'Super-duper-solid-gold' capture library 
+* PCR-amplified enriched capture library 
 * Agilent TapeStation
 * Agilent D1000 Tape cartridge
 * Agilent D1000 Sample Buffer
