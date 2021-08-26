@@ -6,7 +6,7 @@
 <details>
   <summary>Click to expand protocol!</summary>
 
->ddRADseq makes use of dual indexEs (=barcodes), so we need to plan ahead for how we will process samples. The first barcode is added during the ligation step of the library construction, and the second is added during PCR amplification of the libraries. As such, we can use the same core set of adapters for a small number of individuals, and then use PCR-barcode to greatly increase the number of individuals that can be mulitplexed.  
+>ddRADseq makes use of dual indexes (=barcodes), so we need to plan ahead for how we will process samples. The first barcode is added during the ligation step of the library construction, and the second is added during PCR amplification of the libraries. As such, we can use the same core set of adapters for a small number of individuals, and then use PCR-barcode to greatly increase the number of individuals that can be mulitplexed.  
   
 **Materials**
 
@@ -92,6 +92,7 @@ MVZ 226839 |Index 8 (TGGGAT) | Index 5 (ACAGTG)
 JAC 30517 | Index 9 (TCTGCT) | Index 5 (ACAGTG)  
 ENS 9494 | Index 10 (AACGGT)  | Index 5 (ACAGTG)   
 
+2. This allowed us to ultimately pool together all 50 samples and then bioinformatically sort the data once it was returned from the Illumina.  
 
 </details>
 
@@ -103,15 +104,22 @@ ENS 9494 | Index 10 (AACGGT)  | Index 5 (ACAGTG)
 **Materials**
 
 * T4 DNA Ligase
-* Adapter Oligonuclotides
-* NEB Phusion polymerase
-* Illumina TruSeq primers
+* SbFI-HF (NEB)
+* Msp-I (NEB)
+* Qubit flourometer
+* Extracted DNA from samples 
 * Nuclease-free water
 * Magnetic tube rack
 
 
 **Protocol**
-1. Using the a-tailed reactions from the last unit...
+1. For each digestion combine the following: 
+  * 200 ng of extracted dsDNA
+  * 5 uL NEB Buffer 4
+  * 1 uL SbFI-HF enzyme
+  * 1 uL MspI enzyme
+  * water to 50 uL
+  
 </details>
 
 ## ddRADseq library construction
