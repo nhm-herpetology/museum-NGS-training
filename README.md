@@ -9,7 +9,7 @@ Herpetology Group at the Natural History Museum, London |
 **Unit 1: Introduction to short read sequencing and library preparation** 
 >Click [here](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_01) to access Unit 1 content.
 
-**Unit 2: Illumina libraries: de novo assembly and reference mapping** 
+**Unit 2: Illumina libraries, de novo assembly and reference mapping** 
 >Click [here](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_02) to access Unit 2 content. 
 
 **Unit 3: Targeted sequence capture of ultraconserved elements (UCEs)** 
