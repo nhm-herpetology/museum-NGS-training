@@ -216,13 +216,13 @@ pwd
 ```  
 Your directory structure will differ from mine based on your user name. On Franklin, mine is: 
 ```
-/home/jefs/NGS_course/sratoolkit.2.11.0-ubuntu64/bin  
+/home/jefs/NGS_course/Unit_1/sratoolkit.2.11.0-ubuntu64/bin  
 ```
 ```  
-mv SRR3284185_1.fastq /home/jefs/NGS_course/FastQC
+mv SRR3284185_1.fastq /home/jefs/NGS_course/Unit_1/FastQC
 ```
 ```  
-mv SRR3284185_2.fastq /home/jefs/NGS_course/FastQC
+mv SRR3284185_2.fastq /home/jefs/NGS_course/Unit_1/FastQC
 ```    
 Now that both of the FASTQ files have been moved. Let's navigate to the FastQC directory. Once in the FastQC directory, run the following command:
 ```
@@ -232,10 +232,10 @@ This will produce several output files. If not working locally, you can use WinS
 
 3. Let's copy the FASTQ files to a new directory for cleaning and processing:
 ```
-cp SRR3284185_1.fastq /home/jefs/NGS_course/Data/raw-fastq
+cp SRR3284185_1.fastq /home/jefs/NGS_course/Unit_1/Data/raw-fastq
 ```  
 ```
-cp SRR3284185_2.fastq /home/jefs/NGS_course/Data/raw-fastq
+cp SRR3284185_2.fastq /home/jefs/NGS_course/Unit_1/Data/raw-fastq
 ```  
   
 Now navigate to the 'Data/raw-fastq' directory. Let's prepare the files for cleaning by renaming them and compressing them: 
@@ -353,10 +353,10 @@ In addition to retaining paired-end reads, Illumiprocessor also keeps 'singleton
 10. Let's use FASTQC to see how the cleaned FASTQ.GZ files compare to the raw FASTQ files.   
 
 ```
-cp Cylindrophis_ruffus_FMNH_258674-READ1.fastq.gz /home/jefs/NGS_course/FastQC
+cp Cylindrophis_ruffus_FMNH_258674-READ1.fastq.gz /home/jefs/NGS_course/Unit_1/FastQC
 ```  
 ```
-cp Cylindrophis_ruffus_FMNH_258674-READ2.fastq.gz /home/jefs/NGS_course/FastQC
+cp Cylindrophis_ruffus_FMNH_258674-READ2.fastq.gz /home/jefs/NGS_course/Unit_1/FastQC
 ```    
 Now navigate to your FASTQC directory. 
 ```
