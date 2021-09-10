@@ -180,7 +180,7 @@
 
 4. Add 2.5 mL of 0.5 M EDTA to the conical tube.
   
-5. Add 1.25 mL of 20% SDS to the conical tube.
+5. Add 2.5 mL of 10% SDS to the conical tube.
   
 6. Using sterile, nuclease-free water fill the conical tube up to the 50 mL line. 
 >This will make a Lysis Buffer with the following concentrations: 100 mM NaCL, 100 mM Tris, 25 mM EDTA, 0.5% SDS. 
