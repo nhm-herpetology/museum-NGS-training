@@ -31,15 +31,15 @@
 
 3. Place the 1.5 mL tube with Speebeads on the magnetic rack until beads are drawn to magnet (~5 minutes)
 
-4. Remove supernatent with a P1000 pipetter and discard. Remove any remaining supernatent with a P100 or P200 pipetter. 
+4. Remove supernatant with a P1000 pipetter and discard. Remove any remaining supernatant with a P100 or P200 pipetter. 
 
 5. Add 1 mL of TE Buffer to the beads, remove from magnet, vortex (mix), and then return to the magenet rack. Allow beads to be drawn to magnent (~5 minutes).
 
-6. Remove supernatent with a P1000 pipetter and discard. Remove any remaining supernatent with a P100 or P200 pipetter. 
+6. Remove supernatant with a P1000 pipetter and discard. Remove any remaining supernatant with a P100 or P200 pipetter. 
 
 7. Add 1 mL of TE Buffer to the beads, remove from magnet, vortex (mix), and then return to the magenet rack. Allow beads to be drawn to magnent (~5 minutes).
 
-8. Remove supernatent with a P1000 pipetter and discard. Remove any remaining supernatent with a P100 or P200 pipetter. 
+8. Remove supernatant with a P1000 pipetter and discard. Remove any remaining supernatant with a P100 or P200 pipetter. 
 
 9. Add 1 mL of TE Buffer to the beads, remove from magnet, vortex (mix), and then place in a normal tube rack.
 >This will clean and prepare the beads for incorporation into the final solution
@@ -124,15 +124,15 @@
 
 9. Place 1.5 mL tube on magnet rack. Allow beads to seperate (~5 min)
 
-10. Remove supernatent with a P1000 pipetter and discard. Remove any remaining supernatent with a P100 or P200 pipetter.
+10. Remove supernatant with a P1000 pipetter and discard. Remove any remaining supernatant with a P100 or P200 pipetter.
 
 11. Add 500 uL of 70% ethanol and let stand for 1 min (Wash No. 1)
 
-12. Remove supernatent as in Step 10.
+12. Remove supernatant as in Step 10.
 
 13. Add 500 uL of 70% ethanol and let stand for 1 min (Wash No. 2)
   
-14. Remove supernatent as in Step 10.
+14. Remove supernatant as in Step 10.
   
 15. Allow beads to sit until there is no residual ethanol on the sides of the tube. This usually takes about 2-3 mins. 
 
@@ -198,15 +198,15 @@
 
 12. Place 1.5 mL tube on magnet rack. Allow beads to seperate (~5 min)
 
-13. Remove supernatent with a P1000 pipetter and discard. Remove any remaining supernatent with a P100 or P200 pipetter.
+13. Remove supernatant with a P1000 pipetter and discard. Remove any remaining supernatant with a P100 or P200 pipetter.
 
 14. Add 500 uL of 70% ethanol and let stand for 1 min (Wash No. 1)
 
-15. Remove supernatent as in Step 13.
+15. Remove supernatant as in Step 13.
 
 16. Add 500 uL of 70% ethanol and let stand for 1 min (Wash No. 2)
   
-17. Remove supernatent as in Step 13.
+17. Remove supernatant as in Step 13.
   
 18. Allow beads to sit until there is no residual ethanol on the sides of the tube. This usually takes about 2-3 mins.
   
@@ -218,7 +218,7 @@
 20. Add 200 uL 10 mM Tris to dried beads and resuspend the beads in solution by removing the tube from the magnet rack. This may require gently flicking the tube to get the beads back into solution. You may then need to centrifuge the tube to return the beads to the solution to the bottom of the tube. 
 
 21. Place 1.5 mL tube on magnet rack. Allow beads to seperate (~5 min)
->The purified DNA is now in the supernatent.
+>The purified DNA is now in the supernatant.
   
 22. Remove 200 uL extracted DNA and place in a new, sterile 1.5 mL microcentifuge tube. 
   
