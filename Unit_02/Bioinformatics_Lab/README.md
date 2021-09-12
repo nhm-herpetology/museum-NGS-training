@@ -167,31 +167,73 @@ make 'MAXKMERLENGTH=127'
 ```
 ./velveth output_directory/ 31 -fastq.gz -shortPaired Cylindrophis_ruffus_FMNH_258674-READ1.fastq.gz Cylindrophis_ruffus_FMNH_258674-READ2.fastq.gz -short Cylindrophis_ruffus_FMNH_258674-READ-singleton.fastq.gz
 ``` 
+```
+./velvetg output_directory
+```  
+
 We should see this output printed: 
  
 ```
-
+Final graph has 110251 nodes and n50 of 280, max 1111, total 12242834, using 0/221695 reads
 ``` 
+>This is similar to the results we got using velvet in phyluce
  
 4. Now let's run velvet using the largest possible kmer size:
 ```
 ./velveth output_directory/ 127 -fastq.gz -short Cylindrophis_ruffus_FMNH_258674-READ1.fastq.gz Cylindrophis_ruffus_FMNH_258674-READ2.fastq.gz Cylindrophis_ruffus_FMNH_258674-READ-singleton.fastq.gz
 ``` 
-
+```
+./velvetg output_directory
+```  
 We should see this output printed: 
  
 ```
-
+Final graph has 7202 nodes and n50 of 311, max 922, total 2403925, using 0/221695 reads
+```  
+>contigs are on average longer than k = 31, but maximum size is smaller and number of nodes is smaller 
+ 
+5. Now let's run velvet using an intermediate kmer size (k = 80):
+```
+./velveth output_directory/ 80 -fastq.gz -short Cylindrophis_ruffus_FMNH_258674-READ1.fastq.gz Cylindrophis_ruffus_FMNH_258674-READ2.fastq.gz Cylindrophis_ruffus_FMNH_258674-READ-singleton.fastq.gz
+``` 
+```
+./velvetg output_directory
+```  
+We should see this output printed: 
+ 
+```
+Final graph has 33085 nodes and n50 of 283, max 1575, total 8295245, using 0/221695 reads
+```  
+>This has the longest fragment length of the three kmer analyses... so which one is best? Well... it depends.    
+ 
+ 
+5. Let's explore the impact of different levels of coverage using (k = 127). 
+```
+./velveth output_directory/ 127 -fastq.gz -short Cylindrophis_ruffus_FMNH_258674-READ1.fastq.gz Cylindrophis_ruffus_FMNH_258674-READ2.fastq.gz Cylindrophis_ruffus_FMNH_258674-READ-singleton.fastq.gz
+``` 
+```
+./velvetg output_directory -cov_cutoff 10
 ```  
  
-5. Let's explore the impact of different levels of coverage. 
-```
-./velveth output_directory/ 127 -fastq.gz -short Cylindrophis_ruffus_FMNH_258674-READ1.fastq.gz Cylindrophis_ruffus_FMNH_258674-READ2.fastq.gz Cylindrophis_ruffus_FMNH_258674-READ-singleton.fastq.gz -cov_cutoff 10
+We should see this output printed: 
+ 
 ``` 
+Final graph has 469 nodes and n50 of 438, max 5386, total 199942, using 0/221695 reads
+```
+>The n50 and maximum length have increased compared to the default settings, this suggests that many of the contigs in the original analysis were short, low coverage contigs that we won't be interested in. However, it does mean we now only have 469 eligible contigs for downstream analysis.  
  
+6. Let's try a different coverage depth with the same kmer value: 
  
- 
+```
+./velvetg output_directory -cov_cutoff 20
+```   
 
+We should see this output printed: 
+ 
+``` 
+Final graph has 36 nodes and n50 of 423, max 1148, total 15336, using 0/221695 reads
+```
+ 
 </details>
 
 ## Reference sequence mapping
