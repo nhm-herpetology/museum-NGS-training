@@ -48,4 +48,5 @@ cd some_directory
 
 </details>
 
+| [WinSCP](https://winscp.net/eng/download.php) | [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) 
 
