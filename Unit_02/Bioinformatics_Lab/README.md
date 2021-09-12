@@ -14,7 +14,9 @@
 Cylindrophis_ruffus_FMNH_258674-READ1.fastq.gz
 Cylindrophis_ruffus_FMNH_258674-READ2.fastq.gz
 Cylindrophis_ruffus_FMNH_258674-READ-singleton.fastq.gz
-```  
+``` 
+>These files should be inside a directory called ```Unit_1/Data/clean-fastq/Cylindrophis_ruffus_FMNH_258674/split-adapter-quality-trimmed```
+ 
 2. Activate phyluce
  ```  
   conda activate phyluce-1.7.1
@@ -23,7 +25,7 @@ Cylindrophis_ruffus_FMNH_258674-READ-singleton.fastq.gz
 
 ```
 [samples]
-Cylindrophis_ruffus_FMNH_258674:/clean-fastq/Cylindrophis_ruffus_FMNH_258674/split-adapter-quality-trimmed/
+Cylindrophis_ruffus_FMNH_258674:clean-fastq/Cylindrophis_ruffus_FMNH_258674/split-adapter-quality-trimmed/
   
 ```
 The configuration file tells phyluce where to find the files that are to be *de novo* assembled. Our example only contains one sample, but you can have configuration files with as many samples/taxa/individuals as you like.
