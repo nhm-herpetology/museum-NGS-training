@@ -280,7 +280,7 @@ conda env create -n phyluce-1.7.1 --file phyluce-1.7.1-py36-Linux-conda.yml
  ```  
   conda activate phyluce-1.7.1
  ``` 
-7. To use Illumiprocessor, a congiguration file is needed. The configuration file looks like this:
+7. To use Illumiprocessor, a configuration file is needed. The configuration file looks like this:
 
 ```
 [adapters]
