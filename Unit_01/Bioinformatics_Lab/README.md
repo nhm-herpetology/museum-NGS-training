@@ -35,18 +35,24 @@ Phred Quality Score | Probability of Incorrect Base Call  | Base Call Accuracy
 
 >If you are retrieving sequence data directly from the NHM NextSeq or MiSeq, you will need to convert the Illumina Base Call data into the FASTQ format. This can be done using the Illumina program [bcl2fastq](https://emea.support.illumina.com/sequencing/sequencing_software/bcl2fastq-conversion-software.html).
 
-1. First, let's download and install bcl2fastq using conda:
+1. To install bcl2fastq, we will need to use conda for installation. To install conda on Franklin or Crop Diversity Cluster we just need to type:
+
+```
+install-conda
+```  	
+	
+2. Next, let's download and install bcl2fastq using conda:
 ```
 conda install -c dranew bcl2fastq  
 ```   
  
-2. Let's check to see if the program installed successfully: 
+3. Let's check to see if the program installed successfully: 
 ```
 bcl2fastq -h 
 ``` 
 >This should initiate the help screen	
 	
-3. Illumina datasets can be very large, so for this lab we are going to work with an unpublished dataset of 10 shotgun-sequenced museum specimens (16 GB) which was generated on the NHM Illumina NextSeq 500. The input data we need to run bcl2fastq are:
+4. Illumina datasets can be very large, so for this lab we are going to work with an unpublished dataset of 10 shotgun-sequenced museum specimens (16 GB) which was generated on the NHM Illumina NextSeq 500. The input data we need to run bcl2fastq are:
 	* Base call files (*.bcl.gz)
 	* Statistics files (*.stats)
 	* Filter files (*.filter)
@@ -55,7 +61,7 @@ bcl2fastq -h
 	* Configuration files
 	* Sample sheet (*.csv)	
 
-4. We will need to make the file called ```SampleSheet.csv``` because it is a configuration file specific to the adapters and indexes we used. It is formatted like this: 
+5. We will need to make the file called ```SampleSheet.csv``` because it is a configuration file specific to the adapters and indexes we used. It is formatted like this: 
 ```
 [Header]			
 IEMFileVersion	4		
@@ -101,12 +107,12 @@ InterOp  RTALogs               RunInfo.xml
 Logs     RTARead1Complete.txt  RunParameters.xml
 ``` 
 	
-5. Navigate to the run folder. Now let's run the program:
+6. Navigate to the run folder. Now let's run the program:
 ```
 bcl2fastq -o FASTQ_output_data --barcode-mismatches 1 --no-lane-splitting 
 ``` 	
 
-6. Once the analysis is completed, navigate to the output directory ```FASTQ_output_data```. It should contain the following files: 
+7. Once the analysis is completed, navigate to the output directory ```FASTQ_output_data```. It should contain the following files: 
  ```
 10_S6_R1_001.fastq.gz  27_S10_R1_001.fastq.gz  6_S4_R1_001.fastq.gz
 10_S6_R2_001.fastq.gz  27_S10_R2_001.fastq.gz  6_S4_R2_001.fastq.gz
@@ -254,13 +260,13 @@ gzip SRR3284185_S1_L001_R2_001.fastq
   
 We want to remove low quality bases and adapter contamination and we can do both of those things using [Illumiprocessor](https://github.com/faircloth-lab/illumiprocessor) 
   
-4. To use Illumiprocessor we need to install phyluce which requires miniconda for installation. On Franklin or Crop Diversity Cluster we just need to type:
+4. To use Illumiprocessor we need to install phyluce which requires miniconda for installation. We already installed conda for the previous module, but if you have skipped ahead, here is how you install conda on Franklin or Crop Diversity Cluster:
 
 ```
 install-conda
 ```  
 
-4. Install phyluce (instructions here for Linux version, other versions available [here](https://github.com/faircloth-lab/phyluce/releases)): 
+5. Install phyluce (instructions here for Linux version, other versions available [here](https://github.com/faircloth-lab/phyluce/releases)): 
 
 ```
 wget https://raw.githubusercontent.com/faircloth-lab/phyluce/v1.7.1/distrib/phyluce-1.7.1-py36-Linux-conda.yml
@@ -270,11 +276,11 @@ conda env create -n phyluce-1.7.1 --file phyluce-1.7.1-py36-Linux-conda.yml
 ```   
 >Dependencies and Illumiprocessor are now installed
   
-5. Activate phyluce
+6. Activate phyluce
  ```  
   conda activate phyluce-1.7.1
  ``` 
-6. To use Illumiprocessor, a congiguration file is needed. The configuration file looks like this:
+7. To use Illumiprocessor, a congiguration file is needed. The configuration file looks like this:
 
 ```
 [adapters]
@@ -295,14 +301,14 @@ SRR3284185_S1:Cylindrophis_ruffus_FMNH_258674
 ```
 The different sections of the configuration file are (1) the adapter section which identifies the universal adapter sequences (in our case these are i5 and i7 Illumina TruSeq adapters), (2) the tag sequences are the unique barcodes for each sample, (3) the tag map is used to name output files, and (4) the name of the sample that we want to be used in downstream analyses. 
 
-7. To make the configuration text file let's use the command line: 
+8. To make the configuration text file let's use the command line: 
  
  ```  
   cat > illumiprocessor.conf
  ```   
- Now paste the configuration text (from Step 6) into your terminal and then press CTRL + SHIFT + D. 
+ Now paste the configuration text (from Step 7) into your terminal and then press CTRL + SHIFT + D. 
  
-8. We are now ready to run Illumiprocessor to trim low quality bases + remove adapter contamiantion: 
+9. We are now ready to run Illumiprocessor to trim low quality bases + remove adapter contamiantion: 
  ```   
 illumiprocessor \
     --input raw-fastq/ \
@@ -311,7 +317,7 @@ illumiprocessor \
     --cores 1  
  ```    
 
-9. Now let's navigate to the cleaned read directory and examine the stats:
+10. Now let's navigate to the cleaned read directory and examine the stats:
   
 ```  
 cd clean-fastq
@@ -350,7 +356,7 @@ Cylindrophis_ruffus_FMNH_258674-READ-singleton.fastq.gz
 
 In addition to retaining paired-end reads, Illumiprocessor also keeps 'singleton' reads that can be used to maximize coverage for *de novo* assembly. 
 
-10. Let's use FASTQC to see how the cleaned FASTQ.GZ files compare to the raw FASTQ files.   
+11. Let's use FASTQC to see how the cleaned FASTQ.GZ files compare to the raw FASTQ files.   
 
 ```
 cp Cylindrophis_ruffus_FMNH_258674-READ1.fastq.gz /home/jefs/NGS_course/Unit_1/FastQC
@@ -370,4 +376,4 @@ This will produce output files as we saw in Step 2. There are also copies in the
 
 **Helpful Links** 
 >[bcl2fastq](https://emea.support.illumina.com/sequencing/sequencing_software/bcl2fastq-conversion-software.html) | [SRA toolkit](https://github.com/ncbi/sra-tools/wiki) | 
-[FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) | [fastx tools](http://hannonlab.cshl.edu/fastx_toolkit/) | [illumiprocessor](https://illumiprocessor.readthedocs.io/en/latest/) | [WinSCP](https://winscp.net/eng/download.php) | [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) 
+[FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) | [illumiprocessor](https://illumiprocessor.readthedocs.io/en/latest/) | [WinSCP](https://winscp.net/eng/download.php) | [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) 
