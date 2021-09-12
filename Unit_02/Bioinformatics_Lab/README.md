@@ -110,11 +110,20 @@ AGTATGCAAGATTTGTTCCAGCTTTCAT
 
 The ```Cylindrophis_ruffus_FMNH_258674``` directory contains various log files from the two programs.
  
-8. When executed in phyluce, spades compares three kmer values (k = 21, 33, 55) and velvet used (k = 31). If we compare some common statistics of the two assemblies we should see that the resulting contig distributions differ. 
+8. When executed in phyluce, spades compares three kmer values (k = 21, 33, 55) and velvet used (k = 31). If we compare some common statistics of the two assemblies we should see that the results differ. 
 
-In Spades: 
+The data below were collected using the following phyluce script: 
+``` 
+for i in spades-assemblies/contigs/*.fasta;
+do
+    phyluce_assembly_get_fasta_lengths --input $i --csv;
+done 
+``` 
+Spades: 
 ```
-Final graph has 116846 nodes and n50 of 261, max 1111, total 12297107, using 199806/221695 reads
+             # samples,contigs,total bp,mean length,95 CI length,min length,max length,median legnth,contigs >1kb
+Cylindrophis_ruffus_FMNH_258674.contigs.fasta,16141,7288211,451.53404373954527,1.308632812051666,56,5441,404.0,98
+
 ```  
 In Velvet: 
 ```
