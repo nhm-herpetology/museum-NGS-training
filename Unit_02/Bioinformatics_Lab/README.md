@@ -7,16 +7,23 @@
 <details>
  <summary>Click to expand content!</summary>
 
- >There are several different ways to assemble contigs from your cleaned Illumina FASTQ data. In this module we will compare the results of two different assemblers that we will execute in [phyluce](XXXX).
+ >There are several different ways to assemble contigs from your cleaned Illumina FASTQ data. In this module we will compare the results of two different assemblers that we will execute in [phyluce](https://phyluce.readthedocs.io/en/latest/index.html).
 
+1. We will use the three sets of cleaned fastq.gz files from [Unit 1](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_01/Bioinformatics_Lab) that were downloaded from the NCBI [SRA](https://www.ncbi.nlm.nih.gov/sra) and originally sequenced for Streicher & Wiens ([2016](https://www.sciencedirect.com/science/article/abs/pii/S1055790316300495?via%3Dihub)).  
+```  
+Cylindrophis_ruffus_FMNH_258674-READ1.fastq.gz
+Cylindrophis_ruffus_FMNH_258674-READ2.fastq.gz
+Cylindrophis_ruffus_FMNH_258674-READ-singleton.fastq.gz
+```  
+ 
 </details>
 
- ## Comparing kmer size for *de novo* assembly using velvet
+ ## Comparing kmer sizes of *de novo* assemblies using velvet
 
 <details>
  <summary>Click to expand content!</summary>
  
->As we discussed in the lecture earlier today, different kmer lengths produce different assembly results. We will see an example of this by using several kmer sizes to generate assemblies in [velvet](https://www.ebi.ac.uk/~zerbino/velvet/). 
+>As we discussed in lecture earlier today, different kmer lengths produce different assembly results. We will see an example of this by using several kmer sizes to generate assemblies in [velvet](https://www.ebi.ac.uk/~zerbino/velvet/). 
 
 1. First let's download velvet 1.2.10: 
  ```
@@ -71,5 +78,5 @@ cd some_directory
 </details>
 
 **Helpful Links** 
-> [velvet](https://www.ebi.ac.uk/~zerbino/velvet/) | [BWA](https://github.com/lh3/bwa) | [WinSCP](https://winscp.net/eng/download.php) | [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) 
+> [velvet](https://www.ebi.ac.uk/~zerbino/velvet/) | [Spades](https://cab.spbu.ru/software/spades/) |[BWA](https://github.com/lh3/bwa) | [WinSCP](https://winscp.net/eng/download.php) | [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) 
 
