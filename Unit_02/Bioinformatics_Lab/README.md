@@ -2,12 +2,21 @@
 
 >You will need a Unix Command Terminal or PuTTY interface to complete this lab.
 
-## *de novo* assembly of shotgun libraries
+## *de novo* assembly of libraries using phyluce
+
+<details>
+ <summary>Click to expand content!</summary>
+
+ >There are several different ways to assemble contigs from your cleaned Illumina FASTQ data. In this module we will compare the results of two different assemblers that we will execute in [phyluce](XXXX).
+
+</details>
+
+ ## Comparing kmer size for *de novo* assembly using velvet
 
 <details>
  <summary>Click to expand content!</summary>
  
->There are several different ways to assemble contigs from your raw Illumina data. In this lab we will compare two different assemblers. 
+>As we discussed in the lecture earlier today, different kmer lengths produce different assembly results. We will see an example of this by using several kmer sizes to generate assemblies in [velvet](https://www.ebi.ac.uk/~zerbino/velvet/). 
 
 1. First let's download velvet 1.2.10: 
  ```
