@@ -120,15 +120,18 @@ do
 done 
 ``` 
 Spades: 
-```
-             # samples,contigs,total bp,mean length,95 CI length,min length,max length,median legnth,contigs >1kb
-Cylindrophis_ruffus_FMNH_258674.contigs.fasta,16141,7288211,451.53404373954527,1.308632812051666,56,5441,404.0,98
 
-```  
-In Velvet: 
-```
-Final graph has 116846 nodes and n50 of 261, max 1111, total 12297107, using 199806/221695 reads
-``` 
+sample | contigs  | total bp | mean length | 95 CI length | min length | max length | median legnth | contigs >1kb
+------------ | -------------  | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | -------------
+Cylindrophis_ruffus_FMNH_258674 | 16141 | 7288211 | 451.53404373954527 | 1.308632812051666 | 56 | 5441 | 404.0 | 98
+
+Velvet: 
+
+sample | contigs  | total bp | mean length | 95 CI length | min length | max length | median legnth | contigs >1kb
+------------ | -------------  | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | -------------
+Cylindrophis_ruffus_FMNH_258674 | 49126 | 12251170 | 249.38260798762366 | 0.4714853349602348 | 100 | 1141 | 237.0 | 1
+
+ 
 >These differences arise from the different kmer and coverage depth settings which we will explore more in the next module. 
  
 </details>
