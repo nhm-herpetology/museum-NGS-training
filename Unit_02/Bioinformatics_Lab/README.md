@@ -196,5 +196,5 @@ cd some_directory
 </details>
 
 **Helpful Links** 
-> [velvet](https://www.ebi.ac.uk/~zerbino/velvet/) | [Spades](https://cab.spbu.ru/software/spades/) |[BWA](https://github.com/lh3/bwa) | [WinSCP](https://winscp.net/eng/download.php) | [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) 
+> [velvet](https://www.ebi.ac.uk/~zerbino/velvet/) | [Spades](https://cab.spbu.ru/software/spades/) | [BWA](https://github.com/lh3/bwa) | [WinSCP](https://winscp.net/eng/download.php) | [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) 
 
