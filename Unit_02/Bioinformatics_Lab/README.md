@@ -44,7 +44,7 @@ phyluce_assembly_assemblo_velvet \
     --output velvet-assemblies \
     --cores 12 
  ```
- >This will place the ouput files in a new directory called velvet-assemblies 
+ >This will place the ouput files in a new directory called velvet-assemblies. On Franklin it should take about 3 mins to run. 
  
  6. Next, let's use the same configuration file to assemble the reads into contigs using spades: 
  ```   
@@ -53,8 +53,10 @@ phyluce_assembly_assemblo_spades \
     --output spades-assemblies \
     --cores 12 
  ``` 
-  >This will place the ouput files in a new directory called spades-assemblies 
+  >This will place the ouput files in a new directory called spades-assemblies. On Franklin this may take ~10 mins to run.  
 
+ 7. Once both assemblies are complete our ```Data``` directory should contain the following items: 
+ 
  
 </details>
 
