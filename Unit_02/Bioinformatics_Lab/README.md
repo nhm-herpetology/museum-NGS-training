@@ -9,7 +9,7 @@
 
  >There are several different ways to assemble contigs from your cleaned Illumina FASTQ data. In this module we will compare the results of two different assemblers that we will execute in [phyluce](https://phyluce.readthedocs.io/en/latest/index.html).
 
-1. We will use the three sets of cleaned fastq.gz files from [Unit 1](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_01/Bioinformatics_Lab) that were downloaded from the NCBI [SRA](https://www.ncbi.nlm.nih.gov/sra) and originally sequenced for Streicher & Wiens ([2016](https://www.sciencedirect.com/science/article/abs/pii/S1055790316300495?via%3Dihub)).  
+1. We will use the three sets of cleaned fastq.gz files from [Unit 1](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_01/Bioinformatics_Lab) that were downloaded from the NCBI [SRA](https://www.ncbi.nlm.nih.gov/sra) and originally sequenced for Streicher & Wiens ([2016](https://www.sciencedirect.com/science/article/abs/pii/S1055790316300495?via%3Dihub)) using a MiSeq and paired-end 300bp kit.  
 ```  
 Cylindrophis_ruffus_FMNH_258674-READ1.fastq.gz
 Cylindrophis_ruffus_FMNH_258674-READ2.fastq.gz
@@ -172,11 +172,11 @@ Cylindrophis_ruffus_FMNH_258674-READ-singleton.fastq.gz
  
 4. Using the Cylindrophis ruffus sample from [Unit 1](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_01/Bioinformatics_Lab), let's run velvet using the default kmer size:
 ```
-./velveth output_directory/ 48 -fasta -short solexa1.fa solexa2.fa solexa3.fa -long capillary.fa
+./velveth output_directory/ 31 -fastq.gz -short Cylindrophis_ruffus_FMNH_258674-READ1.fastq.gz Cylindrophis_ruffus_FMNH_258674-READ2.fastq.gz Cylindrophis_ruffus_FMNH_258674-READ-singleton.fastq.gz
 ``` 
 5. Now let's run velvet using the largest possible kmer size:
  ```
-./velveth output_directory/ 127 -fasta -short solexa1.fa solexa2.fa solexa3.fa -long capillary.fa
+./velveth output_directory/ 127 -fastq.gz -short Cylindrophis_ruffus_FMNH_258674-READ1.fastq.gz Cylindrophis_ruffus_FMNH_258674-READ2.fastq.gz Cylindrophis_ruffus_FMNH_258674-READ-singleton.fastq.gz
 ``` 
 
 
