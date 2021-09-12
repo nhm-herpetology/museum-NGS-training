@@ -28,8 +28,15 @@ cd velvet_1.2.10
 make 'MAXKMERLENGTH=127' 
 ``` 
 >This should make two executable files ```velveth``` and ```velvetg```
+
+3. You should have three sets of cleaned fastq.gz files from [Unit 1](insert link)  
+```  
+Cylindrophis_ruffus_FMNH_258674-READ1.fastq.gz
+Cylindrophis_ruffus_FMNH_258674-READ2.fastq.gz
+Cylindrophis_ruffus_FMNH_258674-READ-singleton.fastq.gz
+```  
  
-3. Using the Cylindrophis ruffus sample from [Unit 1](inser link) let's run velvet:
+4. Using the Cylindrophis ruffus sample from [Unit 1](insert link) let's run velvet:
 ```
 ./velveth output_directory/ 127 -fasta -short solexa1.fa solexa2.fa solexa3.fa -long capillary.fa
 ``` 
@@ -48,5 +55,6 @@ cd some_directory
 
 </details>
 
-| [WinSCP](https://winscp.net/eng/download.php) | [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) 
+**Helpful Links** 
+> [velvet](https://www.ebi.ac.uk/~zerbino/velvet/) | [BWA])https://github.com/lh3/bwa) | [WinSCP](https://winscp.net/eng/download.php) | [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) 
 
