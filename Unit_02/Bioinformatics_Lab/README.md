@@ -15,6 +15,44 @@ Cylindrophis_ruffus_FMNH_258674-READ1.fastq.gz
 Cylindrophis_ruffus_FMNH_258674-READ2.fastq.gz
 Cylindrophis_ruffus_FMNH_258674-READ-singleton.fastq.gz
 ```  
+2. Activate phyluce
+ ```  
+  conda activate phyluce-1.7.1
+ ``` 
+3. To use phyluce to assemble reads into contigs, a configuration file is needed. The configuration file looks like this:
+
+```
+[samples]
+Cylindrophis_ruffus_FMNH_258674:/clean-fastq/Cylindrophis_ruffus_FMNH_258674/split-adapter-quality-trimmed/
+  
+```
+The configuration file tells phyluce where to find the files that are to be *de novo* assembled. Our example only contains one sample, but you can have configuration files with as many samples/taxa/individuals as you like.
+
+4. To make the configuration text file let's use the command line: 
+ 
+ ```  
+  cat > assembly.conf
+ ```   
+ Now paste the configuration text (from Step 3) into your terminal and then press CTRL + SHIFT + D. 
+ 
+5. We are now ready to assemble the reads into contigs using velvet: 
+ ```   
+phyluce_assembly_assemblo_velvet \
+    --conf assembly.conf \
+    --output velvet-assemblies \
+    --cores 12 
+ ```
+ >This will place the ouput files in a new directory called velvet-assemblies 
+ 
+ 6. Next, let's use the same configuration file to assemble the reads into contigs using spades: 
+ ```   
+phyluce_assembly_assemblo_spades \
+    --conf assembly.conf \
+    --output spades-assemblies \
+    --cores 12 
+ ``` 
+  >This will place the ouput files in a new directory called spades-assemblies 
+
  
 </details>
 
