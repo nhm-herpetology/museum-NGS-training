@@ -55,8 +55,22 @@ phyluce_assembly_assemblo_spades \
  ``` 
   >This will place the ouput files in a new directory called spades-assemblies. On Franklin this may take ~10 mins to run.  
 
- 7. Once both assemblies are complete our ```Data``` directory should contain the following items: 
+Once both assemblies have finished our ```Data``` directory should contain the following items: 
  
+```
+ assembly.conf         illumiprocessor.log                   raw-fastq
+clean-fastq           phyluce_assembly_assemblo_spades.log  spades-assemblies
+illumiprocessor.conf  phyluce_assembly_assemblo_velvet.log  velvet-assemblies
+```
+
+7. First, let's look at the velvet assembly:
+
+```
+cd velvet-assemblies
+``` 
+>There should be two directories ```contigs``` and  ```Cylindrophis_ruffus_FMNH_258674```
+ 
+8. The ```contigs``` directory contains a single FASTA file which is the output of the assembly. It will contain hundreds to thousands of sequences inferred by the assembly. 
  
 </details>
 
