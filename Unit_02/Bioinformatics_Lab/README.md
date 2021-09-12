@@ -18,12 +18,12 @@ Cylindrophis_ruffus_FMNH_258674-READ-singleton.fastq.gz
  
 </details>
 
- ## Comparing kmer sizes of *de novo* assemblies using velvet
+ ## Comparing kmer sizes  and coverage depths of *de novo* assemblies using velvet
 
 <details>
  <summary>Click to expand content!</summary>
  
->As we discussed in lecture earlier today, different kmer lengths produce different assembly results. We will see an example of this by using several kmer sizes to generate assemblies in [velvet](https://www.ebi.ac.uk/~zerbino/velvet/). 
+>As we discussed in lecture earlier today, different kmer lengths and coverge thresholds produce different assembly results. We will see examples of this by generating a handful of assemblies in [velvet](https://www.ebi.ac.uk/~zerbino/velvet/). 
 
 1. First let's download velvet 1.2.10: 
  ```
