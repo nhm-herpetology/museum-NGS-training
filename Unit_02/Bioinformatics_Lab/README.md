@@ -29,17 +29,23 @@ make 'MAXKMERLENGTH=127'
 ``` 
 >This should make two executable files ```velveth``` and ```velvetg```
 
-3. You should have three sets of cleaned fastq.gz files from [Unit 1](insert link)  
+3. You should have three sets of cleaned fastq.gz files from [Unit 1](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_01/Bioinformatics_Lab)  
 ```  
 Cylindrophis_ruffus_FMNH_258674-READ1.fastq.gz
 Cylindrophis_ruffus_FMNH_258674-READ2.fastq.gz
 Cylindrophis_ruffus_FMNH_258674-READ-singleton.fastq.gz
 ```  
  
-4. Using the Cylindrophis ruffus sample from [Unit 1](insert link) let's run velvet:
+4. Using the Cylindrophis ruffus sample from [Unit 1](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_01/Bioinformatics_Lab), let's run velvet using the default kmer size:
 ```
+./velveth output_directory/ 48 -fasta -short solexa1.fa solexa2.fa solexa3.fa -long capillary.fa
+``` 
+5. Now let's run velvet using the largest possible kmer size:
+ ```
 ./velveth output_directory/ 127 -fasta -short solexa1.fa solexa2.fa solexa3.fa -long capillary.fa
 ``` 
+
+
 </details>
 
 ## Reference sequence mapping
