@@ -35,7 +35,7 @@ Phred Quality Score | Probability of Incorrect Base Call  | Base Call Accuracy
 
 >If you are retrieving sequence data directly from the NHM NextSeq or MiSeq, you will need to convert the Illumina Base Call data into the FASTQ format. This can be done using the Illumina program [bcl2fastq](https://emea.support.illumina.com/sequencing/sequencing_software/bcl2fastq-conversion-software.html).
 
-1. To install bcl2fastq, we will need to use conda for installation. To install conda on Franklin or Crop Diversity Cluster we just need to type:
+1. To install bcl2fastq, we will need to use conda. To install conda on Franklin or Crop Diversity Cluster we just need to type:
 
 ```
 install-conda
