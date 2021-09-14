@@ -589,22 +589,27 @@ make
 ./samtools view -S -b bwa_mem_alignments1.sam > UCEs1.bam
 ./samtools view -S -b bwa_mem_alignments2.sam > UCEs2.bam
 ```
+4. Now we need to sort the bam files.  
 ```
 ./samtools sort UCEs1.bam -o UCEs1.sorted.bam
 ./samtools sort UCEs2.bam -o UCEs2.sorted.bam
 ``` 
+5. Then index them
 ``` 
 ./samtools index UCEs1.sorted.bam
 ./samtools index UCEs2.sorted.bam
 ``` 
+6. Now the files are in a format that our human eyes can interpret...  
 ```  
 ./samtools tview UCEs1.sorted.bam AB179619.1.fasta
 ./samtools tview UCEs2.sorted.bam AB179619.1.fasta
 ``` 
- >Press ESC to exit the tview screen
+ >Press ESC to exit the tview screen.
+ 
+ 7. We can also use these BAM files to view our reference alignments in a variety of GUI environments like [Geneious Prime](https://www.geneious.com/prime/)
  
  </details>
  
 **Helpful Links** 
-> [velvet](https://www.ebi.ac.uk/~zerbino/velvet/) | [Spades](https://cab.spbu.ru/software/spades/) | [BWA](https://github.com/lh3/bwa) | [WinSCP](https://winscp.net/eng/download.php) | [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) 
+> [velvet](https://www.ebi.ac.uk/~zerbino/velvet/) | [Spades](https://cab.spbu.ru/software/spades/) | [BWA](https://github.com/lh3/bwa) | [SAMtools](https://github.com/samtools/) | [WinSCP](https://winscp.net/eng/download.php) | [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) 
 
