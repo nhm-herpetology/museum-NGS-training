@@ -557,12 +557,52 @@ cp Cylindrophis_ruffus_FMNH_258674-READ2.fastq.gz /home/jefs/NGS_course/Unit_2/b
 <details>
  <summary>Click to expand content!</summary>
 
->Now we will use [SAMtools](https://github.com/samtools/) to view the mapped sequences. Let's download the program: 
+>Now we will use [SAMtools](https://github.com/samtools/) to view the mapped sequences. 
+ 
+1. Let's start by downloading and making the program: 
 
 ``` 
-cd
+wget https://github.com/samtools/samtools/releases/download/1.3.1/samtools-1.3.1.tar.bz2 -O samtools.tar.bz2
+``` 
+``` 
+tar -xjvf samtools.tar.bz2
+``` 
+``` 
+rm samtools.tar.bz2
+``` 
+``` 
+cd samtools-1.3.1
+``` 
+``` 
+make
 ```
-
+>This should give you an executable ```samtools``` file
+ 
+2. Next, let's copy over the reference FASTA and SAM files from the last module:
+ ```
+ cp AB179619.1.fasta /home/jefs/NGS_course/Unit_2/samtools-1.3.1
+ cp bwa_mem_alignments1.sam /home/jefs/NGS_course/Unit_2/samtools-1.3.1
+ cp bwa_mem_alignments2.sam /home/jefs/NGS_course/Unit_2/samtools-1.3.1
+```
+3. Now let's convert the .sam files to .bam files 
+``` 
+./samtools view -S -b bwa_mem_alignments1.sam > UCEs1.bam
+./samtools view -S -b bwa_mem_alignments2.sam > UCEs2.bam
+```
+```
+./samtools sort UCEs1.bam -o UCEs1.sorted.bam
+./samtools sort UCEs2.bam -o UCEs2.sorted.bam
+``` 
+``` 
+./samtools index UCEs1.sorted.bam
+./samtools index UCEs2.sorted.bam
+``` 
+```  
+./samtools tview UCEs1.sorted.bam AB179619.1.fasta
+./samtools tview UCEs2.sorted.bam AB179619.1.fasta
+``` 
+ >Press ESC to exit the tview screen
+ 
  </details>
  
 **Helpful Links** 
