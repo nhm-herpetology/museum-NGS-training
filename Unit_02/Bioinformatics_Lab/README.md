@@ -525,16 +525,47 @@ GAGGCCTACAATCCACGCCCTCCCATATAAACTTTAAACCAAACAATTTATATAGACCAATCAATCCCT
 5. Now let's copy this to the ```bwa``` folder along with the cleaned fastq reads from *Cylindrophis* *ruffus* from [Unit 1](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_01/Bioinformatics_Lab):
  
 ``` 
-cp AB179619.1.fasta  
+cp AB179619.1.fasta /home/jefs/NGS_course/Unit_2/bwa
 ```
+>Now naviagate to the phyluce directories from Unit_1
 ```  
-cp Cylindrophis_ruffus_FMNH_258674-READ1.fastq.gz
-cp Cylindrophis_ruffus_FMNH_258674-READ2.fastq.gz
-cp Cylindrophis_ruffus_FMNH_258674-READ-singleton.fastq.gz
+cp Cylindrophis_ruffus_FMNH_258674.contigs.fasta /home/jefs/NGS_course/Unit_2/bwa
+cp Cylindrophis_ruffus_FMNH_258674-READ1.fastq.gz /home/jefs/NGS_course/Unit_2/bwa
+cp Cylindrophis_ruffus_FMNH_258674-READ2.fastq.gz /home/jefs/NGS_course/Unit_2/bwa
+cp Cylindrophis_ruffus_FMNH_258674-READ-singleton.fastq.gz /home/jefs/NGS_course/Unit_2/bwa
 ```
+
+6.Now let's run BWA using the mtDNA genome of *C. ruffus* as the reference sequence. First, we need to index the reference sequence. 
+``` 
+./bwa index AB179619.1.fasta
+```
+ 
+7. Next, we will map the contigs from spades to the reference sequence: 
+``` 
+./bwa mem AB179619.1.fasta Cylindrophis_ruffus_FMNH_258674.contigs.fasta -t 4 > bwa_mem_alignments1.sam
+```
+ 
+8. Let's also align the cleaned reads to the mitochondrial genome: 
+``` 
+./bwa mem AB179619.1.fasta Cylindrophis_ruffus_FMNH_258674-READ1.fastq.gz Cylindrophis_ruffus_FMNH_258674-READ2.fastq.gz Cylindrophis_ruffus_FMNH_258674-READ-singleton.fastq.gz  -t 4 > bwa_mem_alignments2.sam
+``` 
+>At this point we now have reference mapped the contigs from the spade assembly and the cleaned, raw reads to the mtDNA of *Cylindrophis* *ruffus*. Remeber these sequences are from a targeted sequence capture (TSC) experiment for ultraconserved elements used in Streicher & Wiens (2016), so we don't expect them to have very many mtDNA reads (as these will have mostly been washed away). Nonetheless, we will see in the next module that there is evidence of mtDNA 'bycatch' in this TSC sequencing library.
  
 </details>
 
+## Using SAMtools to view reference maps
+
+<details>
+ <summary>Click to expand content!</summary>
+
+>Now we will use [SAMtools](https://github.com/samtools/) to view the mapped sequences. Let's download the program: 
+
+``` 
+cd
+```
+
+ </details>
+ 
 **Helpful Links** 
 > [velvet](https://www.ebi.ac.uk/~zerbino/velvet/) | [Spades](https://cab.spbu.ru/software/spades/) | [BWA](https://github.com/lh3/bwa) | [WinSCP](https://winscp.net/eng/download.php) | [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) 
 
