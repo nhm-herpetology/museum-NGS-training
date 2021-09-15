@@ -608,6 +608,8 @@ make
  
  7. We can also use these BAM files to view our reference alignments in a variety of GUI environments like [Geneious Prime](https://www.geneious.com/prime/)
  
+ > We now have the basics down for *de novo* assembly and reference mapping. We will use both of these approaches in [Unit 3](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_03/Bioinformatics_Lab) to identify and align UCE loci from *de novo* assembled contigs. 
+ 
  </details>
  
 **Helpful Links** 
