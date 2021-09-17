@@ -172,7 +172,7 @@ Sample 4 | 80.0  | 6.3  | 53.7
 1. We will start by constructing our own adapters that will be used to barcode (=index) each of the eight dA-tailed reactions. First, we need to make the annealing buffer. In a 50 mL conical tube mix the following: 
   * 5 mL 1M TRIS
   * 5 mL 5M NaCl
-  * 1 mL 0.5M EDAT
+  * 1 mL 0.5M EDTA
   * 39 mL nuclease-free water
 >This is your annealing buffer
 
