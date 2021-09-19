@@ -10,7 +10,7 @@ To identify UCEs from targeted sequence capture data there are five main steps:
 3. *de novo* assemble contigs using a stringent coverage level (e.g. 10X)
 4. Identify contigs that include UCEs from each individual/species
 5. Sort UCEs into appropriate directories
->For phylogenetic analyses, UCEs can then be aligned across all species/individuals for downstream applications. 
+>For phylogenetic analyses etc., UCEs can then be aligned across all species/individuals. 
 
 ## Processing UCE data with phyluce
 
@@ -22,8 +22,15 @@ To identify UCEs from targeted sequence capture data there are five main steps:
 1. Download the Tertrapod 5k probe sequences (this will be used to identify UCEs from the capture data). The probe set can also be downloaded [here](https://www.ultraconserved.org/)
   
 ```
-cd some_directory
+wget https://github.com/nhm-herpetology/museum-NGS-training/blob/main/Unit_03/Bioinformatics_Lab/Tetrapods-UCE-5Kv1.fasta
 ```
+
+2. Next we will download some raw data from the NCBI SRA.
+```
+wget https://github.com/nhm-herpetology/museum-NGS-training/blob/main/Unit_03/Bioinformatics_Lab/Tetrapods-UCE-5Kv1.fasta
+```
+
+  
 </details>
 
 ## Preparing UCE data for phylogenetic analysis
