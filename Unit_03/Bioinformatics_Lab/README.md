@@ -166,9 +166,10 @@ illumiprocessor \
     --input raw-fastq/ \
     --output clean-fastq \
     --config illumiprocessor.conf \
-    --cores 1  
+    --cores 4  
  ```   
- 
+>This should take ~3 minutes to run 
+  
 8. We need to update the assembly configuration file from [Unit 2](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_02/Bioinformatics_Lab) to assemble reads into contigs. The configuration file should look like this:
 
 ```
@@ -204,12 +205,54 @@ phyluce_assembly_assemblo_velvet \
     --output velvet-assemblies \
     --cores 12 
  ```  
->Now we are ready to identify which contigs correspond to UCE loci. 
+>This should take ~12-13 minutes to run. Now we are ready to identify which contigs correspond to UCE loci. 
   
 11. Download the Tetrapod 5k probe sequences (this will be used to identify UCEs from the capture data). The probe set can also be downloaded [here](https://www.ultraconserved.org/)
   
 ```
 wget https://raw.githubusercontent.com/nhm-herpetology/museum-NGS-training/main/Unit_03/Bioinformatics_Lab/Tetrapods-UCE-5Kv1.fasta
+``` 
+
+12. Now we will identify which contigs are UCEs: 
+
+```  
+phyluce_assembly_match_contigs_to_probes \
+    --contigs velvet-assemblies/contigs \
+    --probes uce-5k-probes.fasta \
+    --output uce-search-results  
+```
+We should see the following output: 
+  
+```
+Enter data
+```
+  
+13. Now we need to make a configuration file for extracting UCE data from this probe sequence matching step: 
+
+```  
+[all]
+Cylindrophis_ruffus_FMNH_258674
+Micrurus_fulvius_YPM_14096
+Xenodermus_javanicus_FMNH_230073
+Loxocemus_bicolor_ZA_46400
+```
+  
+14. To make the configuration file: 
+  
+```  
+cat > taxon-set.conf
+```   
+Now paste the configuration text (from Step 13) into your terminal and then press CTRL + SHIFT + D.   
+
+15. It is time to extract UCEs from the taxa in our configuration file:  
+
+```   
+phyluce_assembly_get_match_counts \
+    --locus-db uce-search-results/probe.matches.sqlite \
+    --taxon-list-config taxon-set.conf \
+    --taxon-group 'all' \
+    --incomplete-matrix \
+    --output taxon-sets/all/all-taxa-incomplete.conf  
 ``` 
   
 </details>
