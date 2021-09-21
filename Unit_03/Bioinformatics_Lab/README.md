@@ -337,7 +337,7 @@ This FASTA file can now be used to align UCEs from different taxa and prepare th
 cd uce-tutorial/taxon-sets/all
 ```
 
-2. Now we will align the UCEs using the software [MAFFT](https://mafft.cbrc.jp/alignment/software/)via the following command: 
+2. Now we will align the UCEs using the software [MAFFT](https://mafft.cbrc.jp/alignment/software/) via the following command: 
 
 ```  
 phyluce_align_seqcap_align \
@@ -465,4 +465,4 @@ wc -l mapped_C6.sam
 
 
 **Helpful Links**
->[UCEs](https://www.ultraconserved.org/) | [phyluce](https://phyluce.readthedocs.io/en/latest/) | [*Anolis carolinensis* genome](https://www.ncbi.nlm.nih.gov/genome/?term=Anolis+carolinensis)
+>[UCEs](https://www.ultraconserved.org/) | [phyluce](https://phyluce.readthedocs.io/en/latest/) | [MAFFT](https://mafft.cbrc.jp/alignment/software/) | [*Anolis carolinensis* genome](https://www.ncbi.nlm.nih.gov/genome/?term=Anolis+carolinensis)
