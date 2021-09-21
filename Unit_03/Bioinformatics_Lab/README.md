@@ -427,19 +427,24 @@ phyluce_align_concatenate_alignments \
 ```
 >This will combine the UCE NEXUS files into a single PHYLIP file which is used by many phylogenetics programs (e.g. [RAxML](https://cme.h-its.org/exelixis/web/software/raxml/))  
 
-8. Let's use this concatenated alignment to see if the UCEs have phylogenetic signal using [RAXML-NG](https://github.com/amkozlov/raxml-ng). Based on Streicher & Wiens [2016](https://www.sciencedirect.com/science/article/abs/pii/S1055790316300495?via%3Dihub) we should see the following tree (*Cylindrophis*(*Loxocemus*(*Xenodermus*, *Micrurus*): 
+8. Let's use this concatenated alignment to see if the UCEs have phylogenetic signal using [RAXML-NG](https://github.com/amkozlov/raxml-ng). Based on Streicher & Wiens [2016](https://www.sciencedirect.com/science/article/abs/pii/S1055790316300495?via%3Dihub) we should see something consistent with the following tree: ((*Cylindrophis*,*Loxocemus*),(*Xenodermus*, *Micrurus*)): 
   
 ```
 raxml-ng --msa mafft-nexus-internal-trimmed-gblocks-clean-75p-raxml/mafft-nexus-internal-trimmed-gblocks-clean-75p-raxml.phylip --model GTR+G
 ```  
 
-9. We can view the tree:
+9. We can view the ```mafft-nexus-internal-trimmed-gblocks-clean-75p-raxml.phylip.bestTree``` file:
 
+```  
 cd mafft-nexus-internal-trimmed-gblocks-clean-75p-raxml    
-  
-wget https://raw.githubusercontent.com/iBiology/plottree/master/plottree/plottree.py
-  
-python plottree.py mafft-nexus-internal-trimmed-gblocks-clean-75p-raxml.phylip.bestTree
+``` 
+``` 
+cat  mafft-nexus-internal-trimmed-gblocks-clean-75p-raxml.phylip.bestTree 
+```
+```
+Enter  
+```
+>This tree is consistent with Fig. 2 of Streicher & Wiens [2016](https://www.sciencedirect.com/science/article/abs/pii/S1055790316300495?via%3Dihub) 
   
 </details>
 
