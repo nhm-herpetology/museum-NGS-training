@@ -324,16 +324,32 @@ This FASTA file can now be used to align UCEs from different taxa and prepare th
   
 </details>
 
-## Preparing UCE data for phylogenetic analysis
+## Preparing UCE data for comparative analyses
 
 <details>
   <summary>Click to expand content!</summary>
 
 >After the last module, we now have UCE data for all taxa in a single FASTA file. We will now learn how to align these sequence data for comparative analyses. 
+
+1. We need to navigate to the taxon-sets directory we want to align.   
   
 ```
-cd some_directory
+cd uce-tutorial/taxon-sets/all
 ```
+
+2. Now we will align the UCEs using the software [MAFFT](https://mafft.cbrc.jp/alignment/software/)via the following command: 
+
+```  
+phyluce_align_seqcap_align \
+    --input all-taxa-incomplete.fasta \
+    --output mafft-nexus-edge-trimmed \
+    --taxa 4 \
+    --aligner mafft \
+    --cores 12 \
+    --incomplete-matrix \
+    --log-path log  
+```
+  
 </details>
 
 ## Mapping UCE data to genomic assemblies
