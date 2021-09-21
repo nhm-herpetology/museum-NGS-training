@@ -378,7 +378,7 @@ matrix
 ;
 end;  
 ```
->You can see that we have both '?' characters for missing edges and '-' characters for indels in the alignments
+>You can see that we have both '?' characters for missing edges and '-' characters for indels in the alignments. We also see that for UCE 1013, we lack data for *Xenodermus javanicus*.
   
 </details>
 
