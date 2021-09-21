@@ -432,7 +432,15 @@ phyluce_align_concatenate_alignments \
 ```
 raxml-ng --msa mafft-nexus-internal-trimmed-gblocks-clean-75p-raxml/mafft-nexus-internal-trimmed-gblocks-clean-75p-raxml.phylip --model GTR+G
 ```  
-   
+
+9. We can view the tree:
+
+cd mafft-nexus-internal-trimmed-gblocks-clean-75p-raxml    
+  
+wget https://raw.githubusercontent.com/iBiology/plottree/master/plottree/plottree.py
+  
+python plottree.py mafft-nexus-internal-trimmed-gblocks-clean-75p-raxml.phylip.bestTree
+  
 </details>
 
 ## Mapping UCE data to genomic assemblies
