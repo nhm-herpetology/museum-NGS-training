@@ -67,16 +67,54 @@ cd edirect
 ```
 >It is a large file (~79 MB), so it should take ~2 minutes to download.
  
- 3. Now let's move it to the same folder as the FASTA file: 
+3. Now let's move it to the same folder as the FASTA file: 
 
 ```  
-mv NC_014781.1 /home/jefs/NGS_course/Unit_3
+mv NC_014781.1.fasta /home/jefs/NGS_course/Unit_3
+```
+>Please navigate to the Unit_3 directory
+  
+4. If you haven't done so already, activate phyluce so that ```bwa``` and ```samtools``` are available:
+  
+```
+conda activate phyluce-1.7.1
 ```
   
+5. Let's Index chromosome 6 of *Anolis carolinensis* as a reference sequence:
   
+```
+bwa index NC_014781.1.fasta
+```  
+>This should take ~2 minutes  
+
+6. Let's align the UCE probe/bait sequences to the reference: 
+
+```  
+bwa mem NC_014781.1.fasta Tetrapods-UCE-5kv1.fasta -t 4 > bwa_mem_align_UCEs_c6.sam  
+```  
   
+7. Convert the sam file to a bam file  
+ 
+``` 
+samtools view -S -b bwa_mem_align_UCEs_c6.sam > UCE_Ac_6.bam 
+```  
+  
+8. Now we sort the bam file: 
+ 
+```  
+samtools sort UCE_Ac_6.bam  -o UCE_Ac_6.sorted.bam 
+```  
+  
+9. Finally, we index the sorted bam file and view: 
+ 
+```  
+samtools index UCE_Ac_6.sorted.bam 
+```   
+```  
+samtools tview UCE_Ac_6.sorted.bam AB179619.1.fasta NC_014781.1.fasta
+```   
 </details>
 
 
 **Helpful Links**
->[velvet](https://www.ebi.ac.uk/~zerbino/velvet/) | [phyluce](https://phyluce.readthedocs.io/en/latest/)
+>[UCEs](https://www.ultraconserved.org/) | [phyluce](https://phyluce.readthedocs.io/en/latest/) | [*Anolis carolinensis* genome](https://www.ncbi.nlm.nih.gov/genome/?term=Anolis+carolinensis)
