@@ -401,6 +401,19 @@ phyluce_align_get_only_loci_with_min_taxa \
     --cores 12 \
     --log-path log  
 ```
+We can determine how many UCEs satisfy the 75% complete criterion using: 
+  
+```
+cd mafft-nexus-internal-trimmed-gblocks-clean-75p
+```
+```  
+ls | wc -l 
+``` 
+>There should be 628 UCE alignments in the directory
+
+```
+cd ..
+```  
   
 7. One way to analyze the UCE data is to concateate them and infer a phylogeny with the resulting alignment. To do this we use the following commnd on 75% taxa present UCEs identified in the previous step: 
  
@@ -414,13 +427,12 @@ phyluce_align_concatenate_alignments \
 ```
 >This will combine the UCE NEXUS files into a single PHYLIP file which is used by many phylogenetics programs (e.g. [RAxML](https://cme.h-its.org/exelixis/web/software/raxml/))  
 
-8. Let's use this concatenated alignment to see if the UCEs have phylogenetic signal using [RAXML-NG](https://github.com/amkozlov/raxml-ng). Based on Streicher & Wiens [2016](https://www.sciencedirect.com/science/article/abs/pii/S1055790316300495?via%3Dihub) we should see the following tree (Cylindrophis(Loxocemus(Xendodermus, Micrurus): 
+8. Let's use this concatenated alignment to see if the UCEs have phylogenetic signal using [RAXML-NG](https://github.com/amkozlov/raxml-ng). Based on Streicher & Wiens [2016](https://www.sciencedirect.com/science/article/abs/pii/S1055790316300495?via%3Dihub) we should see the following tree (*Cylindrophis*(*Loxocemus*(*Xenodermus*, *Micrurus*): 
   
 ```
-raxml-ng --msa mafft-nexus-internal-trimmed-gblocks-clean-75p-raxml --model GTR+G
+raxml-ng --msa mafft-nexus-internal-trimmed-gblocks-clean-75p-raxml/mafft-nexus-internal-trimmed-gblocks-clean-75p-raxml.phylip --model GTR+G
 ```  
-  
-  
+   
 </details>
 
 ## Mapping UCE data to genomic assemblies
