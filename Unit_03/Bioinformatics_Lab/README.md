@@ -218,7 +218,7 @@ wget https://raw.githubusercontent.com/nhm-herpetology/museum-NGS-training/main/
 ```  
 phyluce_assembly_match_contigs_to_probes \
     --contigs velvet-assemblies/contigs \
-    --probes uce-5k-probes.fasta \
+    --probes Tetrapods-UCE-5Kv1.fasta \
     --output uce-search-results  
 ```
 We should see the following output: 
