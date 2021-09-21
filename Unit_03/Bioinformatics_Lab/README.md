@@ -20,37 +20,40 @@ To identify UCEs from targeted sequence capture data there are five main steps:
 >As we laready learned in [Unit 1](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_01/Bioinformatics_Lab) and [Unit 2](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_02/Bioinformatics_Lab), phyluce is a really helpful program for processing targeted sequence capture data. There are several tutorials avialable here [here](https://phyluce.readthedocs.io/en/latest/tutorials/index.html)
 
 
-1. Navigate to the SRA tools directory from [Unit 1](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_01/Bioinformatics_Lab). We will download some raw data from three more snake species from the Streicher & Wiens [2016](https://www.sciencedirect.com/science/article/abs/pii/S1055790316300495?via%3Dihub) dataset; *Xenodermus javanicus*, *Micrurus fulvius*, and *Loxocemus bicolor*.
+1. Navigate to the SRA tools ```bin``` directory from [Unit 1](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_01/Bioinformatics_Lab). We will download some raw data from three more snake species from the Streicher & Wiens [2016](https://www.sciencedirect.com/science/article/abs/pii/S1055790316300495?via%3Dihub) dataset; *Xenodermus javanicus*, *Micrurus fulvius*, and *Loxocemus bicolor*.
 
 ```
 ./fasterq-dump SRR3284492	
 ```
+>The download should take ~4-5 minutes  
 ```
 ./fasterq-dump SRR3284197	
 ```
+>The download should take ~3-4 minutes
 ```
 ./fasterq-dump SRR3284196		
 ```
+>The download should take ~2-3 minutes
   
 2. Now, we will move these new files to our phyluce directory from [Unit 1](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_01/Bioinformatics_Lab):
 
 ```
-cp SRR3284492_1.fastq /home/jefs/NGS_course/Unit_1/Data/raw-fastq
+mv SRR3284492_1.fastq /home/jefs/NGS_course/Unit_1/Data/raw-fastq
 ```  
 ```
-cp SRR3284492_2.fastq /home/jefs/NGS_course/Unit_1/Data/raw-fastq
+mv SRR3284492_2.fastq /home/jefs/NGS_course/Unit_1/Data/raw-fastq
 ```   
 ```
-cp SRR3284197_1.fastq /home/jefs/NGS_course/Unit_1/Data/raw-fastq
+mv SRR3284197_1.fastq /home/jefs/NGS_course/Unit_1/Data/raw-fastq
 ```  
 ```
-cp SRR3284197_2.fastq /home/jefs/NGS_course/Unit_1/Data/raw-fastq
+mv SRR3284197_2.fastq /home/jefs/NGS_course/Unit_1/Data/raw-fastq
 ```    
 ```
-cp SRR3284196_1.fastq /home/jefs/NGS_course/Unit_1/Data/raw-fastq
+mv SRR3284196_1.fastq /home/jefs/NGS_course/Unit_1/Data/raw-fastq
 ```  
 ```
-cp SRR3284196_2.fastq /home/jefs/NGS_course/Unit_1/Data/raw-fastq
+mv SRR3284196_2.fastq /home/jefs/NGS_course/Unit_1/Data/raw-fastq
 ```     
 
 3. Now navigate to the 'Data/raw-fastq' directory. Let's prepare the files for cleaning by renaming them and compressing them: 
