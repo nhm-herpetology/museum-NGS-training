@@ -439,12 +439,15 @@ raxml-ng --msa mafft-nexus-internal-trimmed-gblocks-clean-75p-raxml/mafft-nexus-
 cd mafft-nexus-internal-trimmed-gblocks-clean-75p-raxml    
 ``` 
 ``` 
-cat  mafft-nexus-internal-trimmed-gblocks-clean-75p-raxml.phylip.bestTree 
+cat  mafft-nexus-internal-trimmed-gblocks-clean-75p-raxml.phylip.raxml.bestTree 
 ```
+We should see the following tree:  
 ```
-Enter  
+((Loxocemus_bicolor_ZA_46400:0.019766,Cylindrophis_ruffus_FMNH_258674:0.016527):0.004738,Xenodermus_javanicus_FMNH_230073:0.047025,Micrurus_fulvius_YPM_14096:0.027562);  
 ```
 >This tree is consistent with Fig. 2 of Streicher & Wiens [2016](https://www.sciencedirect.com/science/article/abs/pii/S1055790316300495?via%3Dihub) 
+
+Now we have learned the basics of preparring UCE data for comparative analysis.   
   
 </details>
 
@@ -453,7 +456,7 @@ Enter
 <details>
   <summary>Click to expand content!</summary>
 
->We can align UCEs (or any locus) to genomic assemblies to see where each UCE is in the genome, which may help with understanding dynamics related to linkage etc. 
+>We can align UCEs to genomic assemblies to see where each UCE is in the genome, which may help with understanding dynamics related to linkage etc. 
 
 We will use the vertebrate 5k UCE probe sequences in FASTA format that we downloaded in the first module and chromosomes 6 (80.74 Mbp) of *Anolis carolinensis* as an example of mapping UCEs to a reference genome.   
 
