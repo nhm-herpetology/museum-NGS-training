@@ -329,7 +329,7 @@ This FASTA file can now be used to align UCEs from different taxa and prepare th
 <details>
   <summary>Click to expand content!</summary>
 
->After the last module, we now have UCE data for all taxa in a single FASTA file. We will now learn how to align these sequence data for comparative analyses. 
+>After the last module, we have UCE data for all taxa in a single FASTA file. We will now learn how to align these sequence data for comparative analyses. 
 
 1. We need to navigate to the taxon-sets directory we want to align.   
   
@@ -349,7 +349,26 @@ phyluce_align_seqcap_align \
     --incomplete-matrix \
     --log-path log  
 ```
-  
+>There will be several warning about 'dropped' UCEs - this is normal as the script works its way through all possible UCEs. 
+ 
+3. Now let's have a look at the alignments: 
+
+```
+cd mafft-nexus-edge-trimmed
+```
+```   
+ls  
+```   
+>You should see hundreds of files that correspond to alignments for all UCEs that the four snakes had in common. 
+ 
+4. Looking at one of the NEXUS-formatted file: 
+```   
+cat uce-1013.nexus  
+```  
+We should see the following: 
+```
+Enter  
+```  
 </details>
 
 ## Mapping UCE data to genomic assemblies
