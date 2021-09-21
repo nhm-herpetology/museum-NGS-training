@@ -38,6 +38,8 @@ wget https://github.com/nhm-herpetology/museum-NGS-training/blob/main/Unit_03/Bi
 <details>
   <summary>Click to expand content!</summary>
 
+>There is a really nice tutorial for assembling UCE data woth phyluce available [here](https://phyluce.readthedocs.io/en/latest/tutorials/tutorial-1.html). We will continue working with some of the squamate examples from before.
+  
 ```
 cd some_directory
 ```
