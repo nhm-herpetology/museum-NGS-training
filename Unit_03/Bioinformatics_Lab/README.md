@@ -379,6 +379,47 @@ matrix
 end;  
 ```
 >You can see that we have both '?' characters for missing edges and '-' characters for indels in the alignments. We also see that for UCE 1013, we lack data for *Xenodermus javanicus*.
+
+5. We can rename the taxa in each alignment to remove the UCE name. This will be helpful for downstream analyses. 
+  
+```
+phyluce_align_remove_locus_name_from_files \
+    --alignments mafft-nexus-edge-trimmed \
+    --output mafft-nexus-internal-trimmed-gblocks-clean \
+    --cores 12 \
+    --log-path log  
+```
+
+6. We will need to decide how much missing data we will allow in the UCE data matrices. In the example we will only use UCEs that have at least 75% of the taxa present in them (i.e. 3 out of 4): 
+
+```  
+phyluce_align_get_only_loci_with_min_taxa \
+    --alignments mafft-nexus-internal-trimmed-gblocks-clean \
+    --taxa 4 \
+    --percent 0.75 \
+    --output mafft-nexus-internal-trimmed-gblocks-clean-75p \
+    --cores 12 \
+    --log-path log  
+```
+  
+7. One way to analyze the UCE data is to concateate them and infer a phylogeny with the resulting alignment. To do this we use the following commnd on 75% taxa present UCEs identified in the previous step: 
+ 
+  
+```  
+phyluce_align_concatenate_alignments \
+    --alignments mafft-nexus-internal-trimmed-gblocks-clean-75p \
+    --output mafft-nexus-internal-trimmed-gblocks-clean-75p-raxml \
+    --phylip \
+    --log-path log  
+```
+>This will combine the UCE NEXUS files into a single PHYLIP file which is used by many phylogenetics programs (e.g. [RAxML](https://cme.h-its.org/exelixis/web/software/raxml/))  
+
+8. Let's use this concatenated alignment to see if the UCEs have phylogenetic signal using [RAXML-NG](https://github.com/amkozlov/raxml-ng). Based on Streicher & Wiens [2016](https://www.sciencedirect.com/science/article/abs/pii/S1055790316300495?via%3Dihub) we should see the following tree (Cylindrophis(Loxocemus(Xendodermus, Micrurus): 
+  
+```
+raxml-ng --msa mafft-nexus-internal-trimmed-gblocks-clean-75p-raxml --model GTR+G
+```  
+  
   
 </details>
 
