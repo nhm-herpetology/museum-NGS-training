@@ -59,6 +59,12 @@ We will use the vertebrate 5k UCE probe sequences in FASTA format available [her
 ```
 wget https://www.ncbi.nlm.nih.gov/books/NBK179288/bin/install-edirect.sh
 ```
+  
+2. To download Chromosome 6 we use:
+
+```  
+./esearch -db nucleotide -query "NC_014781.1" | ./efetch -format fasta > NC_014781.1.fasta
+```  
 </details>
 
 
