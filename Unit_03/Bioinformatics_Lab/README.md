@@ -411,11 +411,14 @@ mv NC_014781.1.fasta /home/jefs/NGS_course/Unit_3
 ```
 >Please navigate to the Unit_3 directory
   
-4. If you haven't done so already, activate phyluce so that ```bwa``` and ```samtools``` are available:
+4. If you haven't done so already, activate phyluce so that ```bwa``` and ```samtools``` are available and download the UCE-probe set:
   
 ```
 conda activate phyluce-1.7.1
 ```
+```
+wget https://raw.githubusercontent.com/nhm-herpetology/museum-NGS-training/main/Unit_03/Bioinformatics_Lab/Tetrapods-UCE-5Kv1.fasta
+```   
   
 5. Let's Index chromosome 6 of *Anolis carolinensis* as a reference sequence:
   
