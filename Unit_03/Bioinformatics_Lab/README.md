@@ -284,6 +284,27 @@ phyluce_assembly_get_fastas_from_match_counts \
     --incomplete-matrix taxon-sets/all/all-taxa-incomplete.incomplete \
     --log-path taxon-sets/all/log  
 ```   
+  
+The output should look something like this: 
+
+```  
+2021-09-21 19:33:53,819 - phyluce_assembly_get_fastas_from_match_counts - INFO - -------Getting UCE loci for Cylindrophis_ruffus_FMNH_258674------
+2021-09-21 19:33:54,608 - phyluce_assembly_get_fastas_from_match_counts - INFO - There are 2365 UCE loci for Cylindrophis_ruffus_FMNH_258674
+2021-09-21 19:33:54,608 - phyluce_assembly_get_fastas_from_match_counts - INFO - Parsing and renaming contigs for Cylindrophis_ruffus_FMNH_258674
+2021-09-21 19:34:11,303 - phyluce_assembly_get_fastas_from_match_counts - INFO - Writing missing locus information to /home/jefs/NGS_course/Unit_1/Data/taxon-sets/all/all-taxa-incomplete.incomplete
+2021-09-21 19:34:11,305 - phyluce_assembly_get_fastas_from_match_counts - INFO - ---------Getting UCE loci for Loxocemus_bicolor_ZA_46400---------
+2021-09-21 19:34:11,909 - phyluce_assembly_get_fastas_from_match_counts - INFO - There are 1924 UCE loci for Loxocemus_bicolor_ZA_46400
+2021-09-21 19:34:11,910 - phyluce_assembly_get_fastas_from_match_counts - INFO - Parsing and renaming contigs for Loxocemus_bicolor_ZA_46400
+2021-09-21 19:34:38,183 - phyluce_assembly_get_fastas_from_match_counts - INFO - Writing missing locus information to /home/jefs/NGS_course/Unit_1/Data/taxon-sets/all/all-taxa-incomplete.incomplete
+2021-09-21 19:34:38,184 - phyluce_assembly_get_fastas_from_match_counts - INFO - ---------Getting UCE loci for Micrurus_fulvius_YPM_14096---------
+2021-09-21 19:34:38,616 - phyluce_assembly_get_fastas_from_match_counts - INFO - There are 1315 UCE loci for Micrurus_fulvius_YPM_14096
+2021-09-21 19:34:38,616 - phyluce_assembly_get_fastas_from_match_counts - INFO - Parsing and renaming contigs for Micrurus_fulvius_YPM_14096
+2021-09-21 19:35:44,490 - phyluce_assembly_get_fastas_from_match_counts - INFO - Writing missing locus information to /home/jefs/NGS_course/Unit_1/Data/taxon-sets/all/all-taxa-incomplete.incomplete
+2021-09-21 19:35:44,492 - phyluce_assembly_get_fastas_from_match_counts - INFO - ------Getting UCE loci for Xenodermus_javanicus_FMNH_230073------
+2021-09-21 19:35:44,882 - phyluce_assembly_get_fastas_from_match_counts - INFO - There are 1308 UCE loci for Xenodermus_javanicus_FMNH_230073
+2021-09-21 19:35:44,882 - phyluce_assembly_get_fastas_from_match_counts - INFO - Parsing and renaming contigs for Xenodermus_javanicus_FMNH_230073
+```  
+  
 </details>
 
 ## Preparing UCE data for phylogenetic analysis
