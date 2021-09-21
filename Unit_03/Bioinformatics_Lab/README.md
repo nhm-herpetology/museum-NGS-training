@@ -6,8 +6,8 @@
 To identify UCEs from targeted sequence capture data there are five main steps:
 
 1. Clean raw FASTQ files for quality and adpater contamination.
-2. Organise raw data by individuals/species
-3. *de novo* assemble contigs using a stringent coverage level (e.g. 10X)
+2. Organise cleaned data by individuals/species
+3. *de novo* assemble contigs 
 4. Identify contigs that include UCEs from each individual/species
 5. Sort UCEs into appropriate directories
 >For phylogenetic analyses etc., UCEs can then be aligned across all species/individuals. 
@@ -20,7 +20,7 @@ To identify UCEs from targeted sequence capture data there are five main steps:
 >As we laready learned in [Unit 1](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_01/Bioinformatics_Lab), phyluce is a really helpful program for processing targeted sequence capture data. There are seveal tutorials avialable here [here](https://phyluce.readthedocs.io/en/latest/tutorials/index.html)
 
 
-2. Navigate to the SRA tools directory from [Unit 1](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_01/Bioinformatics_Lab). We will download some raw data from three more snake species from the Streicher & Wiens [2016](https://www.sciencedirect.com/science/article/abs/pii/S1055790316300495?via%3Dihub) dataset; *Xenodermus javanicus*, *Micrurus fulvius*, and *Loxocemus bicolor*.
+1. Navigate to the SRA tools directory from [Unit 1](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_01/Bioinformatics_Lab). We will download some raw data from three more snake species from the Streicher & Wiens [2016](https://www.sciencedirect.com/science/article/abs/pii/S1055790316300495?via%3Dihub) dataset; *Xenodermus javanicus*, *Micrurus fulvius*, and *Loxocemus bicolor*.
 
 ```
 ./fasterq-dump SRR3284492	
@@ -32,7 +32,7 @@ To identify UCEs from targeted sequence capture data there are five main steps:
 ./fasterq-dump SRR3284196		
 ```
   
-3. Now, we will move these new files to our phyluce directory from [Unit 1](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_01/Bioinformatics_Lab):
+2. Now, we will move these new files to our phyluce directory from [Unit 1](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_01/Bioinformatics_Lab):
 
 ```
 cp SRR3284492_1.fastq /home/jefs/NGS_course/Unit_1/Data/raw-fastq
@@ -53,7 +53,7 @@ cp SRR3284196_1.fastq /home/jefs/NGS_course/Unit_1/Data/raw-fastq
 cp SRR3284196_2.fastq /home/jefs/NGS_course/Unit_1/Data/raw-fastq
 ```     
 
-4. Now navigate to the 'Data/raw-fastq' directory. Let's prepare the files for cleaning by renaming them and compressing them: 
+3. Now navigate to the 'Data/raw-fastq' directory. Let's prepare the files for cleaning by renaming them and compressing them: 
 ```
 mv SRR3284492_1.fastq SRR3284492_S1_L001_R1_001.fastq
 ```  
@@ -91,7 +91,7 @@ gzip SRR3284196_S1_L001_R1_001.fastq
 gzip SRR3284196_S1_L001_R2_001.fastq
 ``` 
 
-5. Before we run illumiprocessor, let's remove the ```clean-fastq``` directory and ```illumiprocessor.conf``` file from [Unit 1](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_01/Bioinformatics_Lab):
+4. Before we run illumiprocessor, let's remove the ```clean-fastq``` directory and ```illumiprocessor.conf``` file from [Unit 1](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_01/Bioinformatics_Lab):
   
 ```
 rm -r clean-fastq
@@ -100,7 +100,7 @@ rm -r clean-fastq
 rm illumiprocessor.conf
 ```    
   
-6. Now we will run Illumiprocessor, but an updated configuration file is needed. The configuration file should look like this:
+5. Now we will run Illumiprocessor, but an updated configuration file is needed. The configuration file should look like this:
 
 ```
 [adapters]
@@ -122,12 +122,12 @@ SRR3284185_S1:Cylindrophis_ruffus_FMNH_258674
   
 ```  
 
-7. To make the configuration text file let's use the command line: 
+6. To make the configuration text file let's use the command line: 
  
  ```  
   cat > illumiprocessor.conf
  ```   
- Now paste the configuration text (from Step 6) into your terminal and then press CTRL + SHIFT + D.   
+ Now paste the configuration text (from Step 5) into your terminal and then press CTRL + SHIFT + D.   
   
 1. Download the Tertrapod 5k probe sequences (this will be used to identify UCEs from the capture data). The probe set can also be downloaded [here](https://www.ultraconserved.org/)
   
