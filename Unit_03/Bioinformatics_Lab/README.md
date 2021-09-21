@@ -22,12 +22,12 @@ To identify UCEs from targeted sequence capture data there are five main steps:
 1. Download the Tertrapod 5k probe sequences (this will be used to identify UCEs from the capture data). The probe set can also be downloaded [here](https://www.ultraconserved.org/)
   
 ```
-wget https://ndownloader.figshare.com/files/10513882
+wget https://raw.githubusercontent.com/nhm-herpetology/museum-NGS-training/main/Unit_03/Bioinformatics_Lab/Tetrapods-UCE-5Kv1.fasta
 ```
 
 2. Next we will download some raw data from the NCBI SRA.
 ```
-wget https://github.com/nhm-herpetology/museum-NGS-training/blob/main/Unit_03/Bioinformatics_Lab/Tetrapods-UCE-5Kv1.fasta
+cd somewhere
 ```
 
   
