@@ -117,7 +117,7 @@ samtools tview UCE_Ac_6.sorted.bam AB179619.1.fasta NC_014781.1.fasta
 10. Let's get a list of the mapped sequences:
 
 ```   
-samtools view -F 4 bwa_mem_align_UCEs_c6.sam > mapped_C6.sam
+samtools view -F 4 UCE_Ac_6.bam > mapped_C6.sam
 ```   
   
 </details>
