@@ -114,13 +114,16 @@ gzip SRR3284196_S1_L001_R2_001.fastq
 ``` 
 >Now navigate back up to the ```Data``` directory. 
   
-4. Before we run illumiprocessor, let's remove the ```clean-fastq``` directory and ```illumiprocessor.conf``` file from [Unit 1](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_01/Bioinformatics_Lab):
+4. Before we run illumiprocessor, let's remove the ```clean-fastq``` directory and the ```illumiprocessor.conf``` + ```illumiprocessor.log``` files from [Unit 1](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_01/Bioinformatics_Lab):
   
 ```
 rm -r clean-fastq
 ```
 ```
 rm illumiprocessor.conf
+``` 
+```
+rm illumiprocessor.log
 ```    
   
 5. Now we will run Illumiprocessor, but an updated configuration file is needed. The configuration file should look like this:
