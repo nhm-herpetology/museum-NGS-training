@@ -47,6 +47,7 @@ cd some_directory
 
 <details>
   <summary>Click to expand content!</summary>
+
 >Aligning UCEs (or any locus) to genomic assemblies is helpful for assessing linkage
 
 We will use the vertebrate 5k UCE probe sequences in FASTA format available [here](insert link), and an example of mapping these UCEs on chromosomes 6 (80.74 Mbp) of *Anolis carolinensis*  
