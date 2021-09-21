@@ -50,21 +50,31 @@ cd some_directory
 <details>
   <summary>Click to expand content!</summary>
 
->Aligning UCEs (or any locus) to genomic assemblies is helpful for assessing linkage
+>We can align UCEs (or any locus) to genomic assemblies to see where each UCE is in the genome, which may help with understanding dynamics related to linkage etc. 
 
-We will use the vertebrate 5k UCE probe sequences in FASTA format available [here](insert link), and an example of mapping these UCEs on chromosomes 6 (80.74 Mbp) of *Anolis carolinensis*  
+We will use the vertebrate 5k UCE probe sequences in FASTA format that we downloaded in the first module and chromosomes 6 (80.74 Mbp) of *Anolis carolinensis* as an example of mapping UCEs to a reference genome.   
 
-1. Let's install the NCBI Entrez Direct UNIX E-utilities so that we can download genomic sequences 
+1. We should have the NCBI Entrez Direct UNIX E-utilities installed from the [Unit 2](XXX) bioinformatics lab. so that we can download genomic sequences 
   
 ```
-wget https://www.ncbi.nlm.nih.gov/books/NBK179288/bin/install-edirect.sh
+cd edirect
 ```
   
-2. To download Chromosome 6 we use:
+2. To download Chromosome 6 from *Anolis carolinensis* we use:
 
 ```  
 ./esearch -db nucleotide -query "NC_014781.1" | ./efetch -format fasta > NC_014781.1.fasta
+```
+>It is a large file (~79 MB), so it should take ~2 minutes to download.
+ 
+ 3. Now let's move it to the same folder as the FASTA file: 
+
 ```  
+mv NC_014781.1 
+```
+  
+  
+  
 </details>
 
 
