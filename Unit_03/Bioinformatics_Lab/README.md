@@ -25,15 +25,32 @@ To identify UCEs from targeted sequence capture data there are five main steps:
 ```
 ./fasterq-dump SRR3284492	
 ```
->The download should take ~4-5 minutes  
+>The *X. javanicus* download should take ~4-5 minutes with an output of:  
+```
+spots read      : 727,334
+reads read      : 1,454,668
+reads written   : 1,454,668	
+```   
+
 ```
 ./fasterq-dump SRR3284197	
 ```
->The download should take ~3-4 minutes
+ >The *M. fulvius* download should take ~3-4 minutes with an output of: 
+```
+spots read      : 560,385
+reads read      : 1,120,770
+reads written   : 1,120,770
+```
+  
 ```
 ./fasterq-dump SRR3284196		
 ```
->The download should take ~2-3 minutes
+>The *L. bicolor* download should take ~2-3 minutes with an output of:
+```
+spots read      : 256,289
+reads read      : 512,578
+reads written   : 512,578		
+```  
   
 2. Now, we will move these new files to our phyluce directory from [Unit 1](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_01/Bioinformatics_Lab):
 
