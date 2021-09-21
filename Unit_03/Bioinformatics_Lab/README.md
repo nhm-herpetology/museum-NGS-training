@@ -90,6 +90,44 @@ gzip SRR3284196_S1_L001_R1_001.fastq
 ```
 gzip SRR3284196_S1_L001_R2_001.fastq
 ``` 
+
+5. Before we run illumiprocessor, let's remove the ```clean-fastq``` directory and ```illumiprocessor.conf``` file from [Unit 1](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_01/Bioinformatics_Lab):
+  
+```
+rm -r clean-fastq
+```
+```
+rm illumiprocessor.conf
+```    
+  
+6. Now we will run Illumiprocessor, but an updated configuration file is needed. The configuration file should look like this:
+
+```
+[adapters]
+i7:AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC*ATCTCGTATGCCGTCTTCTGCTTG
+i5:AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTAGATCTCGGTGGTCGCCGTATCATT
+
+[tag sequences]  
+INDEX-16:CCGTCCCG
+
+  
+[tag map]
+SRR3284185_S1:INDEX-16
+SRR3284197_S1:INDEX?  
+SRR3284196_S1:INDEX?  
+SRR3284492_S1:INDEX?
+  
+[names]
+SRR3284185_S1:Cylindrophis_ruffus_FMNH_258674
+  
+```  
+
+7. To make the configuration text file let's use the command line: 
+ 
+ ```  
+  cat > illumiprocessor.conf
+ ```   
+ Now paste the configuration text (from Step 6) into your terminal and then press CTRL + SHIFT + D.   
   
 1. Download the Tertrapod 5k probe sequences (this will be used to identify UCEs from the capture data). The probe set can also be downloaded [here](https://www.ultraconserved.org/)
   
