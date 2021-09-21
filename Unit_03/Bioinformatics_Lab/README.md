@@ -17,19 +17,85 @@ To identify UCEs from targeted sequence capture data there are five main steps:
 <details>
   <summary>Click to expand content!</summary>
 
->Phyluce is a really helpful program for processing targeted sequence capture data. There are seveal tutorials avialable here [here](https://phyluce.readthedocs.io/en/latest/tutorials/index.html)
+>As we laready learned in [Unit 1](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_01/Bioinformatics_Lab), phyluce is a really helpful program for processing targeted sequence capture data. There are seveal tutorials avialable here [here](https://phyluce.readthedocs.io/en/latest/tutorials/index.html)
 
+
+2. Navigate to the SRA tools directory from [Unit 1](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_01/Bioinformatics_Lab). We will download some raw data from three more snake species from the Streicher & Wiens [2016](https://www.sciencedirect.com/science/article/abs/pii/S1055790316300495?via%3Dihub) dataset; *Xenodermus javanicus*, *Micrurus fulvius*, and *Loxocemus bicolor*.
+
+```
+./fasterq-dump SRR3284492	
+```
+```
+./fasterq-dump SRR3284197	
+```
+```
+./fasterq-dump SRR3284196		
+```
+  
+3. Now, we will move these new files to our phyluce directory from [Unit 1](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_01/Bioinformatics_Lab):
+
+```
+cp SRR3284492_1.fastq /home/jefs/NGS_course/Unit_1/Data/raw-fastq
+```  
+```
+cp SRR3284492_2.fastq /home/jefs/NGS_course/Unit_1/Data/raw-fastq
+```   
+```
+cp SRR3284197_1.fastq /home/jefs/NGS_course/Unit_1/Data/raw-fastq
+```  
+```
+cp SRR3284197_2.fastq /home/jefs/NGS_course/Unit_1/Data/raw-fastq
+```    
+```
+cp SRR3284196_1.fastq /home/jefs/NGS_course/Unit_1/Data/raw-fastq
+```  
+```
+cp SRR3284196_2.fastq /home/jefs/NGS_course/Unit_1/Data/raw-fastq
+```     
+
+4. Now navigate to the 'Data/raw-fastq' directory. Let's prepare the files for cleaning by renaming them and compressing them: 
+```
+mv SRR3284492_1.fastq SRR3284492_S1_L001_R1_001.fastq
+```  
+```
+mv SRR3284492_2.fastq SRR3284492_S1_L001_R2_001.fastq
+``` 
+```
+gzip SRR3284492_S1_L001_R1_001.fastq
+```  
+```
+gzip SRR3284492_S1_L001_R2_001.fastq
+```   
+```
+mv SRR3284197_1.fastq SRR3284197_S1_L001_R1_001.fastq
+```  
+```
+mv SRR3284197_2.fastq SRR3284197_S1_L001_R2_001.fastq
+``` 
+```
+gzip SRR3284197_S1_L001_R1_001.fastq
+```  
+```
+gzip SRR3284197_S1_L001_R2_001.fastq
+```     
+```
+mv SRR3284196_1.fastq SRR3284196_S1_L001_R1_001.fastq
+```  
+```
+mv SRR3284196_2.fastq SRR3284196_S1_L001_R2_001.fastq
+``` 
+```
+gzip SRR3284196_S1_L001_R1_001.fastq
+```  
+```
+gzip SRR3284196_S1_L001_R2_001.fastq
+``` 
+  
 1. Download the Tertrapod 5k probe sequences (this will be used to identify UCEs from the capture data). The probe set can also be downloaded [here](https://www.ultraconserved.org/)
   
 ```
 wget https://raw.githubusercontent.com/nhm-herpetology/museum-NGS-training/main/Unit_03/Bioinformatics_Lab/Tetrapods-UCE-5Kv1.fasta
-```
-
-2. Next we will download some raw data from the NCBI SRA.
-```
-cd somewhere
-```
-
+``` 
   
 </details>
 
@@ -54,7 +120,7 @@ cd some_directory
 
 We will use the vertebrate 5k UCE probe sequences in FASTA format that we downloaded in the first module and chromosomes 6 (80.74 Mbp) of *Anolis carolinensis* as an example of mapping UCEs to a reference genome.   
 
-1. We should have the NCBI Entrez Direct UNIX E-utilities installed from the [Unit 2](XXX) bioinformatics lab. so that we can download genomic sequences 
+1. We should have the NCBI Entrez Direct UNIX E-utilities installed from the [Unit 2](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_02/Bioinformatics_Lab) bioinformatics lab. so that we can download genomic sequences 
   
 ```
 cd edirect
@@ -114,11 +180,15 @@ samtools index UCE_Ac_6.sorted.bam
 samtools tview UCE_Ac_6.sorted.bam AB179619.1.fasta NC_014781.1.fasta
 ```   
 
-10. Let's get a list of the mapped sequences:
+10. Let's get a list of the mapped sequences and then count how many mapped:
 
 ```   
 samtools view -F 4 UCE_Ac_6.bam > mapped_C6.sam
 ```   
+``` 
+wc -l mapped_C6.sam  
+```  
+>There should be 273 probes that mapped to the *Anolis carolinensis* chromosome 6
   
 </details>
 
