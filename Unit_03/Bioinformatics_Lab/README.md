@@ -329,7 +329,7 @@ This FASTA file can now be used to align UCEs from different taxa and prepare th
 <details>
   <summary>Click to expand content!</summary>
 
->There is a really nice tutorial for assembling UCE data woth phyluce available [here](https://phyluce.readthedocs.io/en/latest/tutorials/tutorial-1.html). We will continue working with some of the squamate examples from before.
+>After the last module, we now have UCE data for all taxa in a single FASTA file. We will now learn how to align these sequence data for comparative analyses. 
   
 ```
 cd some_directory
