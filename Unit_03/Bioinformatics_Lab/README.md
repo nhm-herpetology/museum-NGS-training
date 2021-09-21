@@ -70,7 +70,7 @@ cd edirect
  3. Now let's move it to the same folder as the FASTA file: 
 
 ```  
-mv NC_014781.1 
+mv NC_014781.1 /home/jefs/NGS_course/Unit_3
 ```
   
   
