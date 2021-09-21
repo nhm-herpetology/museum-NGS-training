@@ -221,10 +221,14 @@ phyluce_assembly_match_contigs_to_probes \
     --probes Tetrapods-UCE-5Kv1.fasta \
     --output uce-search-results  
 ```
-We should see the following output: 
+We should see something similar to the following output: 
   
 ```
-Enter data
+2021-09-21 19:21:24,334 - phyluce_assembly_match_contigs_to_probes - INFO - Cylindrophis_ruffus_FMNH_258674: 2365 (4.81%) uniques of 49160 contigs, 0 dupe probe matches, 203 UCE loci removed for matching multiple contigs, 2 contigs removed for matching multiple UCE loci
+2021-09-21 19:21:39,173 - phyluce_assembly_match_contigs_to_probes - INFO - Loxocemus_bicolor_ZA_46400: 1924 (2.50%) uniques of 76848 contigs, 0 dupe probe matches, 200 UCE loci removed for matching multiple contigs, 2 contigs removed for matching multiple UCE loci
+2021-09-21 19:22:16,960 - phyluce_assembly_match_contigs_to_probes - INFO - Micrurus_fulvius_YPM_14096: 1315 (0.64%) uniques of 204962 contigs, 0 dupe probe matches, 228 UCE loci removed for matching multiple contigs, 2 contigs removed for matching multiple UCE loci
+2021-09-21 19:22:57,398 - phyluce_assembly_match_contigs_to_probes - INFO - Xenodermus_javanicus_FMNH_230073: 1308 (0.56%) uniques of 234241 contigs, 0 dupe probe matches, 288 UCE loci removed for matching multiple contigs, 1 contigs removed for matching multiple UCE loci
+
 ```
   
 13. Now we need to make a configuration file for extracting UCE data from this probe sequence matching step: 
