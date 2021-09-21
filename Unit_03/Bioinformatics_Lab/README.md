@@ -17,7 +17,7 @@ To identify UCEs from targeted sequence capture data there are five main steps:
 <details>
   <summary>Click to expand content!</summary>
 
->As we laready learned in [Unit 1](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_01/Bioinformatics_Lab) and [Unit 2](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_02/Bioinformatics_Lab), phyluce is a really helpful program for processing targeted sequence capture data. There are several tutorials avialable here [here](https://phyluce.readthedocs.io/en/latest/tutorials/index.html)
+>As we already learned in [Unit 1](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_01/Bioinformatics_Lab) and [Unit 2](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_02/Bioinformatics_Lab), phyluce is a really helpful program for processing targeted sequence capture data. There are several tutorials avialable here [here](https://phyluce.readthedocs.io/en/latest/tutorials/index.html)
 
 
 1. Navigate to the SRA tools ```bin``` directory from [Unit 1](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_01/Bioinformatics_Lab). We will download some raw data from three more snake species from the Streicher & Wiens [2016](https://www.sciencedirect.com/science/article/abs/pii/S1055790316300495?via%3Dihub) dataset; *Xenodermus javanicus*, *Micrurus fulvius*, and *Loxocemus bicolor*.
@@ -76,7 +76,7 @@ mv SRR3284196_2.fastq /home/jefs/NGS_course/Unit_1/Data/raw-fastq
 3. Now navigate to the 'Data/raw-fastq' directory. Let's prepare the files for cleaning by renaming them and compressing them: 
 ```
 mv SRR3284492_1.fastq SRR3284492_S1_L001_R1_001.fastq
-```  
+```
 ```
 mv SRR3284492_2.fastq SRR3284492_S1_L001_R2_001.fastq
 ``` 
@@ -85,7 +85,8 @@ gzip SRR3284492_S1_L001_R1_001.fastq
 ```  
 ```
 gzip SRR3284492_S1_L001_R2_001.fastq
-```   
+```
+>These compression steps might take a few minutes...
 ```
 mv SRR3284197_1.fastq SRR3284197_S1_L001_R1_001.fastq
 ```  
@@ -97,7 +98,8 @@ gzip SRR3284197_S1_L001_R1_001.fastq
 ```  
 ```
 gzip SRR3284197_S1_L001_R2_001.fastq
-```     
+```
+>These compression steps might take a few minutes...  
 ```
 mv SRR3284196_1.fastq SRR3284196_S1_L001_R1_001.fastq
 ```  
