@@ -105,7 +105,7 @@ samtools view -S -b bwa_mem_align_UCEs_c6.sam > UCE_Ac_6.bam
 samtools sort UCE_Ac_6.bam  -o UCE_Ac_6.sorted.bam 
 ```  
   
-9. Finally, we index the sorted bam file and view: 
+9. Finally, we index the sorted bam file and (if you want) view: 
  
 ```  
 samtools index UCE_Ac_6.sorted.bam 
@@ -113,6 +113,13 @@ samtools index UCE_Ac_6.sorted.bam
 ```  
 samtools tview UCE_Ac_6.sorted.bam AB179619.1.fasta NC_014781.1.fasta
 ```   
+
+10. Let's get a list of the mapped sequences:
+
+```   
+samtools view -F 4 bwa_mem_align_UCEs_c6.sam > mapped_C6.sam
+```   
+  
 </details>
 
 
