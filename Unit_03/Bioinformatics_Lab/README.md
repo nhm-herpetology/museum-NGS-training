@@ -90,7 +90,7 @@ bwa index NC_014781.1.fasta
 6. Let's align the UCE probe/bait sequences to the reference: 
 
 ```  
-bwa mem NC_014781.1.fasta Tetrapods-UCE-5kv1.fasta -t 4 > bwa_mem_align_UCEs_c6.sam  
+bwa mem NC_014781.1.fasta Tetrapods-UCE-5Kv1.fasta -t 4 > bwa_mem_align_UCEs_c6.sam  
 ```  
   
 7. Convert the sam file to a bam file  
