@@ -248,8 +248,10 @@ cat > taxon-set.conf
 ```   
 Now paste the configuration text (from Step 13) into your terminal and then press CTRL + SHIFT + D.   
 
-15. It is time to extract UCEs from the taxa in our configuration file:  
-
+15. It is time to extract UCEs from the taxa in our configuration file + make a directory to hold the information:  
+``` 
+mkdir -p taxon-sets/all
+```  
 ```   
 phyluce_assembly_get_match_counts \
     --locus-db uce-search-results/probe.matches.sqlite \
