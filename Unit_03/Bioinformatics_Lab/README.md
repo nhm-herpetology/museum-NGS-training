@@ -260,7 +260,30 @@ phyluce_assembly_get_match_counts \
     --incomplete-matrix \
     --output taxon-sets/all/all-taxa-incomplete.conf  
 ``` 
-  
+ 
+16. Now we need to extract the UCE sequence data in the form of taxon-specific FASTA files: 
+
+```  
+cd taxon-sets/all  
+```
+```  
+mkdir log
+```  
+```
+cd ..
+```
+```
+cd ..
+```  
+```  
+phyluce_assembly_get_fastas_from_match_counts \
+    --contigs velvet-assemblies/contigs \
+    --locus-db uce-search-results/probe.matches.sqlite \
+    --match-count-output taxon-sets/all/all-taxa-incomplete.conf \
+    --output taxon-sets/all/all-taxa-incomplete.fasta \
+    --incomplete-matrix taxon-sets/all/all-taxa-incomplete.incomplete \
+    --log-path taxon-sets/all/log  
+```   
 </details>
 
 ## Preparing UCE data for phylogenetic analysis
