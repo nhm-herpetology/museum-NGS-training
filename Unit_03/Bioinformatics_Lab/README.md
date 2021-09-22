@@ -447,7 +447,7 @@ We should see the following tree:
 ```
 >This tree is consistent with Fig. 2 of Streicher & Wiens [2016](https://www.sciencedirect.com/science/article/abs/pii/S1055790316300495?via%3Dihub) 
 
-Now we have learned the basics of preparring UCE data for comparative analysis.   
+Now we have learned the basics of preparring UCE data for comparative analysis. Reminder: phyluce has many other options for refining alignments and modifying UCE data, so please check out the official [tutorials](https://phyluce.readthedocs.io/en/latest/tutorials/index.html).   
   
 </details>
 
