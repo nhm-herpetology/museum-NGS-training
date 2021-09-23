@@ -334,7 +334,7 @@ This FASTA file can now be used to align UCEs from different taxa and prepare th
 1. We need to navigate to the taxon-sets directory we want to align.   
   
 ```
-cd uce-tutorial/taxon-sets/all
+cd taxon-sets/all
 ```
 
 2. Now we will align the UCEs using the software [MAFFT](https://mafft.cbrc.jp/alignment/software/) via the following command: 
