@@ -61,7 +61,7 @@ Temperature | Target sequence max. divergence
 6. Make Master Mix #2, the **Block Mix** in a 1.5 mL tube:
   * 2.5 uL of Block O
   * 2.5 uL of Block C
-  * 0.5 uL of Block X
+  * 0.5 uL of Block X (Called 'Block A' for Illumina single index adapters)
             
  7. Mix the **Block Mix** by pipetting. Transfer 5 uL to a fresh PCR tube.
             
