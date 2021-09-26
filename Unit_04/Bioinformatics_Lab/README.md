@@ -1,10 +1,27 @@
 # Bioinformatics Laboratory 4
 >You will need a Unix Command Terminal or PuTTY interface to complete this laboratory. 
 
-**Analysis of ddRADseq data using Stacks**
+## Preparing ddRADseq data for processing using Stacks
+
+<details>
+  <summary>Click to expand content!</summary>
+  
+>Data will come back from the Illumina sequenceer as demultiplexed by the PCR index. We will need to sort each PCR index into datasets for each of the individuals contained within it. We can do that using a helpful script called ```process_radtags```
+
+1. First, let's download and install Stacks 2.59:
+
+```
+wget https://catchenlab.life.illinois.edu/stacks/source/stacks-2.59.tar.gz
+```  
+  
+  </details>
+
+## Processing ddRADseq data using Stacks
+
+<details>
+  <summary>Click to expand content!</summary>
+  
 >Description will go here.
-
-
 Example datasets: 
 
 * Illumina HiSeq (download here)
@@ -13,8 +30,25 @@ Example datasets:
 
 ```
 cd some_directory
-```
+```  
+  </details>
 
+## Processing ddRADseq data using dDocent
+
+<details>
+  <summary>Click to expand content!</summary>
+  
+>Description will go here.
+Example datasets: 
+
+* Illumina HiSeq (download here)
+* Illumina MiSeq (download here)
+
+
+```
+cd some_directory
+```  
+  </details>
 
 **Helpful Links**
 >[Stacks](https://catchenlab.life.illinois.edu/stacks/) | [dDocent](https://www.ddocent.com/) | [ipyrad](https://ipyrad.readthedocs.io/en/master/)
