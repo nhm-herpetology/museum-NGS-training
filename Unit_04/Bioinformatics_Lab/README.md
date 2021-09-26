@@ -57,35 +57,69 @@ make
 ```
 ./fasterq-dump SRR1947266
 ```  
->These are ddRAdseq data from *M. fulvius* M86 from Tampa, Florida, USA.   
+>These are ddRADseq data from *M. fulvius* M86 from Tampa, Florida, USA.   
 
 ```
 ./fasterq-dump SRR1947265
 ```  
->These are ddRAdseq data from *M. fulvius* M87 from Walton, Florida, USA.   
+>These are ddRADseq data from *M. fulvius* M87 from Walton, Florida, USA.   
 
 ```
 ./fasterq-dump SRR1947267 
 ```  
->These are ddRAdseq data from *M. fulvius* M692 from New Hanover, North Carolina. USA.    
+>These are ddRADseq data from *M. fulvius* M692 from New Hanover, North Carolina, USA.    
 
+```
+./fasterq-dump SRR1947271	 
+```  
+>These are ddRADseq data from *M. tener* M206 from Tamaulipas, Mexico.    
+
+```
+./fasterq-dump SRR1947351	 
+```  
+>These are ddRADseq data from *M. tener* M230 from Anderson, Texas, USA.   
+
+```
+./fasterq-dump SRR1947349		 
+```  
+>These are ddRADseq data from *M. tener* M279 from Brazos, Texas, USA.     
   
   </details>
+  
+2. Let's move all of these files to our working directory:
+
+ ```
+./fasterq-dump SRR1947349		 
+``` 
 
 ## Generating population genetic statistics in Stacks
 
 <details>
   <summary>Click to expand content!</summary>
   
->Description will go here.
-Example datasets: 
+>We can generate summary statistics and population genetic statistics using the ```populations``` program from stacks and configuration files. Let's use the data we downloaded for the last module. 
 
-* Illumina HiSeq (download here)
-* Illumina MiSeq (download here)
-
+1. First, Let's summarise by species using the following configuration file (referred to as the 'population map' in Stacks manual):
 
 ```
-cd some_directory
+M86       fulvius
+M87       fulvius
+M692      fulvius
+M206      tener
+M230      tener 
+M279      tener
+``` 
+  
+  
+2. Now let's treat each individual as a single entity. The configuration file referred to as the 'population map' in Stacks manual) should be: 
+  
+```
+M86       1
+M87       2
+M692      3
+M206      4
+M230      5 
+M279      6
 ```  
   </details>
 
