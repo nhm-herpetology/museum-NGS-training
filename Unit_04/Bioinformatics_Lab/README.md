@@ -90,7 +90,18 @@ make
 mv *.fastq /home/jefs/NGS_course/Unit_4/  
 ```
 >Reminder: your user name will need to be swapped with mine for this command to work
+
+3. Now navigate to your ```Unit_4``` directory and check the format on the read 1 data: 
   
+```  
+head -3 SRR1947265_1.fastq
+```  
+
+4. Now let's do the same for an example read 2 file:   
+
+```  
+head -3 SRR1947265_2.fastq
+```    
   
   </details>
 
