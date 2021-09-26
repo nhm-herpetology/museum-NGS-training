@@ -57,32 +57,32 @@ make
 ```
 ./fasterq-dump SRR1947266
 ```  
->These are ddRADseq data from *M. fulvius* M86 from Tampa, Florida, USA.   
+>These are ddRADseq data from *M. fulvius* M86 from Tampa, Florida, USA. The download should take 1-2 minutes.   
 
 ```
 ./fasterq-dump SRR1947265
 ```  
->These are ddRADseq data from *M. fulvius* M87 from Walton, Florida, USA.   
+>These are ddRADseq data from *M. fulvius* M87 from Walton, Florida, USA. The download should take 1-2 minutes.   
 
 ```
 ./fasterq-dump SRR1947267 
 ```  
->These are ddRADseq data from *M. fulvius* M692 from New Hanover, North Carolina, USA.    
+>These are ddRADseq data from *M. fulvius* M692 from New Hanover, North Carolina, USA. The download should take 2-3 minutes.     
 
 ```
 ./fasterq-dump SRR1947271	 
 ```  
->These are ddRADseq data from *M. tener* M206 from Tamaulipas, Mexico.    
+>These are ddRADseq data from *M. tener* M206 from Tamaulipas, Mexico. The download should take 2-3 minutes.    
 
 ```
 ./fasterq-dump SRR1947351	 
 ```  
->These are ddRADseq data from *M. tener* M230 from Anderson, Texas, USA.   
+>These are ddRADseq data from *M. tener* M230 from Anderson, Texas, USA. The download should take 1-2 minutes.  
 
 ```
 ./fasterq-dump SRR1947349		 
 ```  
->These are ddRADseq data from *M. tener* M279 from Brazos, Texas, USA.     
+>These are ddRADseq data from *M. tener* M279 from Brazos, Texas, USA. The download should take 1-2 minutes.     
   
   </details>
 
