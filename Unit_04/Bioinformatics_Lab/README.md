@@ -93,7 +93,7 @@ make
   
 >We can generate summary statistics and population genetic statistics using the ```populations``` program from stacks and configuration files. Let's use the data we downloaded for the last module. 
 
-1. First, Let's summarise by species using the following configuration file (referred to as the 'population map' in Stacks manual):
+1. First, let's summarise by species using the following configuration file (referred to as the 'population map' in Stacks manual):
 
 ```
 M86       fulvius
@@ -129,6 +129,20 @@ M279      6
 cat > config_individuals.txt
 ```  
 Now paste the configuration text (from Step 3) into your terminal and then press CTRL + SHIFT + D.  
+  
+5. Run the ```populations``` program using the first configuration file: 
+
+```
+populations -P ./stacks/ --popmap ./samples/config_species.txt --smooth -p 10 -r 0.75 -f p_value -t 8 --structure --genepop --write-single-snp   
+```
+  
+6. Run the ```populations``` program using the second configuration file:   
+
+```
+populations -P ./stacks/ --popmap ./samples/config_individuals.txt --smooth -p 10 -r 0.75 -f p_value -t 8 --structure --genepop --write-single-snp   
+```  
+  
+  
   </details>
 
 **Helpful Links**
