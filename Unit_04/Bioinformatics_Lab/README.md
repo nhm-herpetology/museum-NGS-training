@@ -8,7 +8,19 @@
   
 >Data will come back from the Illumina sequenceer as demultiplexed by the PCR index. We will need to sort each PCR index into datasets for each of the individuals contained within it. We can do that using a helpful script called ```process_radtags```
 
-1. First, let's download and install Stacks 2.59:
+1. First, let's make a new directory inside ```NGS_course``` called ```Unit_4```
+
+```
+cd NGS_course
+```
+```
+mkdir Unit_4
+```  
+```
+cd Unit_4
+```    
+  
+2. Let's download and install Stacks 2.59:
 
 ```
 wget https://catchenlab.life.illinois.edu/stacks/source/stacks-2.59.tar.gz
@@ -25,6 +37,12 @@ cd stacks-2.59
 ```
 make
 ```  
+>The installation may take ~2-5 minutes
+  
+3. Now let's download some empirical data to analyze. Navigate to the SRA toolkit folder from [Unit 1](XXXXX). 
+  
+  
+>More information is available in the Stacks [manual](https://catchenlab.life.illinois.edu/stacks/manual/), including some tutorials. 
   </details>
 
 ## Processing ddRADseq data using Stacks
