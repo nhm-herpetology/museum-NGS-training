@@ -103,9 +103,16 @@ M206      tener
 M230      tener 
 M279      tener
 ``` 
+
+2. Let's make the configuration file:   
+  
+```
+cat > config_species.txt
+```  
+Now paste the configuration text (from Step 1) into your terminal and then press CTRL + SHIFT + D.
   
   
-2. Now let's treat each individual as a single entity. The configuration file referred to as the 'population map' in Stacks manual) should be: 
+3. Now let's treat each individual as a single entity. The configuration file (referred to as the 'population map' in Stacks manual) should be: 
   
 ```
 M86       1
@@ -115,6 +122,13 @@ M206      4
 M230      5 
 M279      6
 ```  
+  
+4. Let's make the configuration file:   
+  
+```
+cat > config_individuals.txt
+```  
+Now paste the configuration text (from Step 3) into your terminal and then press CTRL + SHIFT + D.  
   </details>
 
 **Helpful Links**
