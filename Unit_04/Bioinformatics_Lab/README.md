@@ -83,6 +83,14 @@ make
 ./fasterq-dump SRR1947349		 
 ```  
 >These are ddRADseq data from *M. tener* M279 from Brazos, Texas, USA. The download should take 1-2 minutes.     
+
+2. Move all of the FASTQ files to your ```Unit_4``` directory:
+
+```  
+mv *.fastq /home/jefs/NGS_course/Unit_4/  
+```
+>Reminder: your user name will need to be swapped with mine for this command to work
+  
   
   </details>
 
