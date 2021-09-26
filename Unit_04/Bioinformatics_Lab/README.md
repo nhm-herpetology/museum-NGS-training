@@ -39,7 +39,7 @@ make
 ```  
 >The installation may take ~2-5 minutes
   
-3. Now let's download some empirical data to analyze. Navigate to the SRA toolkit folder from [Unit 1](XXXXX). 
+3. Now let's download some empirical data to analyze. Navigate to the SRA toolkit folder from [Unit 1](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_01/Bioinformatics_Lab). 
   
   
 >More information is available in the Stacks [manual](https://catchenlab.life.illinois.edu/stacks/manual/), including some tutorials. 
