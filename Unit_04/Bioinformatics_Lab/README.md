@@ -50,19 +50,29 @@ make
 <details>
   <summary>Click to expand content!</summary>
   
->Description will go here.
-Example datasets: 
-
-* Illumina HiSeq (download here)
-* Illumina MiSeq (download here)
-
+>We will explore Stacks using some data from North American coralsnakes generated for Streicher et al. [2016](https://onlinelibrary.wiley.com/doi/10.1111/evo.12967). We will download data from 3 individuals for *Micrurus tener* and 3 individuals of *Micrurus fulvius*. 
+  
+1. Navigate to the SRA toolkit folder from [Unit 1](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_01/Bioinformatics_Lab). 
 
 ```
-cd some_directory
+./fasterq-dump SRR1947266
 ```  
+>These are ddRAdseq data from *M. fulvius* M86 from Tampa, Florida, USA.   
+
+```
+./fasterq-dump SRR1947265
+```  
+>These are ddRAdseq data from *M. fulvius* M87 from Walton, Florida, USA.   
+
+```
+./fasterq-dump SRR1947267 
+```  
+>These are ddRAdseq data from *M. fulvius* M692 from New Hanover, North Carolina. USA.    
+
+  
   </details>
 
-## Processing ddRADseq data using dDocent
+## Generating population genetic statistics in Stacks
 
 <details>
   <summary>Click to expand content!</summary>
