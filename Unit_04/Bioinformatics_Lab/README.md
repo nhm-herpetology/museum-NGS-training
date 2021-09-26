@@ -1,7 +1,7 @@
 # Bioinformatics Laboratory 4
 >You will need a Unix Command Terminal or PuTTY interface to complete this laboratory. 
 
-## Preparing ddRADseq data for processing using Stacks
+## Preparing raw ddRADseq data for processing using Stacks
 
 <details>
   <summary>Click to expand content!</summary>
@@ -45,7 +45,7 @@ make
 >More information is available in the Stacks [manual](https://catchenlab.life.illinois.edu/stacks/manual/), including some tutorials. 
   </details>
 
-## Processing ddRADseq data using Stacks
+## Processing ddRADseq data from the SRA using Stacks
 
 <details>
   <summary>Click to expand content!</summary>
