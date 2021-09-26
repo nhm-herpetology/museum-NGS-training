@@ -1,8 +1,9 @@
 # Bioinformatics Laboratory 4
+>You will need a Unix Command Terminal or PuTTY interface to complete this laboratory. 
 
-**Some commands to go with programs**
+**Analysis of ddRADseq data using Stacks**
 >Description will go here.
-You will need a Unix Command Terminal or PuTTY interface
+
 
 Example datasets: 
 
