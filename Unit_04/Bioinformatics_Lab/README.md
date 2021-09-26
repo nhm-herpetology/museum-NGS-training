@@ -85,12 +85,6 @@ make
 >These are ddRADseq data from *M. tener* M279 from Brazos, Texas, USA.     
   
   </details>
-  
-2. Let's move all of these files to our working directory:
-
- ```
-./fasterq-dump SRR1947349		 
-``` 
 
 ## Generating population genetic statistics in Stacks
 
