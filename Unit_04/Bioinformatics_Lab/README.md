@@ -12,8 +12,19 @@
 
 ```
 wget https://catchenlab.life.illinois.edu/stacks/source/stacks-2.59.tar.gz
+```
+```
+tar xfvz stacks-2.59.tar.gz
 ```  
-  
+```
+cd stacks-2.59
+``` 
+```
+./configure
+```
+```
+make
+```  
   </details>
 
 ## Processing ddRADseq data using Stacks
