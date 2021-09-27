@@ -182,8 +182,12 @@ Temperature | Target sequence max. divergence
   
 26. After the last wash and pelleting, remove as much liquid as possible without disturbing the bead pellet. 
   
-27. Add 30 uL **Buffer E** to the tube with the bead pellet.   
+27. Add 30 uL **Buffer E** to the tube with the bead pellet.
   
+28. Incubate the beads + **Buffer E** at 95 C for 5 min
+  
+29. Immediately pellet the beads using the magnet rack and collect the supernatant containing the enriched libraries (move it to a clean 0.2 mL PCR tube). 
+
  >We will now proceed to the final stage of targeted sequence capture, PCR enrichment.   
 
   </details>  
@@ -206,16 +210,16 @@ Temperature | Target sequence max. divergence
 * Magnetic tube rack
 
 **Protocol**  
->There are two main approaches to amplifying capture libraries following the last module. First, the PCR can be done using the **Buffer E** + bead solution as template or alternatively, the PCR can be done after eluting the enriched libraries into solution.
+>There are two main approaches to amplifying capture libraries following the last module. First, the PCR can be done using the **Buffer E** + bead solution as template or alternatively, the PCR can be done after eluting the enriched libraries into solution. In this case we have already eluted the enriched libraries. 
 
-1. Remove the 30 uL of **Buffer E** + bead solution from the magnetic rack, vortex and spin down. 
+1. You should have 30 uL of enriched library (in **Buffer E**) from the previous module. 
   
 2. Mix the following together in a 1.5 mL tube:
   * 5 uL of nucleas-free water
   * 25 uL Q5 DNA polymerase
   * 2.5 uL TruSeq P5 (10 uM)
   * 2.5 uL TruSeq P7 (10 uM)
-  * 15 uL **Buffer E** + bead solution (= enriched library)
+  * 15 uL **Buffer E** (= enriched library)
   
 3. Program the following into a thermal cycler: 
 
