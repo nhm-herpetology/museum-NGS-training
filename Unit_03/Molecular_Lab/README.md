@@ -130,7 +130,7 @@ Temperature | Target sequence max. divergence
   * 400 uL Hyb S 
   * 10 mL Wash Buffer
   * 39.6 mL Nuclease-free Water
- >Once made this buffer can be stored at 4 C for 1 month. If you have a small number of captures, you can half the recipe to 200 uL Hyb S, 5 mL Wash Buffer, and 19.8 uL water. 
+ >Once made this buffer can be stored at 4 C for 1 month. If you have a small number of captures, you can half the recipe to 200 uL Hyb S, 5 mL Wash Buffer, and 19.8 mL water. 
 
 4. Transfer 500 uL of **Wash Buffer X** to three 1.5 mL tubes. Place all three tubes on the 65 C heat block. 
 >The buffer needs to be warmed for the bead washing we will do later  
