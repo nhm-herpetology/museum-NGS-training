@@ -226,10 +226,10 @@ Temperature | Target sequence max. divergence
 Step | Temperature  | Time
 ------------ | -------------  | -------------
 1 | 98 C | 2 minutes
-2 | 98 C  | 20 seconds
+2* | 98 C  | 20 seconds
 3* | 60 C  | 30 seconds
 4* | 72 C | 45 seconds
-5* | 72 C  | 5 minutes
+5 | 72 C  | 5 minutes
 6 | 8 C| Infinity
 >*Steps 3-5 should be repeated 12 times. 
 
