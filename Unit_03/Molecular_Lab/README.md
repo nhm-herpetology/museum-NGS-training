@@ -182,7 +182,7 @@ Temperature | Target sequence max. divergence
   
 26. After the last wash and pelleting, remove as much liquid as possible without disturbing the bead pellet. 
   
-27. Add 30 uL **Buffer E** to the tube with the bead pellet.
+27. Add 30 uL **Buffer E** to the tube with the bead pellet (or 30 uL 10mM Tris).
   
 28. Incubate the beads + **Buffer E** at 95 C for 5 min
   
