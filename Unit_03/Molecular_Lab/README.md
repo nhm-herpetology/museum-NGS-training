@@ -127,10 +127,10 @@ Temperature | Target sequence max. divergence
 >For the purpose of this UCE protocol we will use 65 C to match the hybridization reaction, so turn on and set a heat block to 65 C
 
 3. Prepare the **Wash Buffer X** in a 50 mL conical (falcon) tube:
-  * 400 uL Hyb S
+  * 400 uL Hyb S 
   * 10 mL Wash Buffer
   * 39.6 mL Nuclease-free Water
- >Once made this buffer can be stored at 4 C for 1 month
+ >Once made this buffer can be stored at 4 C for 1 month. If you have a small number of captures, you can half the recipe to 200 uL Hyb S, 5 mL Wash Buffer, and 19.8 uL water. 
 
 4. Transfer 500 uL of **Wash Buffer X** to three 1.5 mL tubes. Place all three tubes on the 65 C heat block. 
 >The buffer needs to be warmed for the bead washing we will do later  
