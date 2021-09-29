@@ -202,23 +202,50 @@ Sample 4 | 80.0  | 2.5  | 47.5
 * Illumina TruSeq primers
 * Nuclease-free water
 * Magnetic tube rack
+* 1.5 mL tubes
+* 0.2 mL PCR tubes
+* 50 mL conical tube  
 
 **Protocol**
-1. We will be making our own adapters for this protocol and we need to make our own annealing buffer to combine our custom oligonucleotides in. THe recipe for the Annealing buffer stock (10X) is:
+1. We will be making our own adapters for this protocol and we need to make our own annealing buffer to combine our custom oligonucleotides in. THe recipe for the Annealing Buffer stock (10X) is:
    * 100 mM Tris HCl, pH 8
    * 500 mM NaCl
    * 10 mM EDTA
 >We can get these concentrations if we add...
   
-2. After we have made our Annealing Buffer, we will need to rehydrate the oligos as they come from Sigma Aldrich. There will be a sheet with the amount of nuclease-free water to add to each tube. Each adapter is comprised of a set of oligos that look like this: 
+2. After we have made our Annealing Buffer, we will need to rehydrate the oligos as they come from Sigma Aldrich. There will be a sheet with the amount of nuclease-free water to add to each tube to get 100 uM concetrations. Each adapter is comprised of a set of oligos that look like this: 
   
-P1.1_ACTAGG_1  ACACTCTTTCCCTACACGACGCTCTTCCGATCTNNNNNNNNACTAGGTGC*A
-P1.2_ACTAGG_1  CCTAGTNNNNNNNNAGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT  
-
-MspI_P2.1    GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT
-MspI_P2.2    CGAGATCGGAAGAGCGAGAACAA
-  
+P1.1_ACTAGG_1  
+```
+ACACTCTTTCCCTACACGACGCTCTTCCGATCTNNNNNNNNACTAGGTGC*A
+```
+P1.2_ACTAGG_1  
+```
+CCTAGTNNNNNNNNAGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT  
+``` 
+MspI_P2.1
+```
+GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT
+```  
+MspI_P2.2    
+```
+CGAGATCGGAAGAGCGAGAACAA
+```  
 >P1 oligos are for the SbfI cutsites and P2 oligos are for the MspI cutsites.   
+  
+3. In 1.5 mL microcentrifuge tubes combine the following for each adapter: 
+    * 40 uL PX.1
+    * 40 uL PX.2
+    * 10 uL 10X Annealing Buffer
+    * 10 uL nuclease-free water
+  
+4. Vortex and spin down the tubes. Now place them on a heat block at 97.1 C for 2 minutes and 30 seconds (150 seconds total). 
+  
+5. Turn off the heat block and allow to cool to room temperature. 
+  
+6. While we are waiting for the adapters to cool, we can clean our restriction digested DNA from the previous module using Serapure beads. We will use a 1.8 X concetration of beads to sample, so we need to add 108 uL of Serapure solution to the 60 uL of restriction digests. 
+  
+7. 
   
 </details>
 
