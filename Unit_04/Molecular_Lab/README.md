@@ -96,6 +96,56 @@ ENS 9494 | Index 10 (AACGGT)  | Index 5 (ACAGTG)
 
 </details>
 
+## Quantification of double-stranded DNA (dsDNA)  
+
+<details>
+  <summary>Click to expand protocol!</summary>
+
+>Here we will quantify DNA extracts using a fluorometer. This is important because only double-stranded DNAs will be used in the NGS library preparations. 
+
+**Materials**
+  
+* Extracted DNA from ten samples  
+* Qubit HS dsDNA reagent kit
+  * HS Buffer
+  * Fluorecent Dye
+  * Size Standard 1
+  * Size Standard 2
+* Qubit fluorometer
+* Crystal-clear Axygen microcentrifuge tubes
+
+**Protocol**  
+>This protocol is written for use with 1 uL of DNA extract. For samples that are likely to have very little dsDNA, it can be modified so that more template is used. 
+
+1. First we need to make a Master Mix from the Qubit reagents. For each sample (+ the two size standards) we need to combine 1 uL of Dye with 199 uL of buffer. 
+>In our case this means we add 10 uL of dye with 1990 uL of buffer
+
+2. Add 190 uL of Master Mix to two Axygen tubes (these will be used for the Size Standard DNA).
+
+3. Add 10 uL of Size Standard 1 to the first Axygen tube.
+  
+4. Add 10 uL of Size Standard 2 to the second Axygen tube. 
+  
+5. Add 199 uL of Master Mix to ten Axygen tubes (these will be used for the sample DNA).
+  
+6. To each of the ten sample tubes, add 1 uL of your DNA extract from each sample. 
+>At this point, you should have seven tubes, each with 200 uL of liquid in them (two size standards and ten samples). 
+
+7. Vortex each of the tubes and then spin down using a lab bench mini-centrifuge. Allow to sit at room temperature for 5 mins. 
+  
+8. Turn on the Qubit fluorometer. Select the appropriate assay kit from the home menu. 
+  
+9. Follow the instructions for inserting the size standards. 
+  
+10. Once calibrated, conduct a reading on each of the DNA extract samples and note the concentrations (in ng/uL) 
+>Note: In order to get the concentrations in ng/uL format, you may need to modify the units on the Qubit fluorometer. 
+  
+11. These concentrations will be used to determine how many uL of DNA extract we use for the start of our library preparation protocol in the next module. 
+
+12. Discard the used Axygen tubes at the end of the laboratory session. 
+  
+</details>
+
 ## Restriction digestion of genomic DNA
 
 <details>
@@ -125,12 +175,15 @@ Sample 4 | 80.0  | 2.5  | 47.5
  
 > The third column is 200 divided by the second column value and the fourth column is 50 minus the third column value
   
- 2. For each digestion combine the following: 
-  * 200 ng of extracted dsDNA
-  * 5 uL NEB Buffer 4
-  * 1 uL SbFI-HF enzyme
+ 2. For each digestion combine the following in 0.2 mL PCR tubes: 
+  * 6 uL NEB Buffer 4
+  * 0.2 uL SbFI-HF enzyme
   * 1 uL MspI enzyme
-  * 50 uL of DNA extraction + nuclease-free water 
+  * 2.8 uL nuclease-free water
+  * 50 uL of DNA extraction + nuclease-free water (200 ng of extracted dsDNA)
+  
+ 3. Vortex and spin down the tubes. Now place the samples at 37 C for 6 hours.
+ > The restriction digestion of your genomic DNA is now taking place.
   
 </details>
 
@@ -139,7 +192,7 @@ Sample 4 | 80.0  | 2.5  | 47.5
 <details>
   <summary>Click to expand protocol!</summary>
 
-  >Magnetic Beads are valuable for extracting genomic DNA, removing small unwanted nucleic acids (e.g. primers, adapaters), and size selection. Modified from B. Faircloth and T. Glenn protocol (UCLA, 2011). Original protocol by Rohland and Reich [2012](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3337438/).
+>This protocol is based on the Peterson et al. [2012](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0037135) protocol. You can download a copy of the protovol [here](https://ndownloader.figstatic.com/files/327801). 
 
 **Materials**
 
@@ -150,9 +203,23 @@ Sample 4 | 80.0  | 2.5  | 47.5
 * Nuclease-free water
 * Magnetic tube rack
 
-
 **Protocol**
-1. Using the a-tailed reactions from the last unit...
+1. We will be making our own adapters for this protocol and we need to make our own annealing buffer to combine our custom oligonucleotides in. THe recipe for the Annealing buffer stock (10X) is:
+   * 100 mM Tris HCl, pH 8
+   * 500 mM NaCl
+   * 10 mM EDTA
+>We can get these concentrations if we add...
+  
+2. After we have made our Annealing Buffer, we will need to rehydrate the oligos as they come from Sigma Aldrich. There will be a sheet with the amount of nuclease-free water to add to each tube. Each adapter is comprised of a set of oligos that look like this: 
+  
+P1.1_ACTAGG_1  ACACTCTTTCCCTACACGACGCTCTTCCGATCTNNNNNNNNACTAGGTGC*A
+P1.2_ACTAGG_1  CCTAGTNNNNNNNNAGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT  
+
+MspI_P2.1    GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT
+MspI_P2.2    CGAGATCGGAAGAGCGAGAACAA
+  
+>P1 oligos are for the SbfI cutsites and P2 oligos are for the MspI cutsites.   
+  
 </details>
 
 ## Quantification of ddRADseq libraries using Agilent TapeStation
