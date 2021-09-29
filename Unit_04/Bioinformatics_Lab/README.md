@@ -389,6 +389,10 @@ Now paste the configuration text (from Step 1) into your terminal one line at a 
 ```
 ./populations -P ./stacks-snakes/ --popmap ./config_individuals.txt -p 3 -r 0.75 -f p_value -t 8 --structure --phylip --write-single-snp   
 ```    
+
+4. Now let's examine the output: 
+  
+  
   
 4. Run the ```populations``` program using the second configuration file which will summarise data by species:   
 
