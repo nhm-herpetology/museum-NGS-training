@@ -126,7 +126,7 @@ AACGGT
 ```  
 ./process_radtags -f ./raw/Craugastor_index_5_8bp_trim -o ./samples-frogs/ -b ./barcodes -c -q -r -e sbfI 
 ``` 
->This will perform a seond round of demultiplexing and place FASTQ files for each individual in the ```samples``` directory. 
+>This will perform a seond round of demultiplexing and place FASTQ files for each individual in the ```samples``` directory. It should take ~4 minutes to run. For definitions of ```process_radtags``` commands click [here](https://catchenlab.life.illinois.edu/stacks/comp/process_radtags.php) 
 
 8. Now we will modify the file names to match the sample IDs:
 
