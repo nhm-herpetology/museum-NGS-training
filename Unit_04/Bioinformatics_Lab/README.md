@@ -301,7 +301,7 @@ cd ..
 ./ustacks -f ./samples-snakes/M230_tener_1.fastq -o ./stacks-snakes -i 5 -m 3 -M 4 -p 16                                                                                         
 ./ustacks -f ./samples-snakes/M279_tener_1.fastq -o ./stacks-snakes -i 6 -m 3 -M 4 -p 16                                                                                         
 ```                                                                                                  
->There should now be individual stacks files in the ```stacks-snakes``` directory.                                                                                               
+>It should take ~6 minutes to run. There should now be individual stacks files in the ```stacks-snakes``` directory.                                                                                              
    
 8. We will now run CSTACKS which is a Stacks program that creates a set of consensus loci, merging alleles together that are listed in the USTACKS output. First, we need to make a 'population map' that will be used to identify the individuals we want to process in CTACKS: 
   
@@ -311,14 +311,14 @@ cat > config_individuals.txt
  
 Paste the following text: 
 ```
-M86_fulvius_1       1
-M87_fulvius_1       2
-M692_fulvius_1      3
-M206_tener_1        4
-M230_tener_1        5 
-M279_tener_1        6
+M86_fulvius_1 1
+M87_fulvius_1 2
+M692_fulvius_1  3
+M206_tener_1  4
+M230_tener_1  5 
+M279_tener_1  6
 ```    
-Now press CTRL + SHIFT + D to create the file.
+Now press ENTER then CTRL + SHIFT + D to create the file.
   
 9. Run CSTACKS using the following command: 
   
@@ -355,7 +355,7 @@ Now press CTRL + SHIFT + D to create the file.
   
 >We can generate summary statistics and population genetic statistics using the ```populations``` program from stacks and configuration files. Let's use the data we downloaded for the last module. 
 
-1. First, let's summarise by species using the following configuration file (referred to as the 'population map' in Stacks manual):
+1. First, let's make an additional configuration file (referred to as the 'population map' in Stacks manual) by species:
 
 ```
 M86       fulvius
@@ -371,38 +371,19 @@ M279      tener
 ```
 cat > config_species.txt
 ```  
-Now paste the configuration text (from Step 1) into your terminal and then press CTRL + SHIFT + D.
+Now paste the configuration text (from Step 1) into your terminal and then press ENTER followed by CTRL + SHIFT + D. 
   
-  
-3. Now let's treat each individual as a single entity. The configuration file (referred to as the 'population map' in Stacks manual) should be: 
-  
-```
-M86       1
-M87       2
-M692      3
-M206      4
-M230      5 
-M279      6
-```  
-  
-4. Let's make the configuration file:   
-  
-```
-cat > config_individuals.txt
-```  
-Now paste the configuration text (from Step 3) into your terminal and then press CTRL + SHIFT + D.  
-  
-5. Run the ```populations``` program using the first configuration file: 
+3. Run the ```populations``` program using the individual configuration file from the previous module: 
 
 ```
-populations -P ./stacks/ --popmap ./samples/config_species.txt --smooth -p 10 -r 0.75 -f p_value -t 8 --structure --genepop --write-single-snp   
-```
+./populations -P ./stacks/ --popmap ./samples/config_individuals.txt --smooth -p 10 -r 0.75 -f p_value -t 8 --structure --genepop --write-single-snp   
+```    
   
-6. Run the ```populations``` program using the second configuration file:   
+4. Run the ```populations``` program using the second configuration file which will summarise data by species:   
 
 ```
-populations -P ./stacks/ --popmap ./samples/config_individuals.txt --smooth -p 10 -r 0.75 -f p_value -t 8 --structure --genepop --write-single-snp   
-```  
+./populations -P ./stacks/ --popmap ./samples/config_species.txt --smooth -p 10 -r 0.75 -f p_value -t 8 --structure --genepop --write-single-snp   
+```
   
   
   </details>
