@@ -311,12 +311,12 @@ cat > config_individuals.txt
  
 Paste the following text: 
 ```
-M86_fulvius_1   1 
-M87_fulvius_1   2 
-M692_fulvius_1   3 
-M206_tener_1   4 
-M230_tener_1   5 
-M279_tener_1   6 
+M86_fulvius_1    1 
+M87_fulvius_1    2 
+M692_fulvius_1    3 
+M206_tener_1    4 
+M230_tener_1    5 
+M279_tener_1    6 
 ```    
 Now press ENTER then CTRL + SHIFT + D to create the file.
   
