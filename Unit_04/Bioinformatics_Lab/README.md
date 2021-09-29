@@ -119,12 +119,12 @@ TGGGAT
 TCTGCT
 AACGGT
  ```  
->Now press CTRL + SHIFT + D to create the file.    
+>Now press ENTER then CTRL + SHIFT + D to create the file.    
  
 7. Now we run the ```process_radtags``` program using the following command: 
   
 ```  
-process_radtags -f ./raw/index_1/trimmed/Craugastor_index_1_8bp_trim -o ./samples-frogs/ -b ./barcodes -c -q -r -e sbfI 
+process_radtags -f ./raw/Craugastor_index_5_8bp_trim -o ./samples-frogs/ -b ./barcodes -c -q -r -e sbfI 
 ``` 
 >This will perform a seond round of demultiplexing and place FASTQ files for each individual in the ```samples``` directory. 
 
