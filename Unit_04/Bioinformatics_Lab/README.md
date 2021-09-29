@@ -6,7 +6,7 @@
 <details>
   <summary>Click to expand content!</summary>
   
->Data will come back from the Illumina sequenceer as demultiplexed by the PCR index. We will need to sort each PCR index into datasets for each of the individuals contained within it. We can do that using a helpful script called ```process_radtags```
+>Data will come back from the Illumina sequencer as demultiplexed by ddRADseq PCR 1 index. It will be demultiplexed using the bcl2fastq software we disussed in [Unit 1](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_01/Bioinformatics_Lab). Following this, we will still need to sort each PCR index into FASTQ files for each of the individuals contained within the pool. We can do that using the software [Stacks](https://catchenlab.life.illinois.edu/stacks/) and a helpful program called ```process_radtags```
 
 1. First, let's make a new directory inside ```NGS_course``` called ```Unit_4```
 
@@ -57,6 +57,8 @@ Here is a SharePoint link that the course participants can use to download the d
 [Craugastor_index_5_8bp_trim](https://naturalhistorymuseum.sharepoint.com/:u:/s/Herpetology/Eddrp3h57rJIr53ScPz34zEB5NcQQjd2oQOsK_YbJHT0pw?e=6U4VL8)  
   
 This file is ~3.6 GB in size, so it will take several minutes to download. 
+
+>Note: This file has already had the 8 Unique Molecular Identifier (UMI) nucleotides trimmed off, so it starts with the adapter index/barcode. I used [FastX Toolkit](https://github.com/agordon/fastx_toolkit) to trim the FASTQ file that was demultiplexed from teh Illumina HiSeq.  
   
 5. The individual samples contained in the file are: 
   
@@ -78,7 +80,7 @@ We need to demultiplex them from the PCR primer index pool, so let's make a file
  ```
  cat > barcodes
  ``` 
- Now paste the following text:
+Paste the following text:
   
  ```
 ACTAGG
@@ -92,8 +94,39 @@ TGGGAT
 TCTGCT
 AACGGT
  ```  
+>Now press CTRL + SHIFT + D to create the file.    
+ 
+6. Now we run the ```process_radtags``` program using the following command: 
   
->More information is available in the Stacks [manual](https://catchenlab.life.illinois.edu/stacks/manual/), including some tutorials. 
+```  
+process_radtags -f ./raw/index_1/trimmed/Craugastor_index_1_8bp_trim -o ./samples/ -b ./barcodes -c -q -r -e sbfI 
+``` 
+>This will perform a seond round of demultiplexing and place FASTQ files for each individual in the ```samples``` directory. 
+
+7. Now we will modify the file names to match the sample IDs:
+
+```   
+cd samples
+```  
+  
+```   
+mv sample_AACGGT.fq ENS_9494.fq
+mv sample_ACTAGG.fq MF_4398.fq
+mv sample_AGCATT.fq MF_6203.fq
+mv sample_CATCTC.fq MF_6205.fq
+mv sample_CGAAAC.fq MF_6115.fq
+mv sample_GACCAA.fq MF_5085.fq
+mv sample_GTCTAT.fq MVZ_226838.fq
+mv sample_TCTGCT.fq JAC_30517.fq
+mv sample_TGGGAT.fq MVZ_226839.fq
+mv sample_TGTTGG.fq MF_6101.fq
+```
+```   
+cd ..
+```   
+  
+>The files are now ready for downstream analysis and 'stacking'. More information is available in the Stacks [manual](https://catchenlab.life.illinois.edu/stacks/manual/), including some tutorials. 
+  
   </details>
 
 ## Processing ddRADseq data from the SRA using Stacks
