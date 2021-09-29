@@ -131,7 +131,7 @@ AACGGT
 8. Now we will modify the file names to match the sample IDs:
 
 ```   
-cd samples
+cd samples-frogs
 ```  
   
 ```   
