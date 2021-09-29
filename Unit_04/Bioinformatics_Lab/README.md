@@ -339,7 +339,16 @@ Now press ENTER then CTRL + SHIFT + D to create the file.
 ```
 ./tsv2bam -P ./stacks-snakes/ -M ./config_individuals.txt -t 8 
 ```    
->This should take ~1 minute to run.
+>This should take ~1 minute to run. You should see the following output:
+  
+```
+Sample 'M86_fulvius_1': matched 21939 sample loci to 21810 catalog loci; wrote 493992 records.
+Sample 'M87_fulvius_1': matched 59448 sample loci to 59443 catalog loci; wrote 894930 records.
+Sample 'M692_fulvius_1': matched 57181 sample loci to 56473 catalog loci; wrote 1696529 records.
+Sample 'M206_tener_1': matched 28037 sample loci to 27627 catalog loci; wrote 891972 records.
+Sample 'M230_tener_1': matched 31423 sample loci to 30923 catalog loci; wrote 618921 records.
+Sample 'M279_tener_1': matched 35834 sample loci to 35211 catalog loci; wrote 751282 records.
+```  
   
 12. Finally. we will run the Stacks program GSTACKS. GSTACKS will identify SNPs within the meta population for each locus and then genotype each individual at each identified SNP. Once SNPs have been identified and genotyped, gstacks will phase the SNPs at each locus, in each individual, into a set of haplotypes. For definitions of GSTACKS commands click [here](https://catchenlab.life.illinois.edu/stacks/comp/gstacks.php)
   
