@@ -241,7 +241,7 @@ mkdir stacks-snakes
 mv *fastq samples-snakes
 ```
 
-6. Let's rename our files so that they are easier to work with: 
+6. Rename the files so that they are easier to work with: 
 
 ```
 cd samples-snakes  
@@ -261,18 +261,48 @@ mv SRR1947351_2.fastq M230_tener_2.fastq
 mv SRR1947349_1.fastq M279_tener_1.fastq 
 mv SRR1947349_2.fastq M279_tener_2.fastq   
 ```   
+
+```
+cd ..  
+```                                                                                                 
                                                                                                   
-7. We will now run USTACKS which is a Stacks program that takes a set of short-read sequences and align them into exactly-matching stacks (or putative alleles). Comparing the stacks it will form a set of putative loci and detect SNPs at each locus using a maximum likelihood framework.
+7. We will now run USTACKS which is a Stacks program that takes a set of short-read sequences and align them into exactly-matching stacks (or putative alleles). Comparing the stacks it will form a set of putative loci and detect SNPs at each locus using a maximum likelihood framework. For definitions of USTACKS ommands click [here](https://catchenlab.life.illinois.edu/stacks/comp/ustacks.php).
                                                                                                   
 ```
-ustacks -f ./samples/f0_male.fq.gz    -o ./stacks -i 1 -m 3 -M 4 -p 16
-ustacks -f ./samples/f0_female.fq.gz  -o ./stacks -i 2 -m 3 -M 4 -p 16
-ustacks -f ./samples/progeny_01.fq.gz -o ./stacks -i 3 -m 3 -M 4 -p 16
-ustacks -f ./samples/progeny_02.fq.gz -o ./stacks -i 4 -m 3 -M 4 -p 16
-ustacks -f ./samples/progeny_02.fq.gz -o ./stacks -i 4 -m 3 -M 4 -p 16                                                                                                  
-ustacks -f ./samples/progeny_02.fq.gz -o ./stacks -i 4 -m 3 -M 4 -p 16                                                                                                  
+./ustacks -f ./samples-snakes/M86_fulvius_1.fastq -o ./stacks-snakes -i 1 -m 3 -M 4 -p 16
+./ustacks -f ./samples-snakes/M87_fulvius_1.fastq -o ./stacks-snakes -i 2 -m 3 -M 4 -p 16
+./ustacks -f ./samples-snakes/M692_fulvius_1.fastq -o ./stacks-snakes -i 3 -m 3 -M 4 -p 16
+./ustacks -f ./samples-snakes/M206_tener_1.fastq -o ./stacks-snakes -i 4 -m 3 -M 4 -p 16
+./ustacks -f ./samples-snakes/M230_tener_1.fastq -o ./stacks-snakes -i 5 -m 3 -M 4 -p 16                                                                                         
+./ustacks -f ./samples-snakes/M279_tener_1.fastq -o ./stacks-snakes -i 6 -m 3 -M 4 -p 16                                                                                         
 ```                                                                                                  
-                                                                                                  
+>There should now be individual stacks files in the ```stacks-snakes``` directory.                                                                                               
+   
+8. We will now run CSTACKS which is a Stacks program that creates a set of consensus loci, merging alleles together that are listed in the USTACKS output. First, we need to make a 'population map' that will be used to identify the individuals we want to process in CTACKS: 
+  
+```
+cat > config_individuals.txt
+```  
+ 
+Paste the following text: 
+```
+M86_fulvius_1       1
+M87_fulvius_1       2
+M692_fulvius_1      3
+M206_tener_1        4
+M230_tener_1        5 
+M279_tener_1        6
+```    
+Now press CTRL + SHIFT + D to create the file.
+  
+9. Run CSTACKS using the following command: 
+  
+```
+./cstacks -P ./stacks-snakes -M ./config_individuals.txt -n 4 -p 15  
+```  
+>For definitions of commands click [here](https://catchenlab.life.illinois.edu/stacks/comp/cstacks.php)
+  
+10. Sets of stacks, i.e. putative loci, constructed by the USTACKS program can be searched against a catalog produced by CSTACKS. In the case of a general population, all samples in the population would be matched against the catalog with SSTACKS. For definitions of SSTACKS commands click [here](https://catchenlab.life.illinois.edu/stacks/comp/sstacks.php)  
   
   </details>
 
