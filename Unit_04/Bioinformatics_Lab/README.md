@@ -38,8 +38,26 @@ cd stacks-2.59
 make
 ```  
 >The installation may take ~2-5 minutes
+
+3. Let's make some working directories: 
+```
+mkdir raw
+```
+```
+mkdir samples
+```
+```
+mkdir stacks
+```     
   
-3. Now let's download some empirical data to analyze. Navigate to the SRA toolkit folder from [Unit 1](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_01/Bioinformatics_Lab). 
+3. Now let's download some empirical data to analyze. We will use Index 5 of the *Craugastor augusti* ddRADseq data that is used in the first module of the Unit 4 [Molecular Lab](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_04/Molecular_Lab). 
+  
+Here is a SharePoint link that the course participants can use to download the demultiplexed file:  
+  
+[Craugastor_index_5_8bp_trim](https://naturalhistorymuseum.sharepoint.com/:u:/s/Herpetology/Eddrp3h57rJIr53ScPz34zEB5NcQQjd2oQOsK_YbJHT0pw?e=6U4VL8)  
+  
+This file is ~3.6 GB in size, so it will take several minutes to download. The individual samples contained in the file are: 
+  
   
   
 >More information is available in the Stacks [manual](https://catchenlab.life.illinois.edu/stacks/manual/), including some tutorials. 
