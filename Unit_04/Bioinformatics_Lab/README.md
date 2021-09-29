@@ -300,9 +300,26 @@ Now press CTRL + SHIFT + D to create the file.
 ```
 ./cstacks -P ./stacks-snakes -M ./config_individuals.txt -n 4 -p 15  
 ```  
->For definitions of commands click [here](https://catchenlab.life.illinois.edu/stacks/comp/cstacks.php)
+>For definitions of CSTACKS commands click [here](https://catchenlab.life.illinois.edu/stacks/comp/cstacks.php)
   
-10. Sets of stacks, i.e. putative loci, constructed by the USTACKS program can be searched against a catalog produced by CSTACKS. In the case of a general population, all samples in the population would be matched against the catalog with SSTACKS. For definitions of SSTACKS commands click [here](https://catchenlab.life.illinois.edu/stacks/comp/sstacks.php)  
+10. Next we will run the Stacks program SSTACKS. Sets of stacks, i.e. putative loci, constructed by the USTACKS program can be searched against a catalog produced by CSTACKS. In the case of a general population, all samples in the population would be matched against the catalog with SSTACKS. For definitions of SSTACKS commands click [here](https://catchenlab.life.illinois.edu/stacks/comp/sstacks.php)  
+ 
+```
+./sstacks -P ./stacks-snakes -M ./config_individuals.txt -p 8 
+```   
+
+11. Next we will run the Stacks program TSV2BAM. The TSV2BAM program will transpose data so that it is oriented by locus, instead of by sample. For definitions of TSV2BAM commands click [here](https://catchenlab.life.illinois.edu/stacks/comp/tsv2bam.php)   
+  
+```
+./tsv2bam -P ./stacks-snakes/ -M ./config_individuals.txt -t 8 
+```    
+
+12. Finally. we will run the Stacks program GSTACKS. GSTACKS will identify SNPs within the meta population for each locus and then genotype each individual at each identified SNP. Once SNPs have been identified and genotyped, gstacks will phase the SNPs at each locus, in each individual, into a set of haplotypes. For definitions of GSTACKS commands click [here](https://catchenlab.life.illinois.edu/stacks/comp/gstacks.php)
+  
+```
+./gstacks -P ./stacks-snakes -M ./config_individuals.txt -t 8
+```   
+>Your RADseq data are now ready for analysis and output using the ```populations``` program discussed in teh next module.  
   
   </details>
 
