@@ -44,10 +44,10 @@ make
 mkdir raw
 ```
 ```
-mkdir samples
+mkdir samples-frogs
 ```
 ```
-mkdir stacks
+mkdir stacks-frogs
 ```     
   
 4. Now let's download some empirical data to analyze. We will use Index 5 of the *Craugastor augusti* ddRADseq data from Streicher et al. [2014](https://onlinelibrary.wiley.com/doi/abs/10.1111/mec.12814) that is used in the first module of the Unit 4 [Molecular Lab](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_04/Molecular_Lab). 
@@ -99,7 +99,7 @@ AACGGT
 6. Now we run the ```process_radtags``` program using the following command: 
   
 ```  
-process_radtags -f ./raw/index_1/trimmed/Craugastor_index_1_8bp_trim -o ./samples/ -b ./barcodes -c -q -r -e sbfI 
+process_radtags -f ./raw/index_1/trimmed/Craugastor_index_1_8bp_trim -o ./samples-frogs/ -b ./barcodes -c -q -r -e sbfI 
 ``` 
 >This will perform a seond round of demultiplexing and place FASTQ files for each individual in the ```samples``` directory. 
 
@@ -171,11 +171,11 @@ cd ..
 2. Move all of the FASTQ files to your ```Unit_4``` directory:
 
 ```  
-mv *.fastq /home/jefs/NGS_course/Unit_4/  
+mv *.fastq /home/jefs/NGS_course/Unit_4/stacks-2.59  
 ```
 >Reminder: your user name will need to be swapped with mine for this command to work
 
-3. Now navigate to your ```Unit_4``` directory and check the format on the read 1 data: 
+3. Now navigate to your ```Unit_4/stacks-2.59``` directory and check the format on the read 1 data: 
   
 ```  
 head -3 SRR1947265_1.fastq
@@ -227,7 +227,52 @@ GJIIJJJJJJJJJJIIGHGHIJJIGHIJIIJJJGJGICHIIJHHFFFFFDEDEEEDDDDBBDBBBBB<@CDCDDEEEEED
 CCTCTTGCAGATATCCTTATGTCGCAGCTGTGGTCTCCCTCTAGGGCATCCATTCCTTACAAAAGTCGTTTCATAATGTCATTGAATAATGACAAAG
 ``` 
 
->These datasets seem to have been cleaned already so that they can be placed directly into the ```samples```  directory. 
+5. Now we need to make our working directories for Stacks. These datasets seem to have been cleaned already so that they can be placed directly into the ```samples-snakes```  directory. 
+                                                                                                  
+```
+mkdir samples-snakes
+```   
+                                                                                                  
+```
+mkdir stacks-snakes
+```                                                                                                  
+                                                                                                  
+```
+mv *fastq samples-snakes
+```
+
+6. Let's rename our files so that they are easier to work with: 
+
+```
+cd samples-snakes  
+```  
+  
+```
+mv SRR1947266_1.fastq M86_fulvius_1.fastq
+mv SRR1947266_2.fastq M86_fulvius_2.fastq
+mv SRR1947265_1.fastq M87_fulvius_1.fastq  
+mv SRR1947265_2.fastq M87_fulvius_1.fastq
+mv SRR1947267_1.fastq M692_fulvius_1.fastq
+mv SRR1947267_2.fastq M692_fulvius_2.fastq 
+mv SRR1947271_1.fastq M206_tener_1.fastq  
+mv SRR1947271_2.fastq M206_tener_2.fastq    
+mv SRR1947351_1.fastq M230_tener_1.fastq 
+mv SRR1947351_2.fastq M230_tener_2.fastq 
+mv SRR1947349_1.fastq M279_tener_1.fastq 
+mv SRR1947349_2.fastq M279_tener_2.fastq   
+```   
+                                                                                                  
+7. We will now run USTACKS which is a Stacks program that takes a set of short-read sequences and align them into exactly-matching stacks (or putative alleles). Comparing the stacks it will form a set of putative loci and detect SNPs at each locus using a maximum likelihood framework.
+                                                                                                  
+```
+ustacks -f ./samples/f0_male.fq.gz    -o ./stacks -i 1 -m 3 -M 4 -p 16
+ustacks -f ./samples/f0_female.fq.gz  -o ./stacks -i 2 -m 3 -M 4 -p 16
+ustacks -f ./samples/progeny_01.fq.gz -o ./stacks -i 3 -m 3 -M 4 -p 16
+ustacks -f ./samples/progeny_02.fq.gz -o ./stacks -i 4 -m 3 -M 4 -p 16
+ustacks -f ./samples/progeny_02.fq.gz -o ./stacks -i 4 -m 3 -M 4 -p 16                                                                                                  
+ustacks -f ./samples/progeny_02.fq.gz -o ./stacks -i 4 -m 3 -M 4 -p 16                                                                                                  
+```                                                                                                  
+                                                                                                  
   
   </details>
 
