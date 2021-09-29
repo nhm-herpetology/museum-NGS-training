@@ -355,7 +355,7 @@ Sample 'M279_tener_1': matched 35834 sample loci to 35211 catalog loci; wrote 75
 ```
 ./gstacks -P ./stacks-snakes -M ./config_individuals.txt -t 8
 ```   
->Your RADseq data are now ready for analysis and output using the ```populations``` program discussed in teh next module.  
+>This should take ~30 seconds to run. Your RADseq data are now ready for analysis and output using the ```populations``` program discussed in teh next module.  
   
   </details>
 
@@ -384,10 +384,10 @@ cat > config_species.txt
 ```  
 Now paste the configuration text (from Step 1) into your terminal one line at a time adding a TAB between the sample and ID. Then press ENTER followed by CTRL + SHIFT + D. 
   
-3. Run the ```populations``` program using the individual configuration file from the previous module: 
+3. There are many options for how to run ```populations``` listed [here](https://catchenlab.life.illinois.edu/stacks/comp/populations.php). Let's run the program using the individual configuration file from the previous module: 
 
 ```
-./populations -P ./stacks/ --popmap ./samples/config_individuals.txt --smooth -p 10 -r 0.75 -f p_value -t 8 --structure --genepop --write-single-snp   
+./populations -P ./stacks-snakes/ --popmap ./config_individuals.txt -p 3 -r 0.75 -f p_value -t 8 --structure --phylip --write-single-snp   
 ```    
   
 4. Run the ```populations``` program using the second configuration file which will summarise data by species:   
