@@ -392,6 +392,54 @@ Now paste the configuration text (from Step 1) into your terminal one line at a 
 
 4. Now let's examine the output: 
   
+```
+Removed 111434 loci that did not pass sample/population constraints from 137331 loci.
+Kept 25897 loci, composed of 2309138 sites; 589 of those sites were filtered, 8843 variant sites remained.
+Mean genotyped sites per locus: 89.17bp (stderr 0.01).
+
+Population summary statistics (more detail in populations.sumstats_summary.tsv):
+  1: 1 samples per locus; pi: 0.099258; all/variant/polymorphic sites: 1750629/6740/669; private alleles: 579
+  2: 1 samples per locus; pi: 0.12121; all/variant/polymorphic sites: 5048/33/4; private alleles: 11
+  3: 1 samples per locus; pi: 0.071126; all/variant/polymorphic sites: 2175362/8267/588; private alleles: 1160
+  4: 1 samples per locus; pi: 0.24755; all/variant/polymorphic sites: 1755511/6944/1719; private alleles: 1631
+  5: 1 samples per locus; pi: 0.18719; all/variant/polymorphic sites: 2008996/7714/1444; private alleles: 908
+  6: 1 samples per locus; pi: 0.2339; all/variant/polymorphic sites: 2093218/7918/1852; private alleles: 1049
+```  
+
+5. There are several important files that have been output including ```populations.sumstats_summary.tsv```, ```populations.sumstats.tsv```, ```populations.fixed.phylip```, and ```populations.structure```. Let's have a look at each of them: 
+  
+```
+cd stacks-snakes   
+```  
+```
+head -10 populations.sumstats_summary.tsv
+```
+>Let's also have a look using WinSCP   
+```
+head -10 populations.sumstats.tsv
+``` 
+>Let's also have a look using WinSCP  
+```
+head -10 populations.sumstats.tsv
+``` 
+>Let's also have a look using WinSCP   
+```
+cat populations.fixed.phylip
+``` 
+>This should be an alignment of 4266 SNPs acquired based on our missing data threshold of 50% of individuals present.   
+```
+cat populations.structure
+```
+>Let's also have a look using WinSCP   
+
+5. Finally let's run the ```populations``` program using the second configuration file which will summarise data by species (WARNING this will overwrite the ```populations``` output files from the previous steps):   
+
+```
+./populations -P ./stacks-snakes/ --popmap ./config_individuals.txt -p 2 -r 1.0 -f p_value -t 8 --structure --write-single-snp    
+```
+
+6. Now let's examine the output: 
+  
 
 Removed 111434 loci that did not pass sample/population constraints from 137331 loci.
 Kept 25897 loci, composed of 2309138 sites; 589 of those sites were filtered, 8843 variant sites remained.
@@ -405,14 +453,7 @@ Population summary statistics (more detail in populations.sumstats_summary.tsv):
   4: 1 samples per locus; pi: 0.24755; all/variant/polymorphic sites: 1755511/6944/1719; private alleles: 1631
   5: 1 samples per locus; pi: 0.18719; all/variant/polymorphic sites: 2008996/7714/1444; private alleles: 908
   6: 1 samples per locus; pi: 0.2339; all/variant/polymorphic sites: 2093218/7918/1852; private alleles: 1049
-```  
-  
-4. Run the ```populations``` program using the second configuration file which will summarise data by species:   
-
-```
-./populations -P ./stacks/ --popmap ./samples/config_species.txt --smooth -p 10 -r 0.75 -f p_value -t 8 --structure --genepop --write-single-snp   
-```
-  
+```    
   
   </details>
 
