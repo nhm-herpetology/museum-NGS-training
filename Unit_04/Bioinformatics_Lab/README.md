@@ -98,7 +98,10 @@ JAC 30517 | Index 9 (TCTGCT) | Index 5 (ACAGTG)
 ENS 9494 | Index 10 (AACGGT)  | Index 5 (ACAGTG)   
 
 We need to demultiplex them from the PCR primer index pool, so let's make a file called ```barcodes``` that we will use as a configuration file for the Stacks ```process_radtags``` command: 
-  
+
+ ```
+ cd ..
+ ```   
  ```
  cat > barcodes
  ``` 
