@@ -310,14 +310,14 @@ cat > config_individuals.txt
 ```  
  
 Paste the following text: 
-```
-M86_fulvius_1\t1 
-M87_fulvius_1\t2 
-M692_fulvius_1\t3 
-M206_tener_1\t4 
-M230_tener_1\t5 
-M279_tener_1\t6 
-```    
+
+M86_fulvius_1 t1 
+M87_fulvius_1 t2 
+M692_fulvius_1  t3 
+M206_tener_1  t4 
+M230_tener_1  t5 
+M279_tener_1  t6 
+    
 Now press ENTER then CTRL + SHIFT + D to create the file.
   
 9. Run CSTACKS using the following command: 
