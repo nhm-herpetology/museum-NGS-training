@@ -311,12 +311,12 @@ cat > config_individuals.txt
  
 Paste the following text one line at a time adding a TAB between the sample and ID: 
 ```
-M86_fulvius_1 t1 
-M87_fulvius_1 t2 
-M692_fulvius_1  t3 
-M206_tener_1  t4 
-M230_tener_1  t5 
-M279_tener_1  t6 
+M86_fulvius_1   1 
+M87_fulvius_1   2 
+M692_fulvius_1  3 
+M206_tener_1    4 
+M230_tener_1    5 
+M279_tener_1    6 
 ```    
 Now press ENTER then CTRL + SHIFT + D to create the file.
   
@@ -371,7 +371,7 @@ M279   tener
 ```
 cat > config_species.txt
 ```  
-Now paste the configuration text (from Step 1) into your terminal and then press ENTER followed by CTRL + SHIFT + D. 
+Now paste the configuration text (from Step 1) into your terminal one line at a time adding a TAB between the sample and ID. Then press ENTER followed by CTRL + SHIFT + D. 
   
 3. Run the ```populations``` program using the individual configuration file from the previous module: 
 
