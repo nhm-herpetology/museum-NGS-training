@@ -50,15 +50,48 @@ mkdir samples
 mkdir stacks
 ```     
   
-3. Now let's download some empirical data to analyze. We will use Index 5 of the *Craugastor augusti* ddRADseq data that is used in the first module of the Unit 4 [Molecular Lab](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_04/Molecular_Lab). 
+4. Now let's download some empirical data to analyze. We will use Index 5 of the *Craugastor augusti* ddRADseq data from Streicher et al. [2014](https://onlinelibrary.wiley.com/doi/abs/10.1111/mec.12814) that is used in the first module of the Unit 4 [Molecular Lab](https://github.com/nhm-herpetology/museum-NGS-training/tree/main/Unit_04/Molecular_Lab). 
   
 Here is a SharePoint link that the course participants can use to download the demultiplexed file:  
   
 [Craugastor_index_5_8bp_trim](https://naturalhistorymuseum.sharepoint.com/:u:/s/Herpetology/Eddrp3h57rJIr53ScPz34zEB5NcQQjd2oQOsK_YbJHT0pw?e=6U4VL8)  
   
-This file is ~3.6 GB in size, so it will take several minutes to download. The individual samples contained in the file are: 
+This file is ~3.6 GB in size, so it will take several minutes to download. 
   
+5. The individual samples contained in the file are: 
   
+Sample ID | Adapter Index/Barcode | PCR Index/Barcode
+------------ | -------------  | -------------
+MF 4398 | Index 1 (ACTAGG) | Index 5 (ACAGTG)
+MF 5085 | Index 2 (GACCAA) | Index 5 (ACAGTG)
+MF 6101 | Index 3 (TGTTGG)  | Index 5 (ACAGTG)
+MF 6115 | Index 4 (CGAAAC)  | Index 5 (ACAGTG)
+MF 6203 | Index 5 (AGCATT) | Index 5 (ACAGTG)
+MF 6205 | Index 6 (CATCTC) | Index 5 (ACAGTG)
+MVZ 226838 | Index 7 (GTCTAT) | Index 5 (ACAGTG) 
+MVZ 226839 |Index 8 (TGGGAT) | Index 5 (ACAGTG)
+JAC 30517 | Index 9 (TCTGCT) | Index 5 (ACAGTG)  
+ENS 9494 | Index 10 (AACGGT)  | Index 5 (ACAGTG)   
+
+We need to demultiplex them from the PCR primer index pool, so let's make a file called ```barcodes``` that we will use as a configuration file for the Stacks ```process_radtags``` command: 
+  
+ ```
+ cat > barcodes
+ ``` 
+ Now paste the following text:
+  
+ ```
+ACTAGG
+GACCAA
+TGTTGG
+CGAAAC
+AGCATT
+CATCTC
+GTCTAT
+TGGGAT
+TCTGCT
+AACGGT
+ ```  
   
 >More information is available in the Stacks [manual](https://catchenlab.life.illinois.edu/stacks/manual/), including some tutorials. 
   </details>
