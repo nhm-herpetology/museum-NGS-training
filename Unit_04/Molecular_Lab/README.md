@@ -243,9 +243,37 @@ CGAGATCGGAAGAGCGAGAACAA
   
 5. Turn off the heat block and allow to cool to room temperature. 
   
-6. While we are waiting for the adapters to cool, we can clean our restriction digested DNA from the previous module using Serapure beads. We will use a 1.8 X concetration of beads to sample, so we need to add 108 uL of Serapure solution to the 60 uL of restriction digests. 
+6. While we are waiting for the adapters to cool, we can clean our restriction digested DNA from the previous module using Serapure beads. We will use a 1.8 X concetration of beads to sample, so we need to add 108 uL of Serapure solution to the 60 uL of restriction digests. Transfer the restriction digest from PCR tubes to 1.5 mL microcentrifuge tubes. 
   
-7. 
+7. Place 1.5 mL tube on magnet rack. Allow beads to seperate (~5 min)
+
+8. Remove supernatent with a P1000 pipetter and discard. Remove any remaining supernatent with a P100 or P200 pipetter.
+
+9. Add 500 uL of 70% ethanol and let stand for 1 min (Wash No. 1)
+
+10. Remove supernatent as in Step 13.
+
+11. Add 500 uL of 70% ethanol and let stand for 1 min (Wash No. 2)
+  
+12. Remove supernatent as in Step 13.
+  
+13. Allow beads to sit until there is no residual ethanol on the sides of the tube. This usually takes about 2-3 mins. 
+
+14. Add 31 uL 10 mM Tris to dried beads and resuspend the beads in solution by removing the tube from the magnet rack. This may require gently flicking the tube to get the beads back into solution. You may then need to centrifuge the tube to return the beads to the solution to the bottom of the tube. 
+
+15. Place 1.5 mL tube on magnet rack. Allow beads to seperate (~5 min)
+>The purified fragmented DNA is now in the supernatent.
+  
+16. We will now ligate adapters using the T4 DNA Ligase. For each reaction mix the following: 
+    * 30 uL purified digestion
+    * 2 uL of P1 adater (0.1 uM concentration)
+    * 2 uL of P2 adapter (4 uM concentration)
+    * 4 uL Ligation Buffer (NEB)
+    * 1 uL T4 LIgase
+    * 1 uL of water
+ 
+ 17. Run in a thermal cycler at 16 C for 35 min followed by 10 min at 65C (to inactivate the ligase enzyme).
+  >Samples are now ligated and can be pooled prior to size selection. 
   
 </details>
 
