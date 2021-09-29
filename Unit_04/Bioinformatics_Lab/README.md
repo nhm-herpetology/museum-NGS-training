@@ -135,16 +135,16 @@ cd samples-frogs
 ```  
   
 ```   
-mv sample_AACGGT.fq ENS_9494.fq
-mv sample_ACTAGG.fq MF_4398.fq
-mv sample_AGCATT.fq MF_6203.fq
-mv sample_CATCTC.fq MF_6205.fq
-mv sample_CGAAAC.fq MF_6115.fq
-mv sample_GACCAA.fq MF_5085.fq
-mv sample_GTCTAT.fq MVZ_226838.fq
-mv sample_TCTGCT.fq JAC_30517.fq
-mv sample_TGGGAT.fq MVZ_226839.fq
-mv sample_TGTTGG.fq MF_6101.fq
+mv sample_AACGGT.fq.gz ENS_9494.fq.gz
+mv sample_ACTAGG.fq.gz MF_4398.fq.gz
+mv sample_AGCATT.fq.gz MF_6203.fq.gz
+mv sample_CATCTC.fq.gz MF_6205.fq.gz
+mv sample_CGAAAC.fq.gz MF_6115.fq.gz
+mv sample_GACCAA.fq.gz MF_5085.fq.gz
+mv sample_GTCTAT.fq.gz MVZ_226838.fq.gz
+mv sample_TCTGCT.fq.gz JAC_30517.fq.gz
+mv sample_TGGGAT.fq.gz MVZ_226839.fq.gz
+mv sample_TGTTGG.fq.gz MF_6101.fq.gz
 ```
 ```   
 cd ..
