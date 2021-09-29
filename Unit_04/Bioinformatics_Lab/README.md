@@ -309,7 +309,7 @@ cd ..
 cat > config_individuals.txt
 ```  
  
-Paste the following text one line at a time adding a <TAB> between the sample and ID: 
+Paste the following text one line at a time adding a TAB between the sample and ID: 
 ```
 M86_fulvius_1 t1 
 M87_fulvius_1 t2 
