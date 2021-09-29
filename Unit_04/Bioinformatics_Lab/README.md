@@ -392,7 +392,20 @@ Now paste the configuration text (from Step 1) into your terminal one line at a 
 
 4. Now let's examine the output: 
   
-  
+
+Removed 111434 loci that did not pass sample/population constraints from 137331 loci.
+Kept 25897 loci, composed of 2309138 sites; 589 of those sites were filtered, 8843 variant sites remained.
+Mean genotyped sites per locus: 89.17bp (stderr 0.01).
+
+```
+Population summary statistics (more detail in populations.sumstats_summary.tsv):
+  1: 1 samples per locus; pi: 0.099258; all/variant/polymorphic sites: 1750629/6740/669; private alleles: 579
+  2: 1 samples per locus; pi: 0.12121; all/variant/polymorphic sites: 5048/33/4; private alleles: 11
+  3: 1 samples per locus; pi: 0.071126; all/variant/polymorphic sites: 2175362/8267/588; private alleles: 1160
+  4: 1 samples per locus; pi: 0.24755; all/variant/polymorphic sites: 1755511/6944/1719; private alleles: 1631
+  5: 1 samples per locus; pi: 0.18719; all/variant/polymorphic sites: 2008996/7714/1444; private alleles: 908
+  6: 1 samples per locus; pi: 0.2339; all/variant/polymorphic sites: 2093218/7918/1852; private alleles: 1049
+```  
   
 4. Run the ```populations``` program using the second configuration file which will summarise data by species:   
 
