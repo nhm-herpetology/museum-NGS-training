@@ -369,12 +369,12 @@ Sample 'M279_tener_1': matched 35834 sample loci to 35211 catalog loci; wrote 75
 1. First, let's make an additional configuration file (referred to as the 'population map' in Stacks manual) by species:
 
 ```
-M86   fulvius
-M87   fulvius
-M692   fulvius
-M206   tener
-M230   tener 
-M279   tener
+M86_fulvius_1   fulvius 
+M87_fulvius_1   fulvius 
+M692_fulvius_1  fulvius 
+M206_tener_1    tener 
+M230_tener_1    tener 
+M279_tener_1    tener 
 ``` 
 
 2. Let's make the configuration file:   
