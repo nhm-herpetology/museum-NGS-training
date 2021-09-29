@@ -59,8 +59,17 @@ Here is a SharePoint link that the course participants can use to download the d
 This file is ~3.6 GB in size, so it will take several minutes to download. 
 
 >Note: This file has already had the 8 Unique Molecular Identifier (UMI) nucleotides trimmed off, so it starts with the adapter index/barcode. I used [FastX Toolkit](https://github.com/agordon/fastx_toolkit) to trim the FASTQ file that was demultiplexed from teh Illumina HiSeq.  
+ 
+5. Let's have a look at the first few lines of the 'PCR Index 5' FASTQ file: 
+
+```  
+cd raw
+``` 
+```  
+head -10 Craugastor_index_5_8bp_trim
+```         
   
-5. The individual samples contained in the file are: 
+6. The individual samples contained in the file are: 
   
 Sample ID | Adapter Index/Barcode | PCR Index/Barcode
 ------------ | -------------  | -------------
@@ -96,14 +105,14 @@ AACGGT
  ```  
 >Now press CTRL + SHIFT + D to create the file.    
  
-6. Now we run the ```process_radtags``` program using the following command: 
+7. Now we run the ```process_radtags``` program using the following command: 
   
 ```  
 process_radtags -f ./raw/index_1/trimmed/Craugastor_index_1_8bp_trim -o ./samples-frogs/ -b ./barcodes -c -q -r -e sbfI 
 ``` 
 >This will perform a seond round of demultiplexing and place FASTQ files for each individual in the ```samples``` directory. 
 
-7. Now we will modify the file names to match the sample IDs:
+8. Now we will modify the file names to match the sample IDs:
 
 ```   
 cd samples
