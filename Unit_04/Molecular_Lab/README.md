@@ -113,12 +113,22 @@ ENS 9494 | Index 10 (AACGGT)  | Index 5 (ACAGTG)
 
 
 **Protocol**
-1. For each digestion combine the following: 
+  
+1. Using fresh DNA extractions, we are now going to prepare the DNA for ddRADseq library construction. First, we need to prepare 200 ng from the example DNA extractions and then adjust the volumes with water so that all samples have 50 uL for the fragmentation step. I use a spreadsheet with four columns, similar to the method introduced in [Unit 2](XXXXX), to do this: 
+  
+Sample ID | Qubit concentration (ng/uL)  | uL needed for 200 ng | uL of water to add
+------------ | -------------  | ------------- | -------------
+Sample 1 | 10.0 | 50.0  | 10.0
+Sample 2 | 18.5  | 27.0 | 33.0
+Sample 3 | 33.2  | 15.1 | 44.9
+Sample 4 | 80.0  | 6.3  | 53.7  
+  
+ 2. For each digestion combine the following: 
   * 200 ng of extracted dsDNA
   * 5 uL NEB Buffer 4
   * 1 uL SbFI-HF enzyme
   * 1 uL MspI enzyme
-  * water to 50 uL
+  * 50 uL of DNA extraction + sample 
   
 </details>
 
