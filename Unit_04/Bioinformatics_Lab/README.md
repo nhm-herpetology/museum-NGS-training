@@ -58,7 +58,7 @@ Here is a SharePoint link that the course participants can use to download the d
   
 This file is ~3.6 GB in size, so it will take several minutes to download. 
 
->Note: This file has already had the 8 Unique Molecular Identifier (UMI) nucleotides trimmed off, so it starts with the adapter index/barcode. I used [FastX Toolkit](https://github.com/agordon/fastx_toolkit) to trim the FASTQ file that was demultiplexed from teh Illumina HiSeq.  
+>Note: This file has already had the 8 Unique Molecular Identifier (UMI) nucleotides trimmed off, so it starts with the adapter index/barcode. I used [FastX Toolkit](https://github.com/agordon/fastx_toolkit) to trim the FASTQ file that was demultiplexed from the Illumina HiSeq.  
  
 5. Let's have a look at the first few lines of the 'PCR Index 5' FASTQ file: 
 
