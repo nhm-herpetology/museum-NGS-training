@@ -435,7 +435,7 @@ cat populations.structure
 5. Finally let's run the ```populations``` program using the second configuration file which will summarise data by species (WARNING this will overwrite the ```populations``` output files from the previous steps):   
 
 ```
-./populations -P ./stacks-snakes/ --popmap ./config_species.txt -p 2 -r 1.0 -f p_value -t 8 --structure --write-single-snp    
+./populations -P ./stacks-snakes/ --popmap ./config_species.txt -p 1 -r 0.25 -f p_value -t 8 --structure --write-single-snp    
 ```
 
 6. Now let's examine the output: 
