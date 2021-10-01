@@ -1,5 +1,5 @@
 # Molecular Laboratory 4
->The protocols we will follow are based on those of Peterson et al. ([2012](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0037135)). Minor modifications of the protocol correspond to this paper: Streicher et al. ([2014](https://onlinelibrary.wiley.com/doi/abs/10.1111/mec.12814)). 
+>The protocols we will follow for ddRADseq are based on those of Peterson et al. ([2012](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0037135)). Minor modifications of the protocol correspond to this paper: Streicher et al. ([2014](https://onlinelibrary.wiley.com/doi/abs/10.1111/mec.12814)). 
 
 ## Experimental design and sample organization
 
