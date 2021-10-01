@@ -118,7 +118,7 @@ ENS 9494 | Index 10 (AACGGT)  | Index 5 (ACAGTG)
 >This protocol is written for use with 1 uL of DNA extract. For samples that are likely to have very little dsDNA, it can be modified so that more template is used. 
 
 1. First we need to make a Master Mix from the Qubit reagents. For each sample (+ the two size standards) we need to combine 1 uL of Dye with 199 uL of buffer. 
->In our case this means we add 10 uL of dye with 1990 uL of buffer
+>In our case this means we add 12 uL of dye with 2370 uL of buffer
 
 2. Add 190 uL of Master Mix to two Axygen tubes (these will be used for the Size Standard DNA).
 
