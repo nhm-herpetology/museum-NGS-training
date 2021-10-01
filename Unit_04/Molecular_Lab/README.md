@@ -109,8 +109,8 @@ ENS 9494 | Index 10 (AACGGT)  | Index 5 (ACAGTG)
 * Qubit HS dsDNA reagent kit
   * HS Buffer
   * Fluorecent Dye
-  * Size Standard 1
-  * Size Standard 2
+  * HS Standard 1
+  * HS Standard 2
 * Qubit fluorometer
 * Crystal-clear Axygen microcentrifuge tubes
 
@@ -122,9 +122,9 @@ ENS 9494 | Index 10 (AACGGT)  | Index 5 (ACAGTG)
 
 2. Add 190 uL of Master Mix to two Axygen tubes (these will be used for the Size Standard DNA).
 
-3. Add 10 uL of Size Standard 1 to the first Axygen tube.
+3. Add 10 uL of HS Standard 1 to the first Axygen tube.
   
-4. Add 10 uL of Size Standard 2 to the second Axygen tube. 
+4. Add 10 uL of HS Standard 2 to the second Axygen tube. 
   
 5. Add 199 uL of Master Mix to ten Axygen tubes (these will be used for the sample DNA).
   
