@@ -146,6 +146,47 @@ ENS 9494 | Index 10 (AACGGT)  | Index 5 (ACAGTG)
   
 </details>
 
+## Determining size and quality of DNA extractions with gel electrophoresis
+
+<details>
+  <summary>Click to expand protocol!</summary>
+
+**Materials**
+  
+* Agarose
+* 1X TAE Buffer
+* Scale
+* Microwave
+* Electrophoresis rig with power source
+* DNA Ladder (for testing beads)
+* Gel loading dye
+* Gel stain (e.g. SYBR safe)
+* Parafilm
+
+  
+**Protocol**
+  
+1. Prepare a 1% TAE gel for electrophoresis. At the NHM, we can use a small gel casting frame which will require:
+      * 0.75 g Agarose
+      * 75 mL 1X TAE Buffer
+      * 4 uL of SYBR safe or Gel Red DNA stain
+
+2. Mix the Agarose and TAE Buffer in a glass flask. Microwave the flask until the the Agarose goes into solution (Don't let the flask boil over!)
+  
+3. Use hot pads to remove the flask from the microwave and allow to cool on the lab bench until you can safely touch the glass. Add the SYBR safe stain to the flask using a pipetter. Mix gently by hand.  
+
+4. Carefully pour the solution into the casting tray and allow to solidify (usually ~20-30 mins)
+>This will create the gel needed to view the DNA extractions
+
+5. Mix 2 uL of loading dye with 5 uL of DNA extraction on a piece of parafilm.  
+  
+6. In the first well of the gel, oad 4 uL of pre-mixed ladder. Then load the 7 uL of DNA extraction + loading dye into your gel (which should now be placed in the Electrophoresis Rig) and run using the Power Source.   
+  
+>If the DNA extractions are high weight we should single bands above the largest ladder fragment, however, some shearing (=smear) is fine and we can still process with the ddRADseq protocol.   
+
+
+</details>
+
 ## Restriction digestion of genomic DNA
 
 <details>
