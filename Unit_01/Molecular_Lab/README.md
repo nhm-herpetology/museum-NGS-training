@@ -87,7 +87,8 @@
 * Microwave
 * Electrophoresis rig with power source
 * DNA Ladder (for testing beads)
-* Gel loading dye  
+* Gel loading dye
+* Gel stain (e.g. SYBR safe)
 * Parafilm
 * Magnetic rack
 * 50 mL conical (falcon) tubes
