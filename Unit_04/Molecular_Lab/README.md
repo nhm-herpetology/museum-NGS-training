@@ -194,10 +194,9 @@ ENS 9494 | Index 10 (AACGGT)  | Index 5 (ACAGTG)
 
 **Materials**
 
-* T4 DNA Ligase
+* Cut-smart buffer (NEB)
 * SbFI-HF (NEB)
 * Msp-I (NEB)
-* Qubit flourometer
 * Extracted DNA from samples 
 * Nuclease-free water
 * Magnetic tube rack
