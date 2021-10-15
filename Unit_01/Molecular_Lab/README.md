@@ -25,7 +25,7 @@
       * 500 uL 1 M Tris
       * 100 uL 0.5 M EDTA
       * Fill the tube up to the 50 mL line with nuclease-free water
->This will create 50 mL of TE Buffer (10 mM Tris-HCL, 1 mM EDTA)
+>This will create 50 mL of TE Buffer (10 mM Tris, 1 mM EDTA)
 
 2. Mix Sera-Mag Speedbeads thoroughly and transfer 1 mL to an empty 1.5 mL microcentrifuge tube. 
 
@@ -48,7 +48,7 @@
 
 11. Add 10 mL 5 M NaCl to the conical tube.
 
-12. Add 500 uL 1 M Tris-HCL to conical tube.
+12. Add 500 uL 1 M Tris to conical tube.
 
 13. Add 100 uL 0.5 M EDTA to conical tube. 
 
