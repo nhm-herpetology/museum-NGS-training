@@ -119,7 +119,7 @@
     * Tube 5 - 20 uL (1.0X)
     * Tube 6 - 10 uL (0.5X)
   
->Follow the protocol below for each of the seven tubes. This can be done at the same time using a magnet rack that fits multiple tubes. 
+>Follow the protocol below for each of the six tubes. This can be done at the same time using a magnet rack that fits multiple tubes. 
 
 8. After adding the Serapure beads incubate at room temperature for 5 mins.
 
