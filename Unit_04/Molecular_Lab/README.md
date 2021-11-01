@@ -307,7 +307,7 @@ CGAGATCGGAAGAGCGAGAACAA
   
 16. We will now ligate adapters using the T4 DNA Ligase. For each reaction mix the following: 
     * 30 uL purified digestion
-    * 2 uL of P1 adater (0.1 uM)
+    * 2 uL of P1 adater (0.02 uM)
     * 2 uL of P2 adapter (5.92 uM)
     * 4 uL Ligation Buffer (NEB)
     * 1 uL T4 LIgase
