@@ -274,10 +274,10 @@ CGAGATCGGAAGAGCGAGAACAA
 >P1 oligos are for the SbfI cutsites and P2 oligos are for the MspI cutsites. We will need to rehydrate the oligos after they arrive from the manufacturer which should result in 100 uM stock solutions for each oligonucleotide.    
   
 3. Assuming 100 uM stock oligo concentrations, in 1.5 mL microcentrifuge tubes combine the following for each adapter: 
-    * 40 uL PX.1
-    * 40 uL PX.2
-    * 10 uL 10X Annealing Buffer
-    * 10 uL nuclease-free water
+    * 20 uL PX.1
+    * 20 uL PX.2
+    * 5 uL 10X Annealing Buffer
+    * 5 uL nuclease-free water
   
 4. Vortex and spin down the tubes. Now place them on a heat block at 97.1 C for 2 minutes and 30 seconds (150 seconds total). 
   
