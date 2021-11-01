@@ -307,12 +307,13 @@ CGAGATCGGAAGAGCGAGAACAA
   
 16. We will now ligate adapters using the T4 DNA Ligase. For each reaction mix the following: 
     * 30 uL purified digestion
-    * 2 uL of P1 adater (0.1 uM concentration)
-    * 2 uL of P2 adapter (4 uM concentration)
+    * 2 uL of P1 adater (0.1 uM)
+    * 2 uL of P2 adapter (5.92 uM)
     * 4 uL Ligation Buffer (NEB)
     * 1 uL T4 LIgase
     * 1 uL of water
- 
+ >You will need to make the appropriate adapter concentrations according to the molarity calculator from Peterson et al. (2012). In the case of SbfI and Msp sites + squamate genomes, we can do this with the following recipe: First, add 29.6 uL of 40 uM P2 adapters to 170.4 uL 1X annealing buffer... *this is your 5.92 uM working dilution*. Second, make a three step dilution series for P1: (1) 1:10 dilution adding 1 uL of 40 uM P1 adapters to 9 uL of 1X annealing buffer (making a 4 uM dilution), (2) add 1 uL of 4 uM P1 adapters to 9 uL of 1X annealing buffer (making a 0.4 uM dilution), and (3) add 10 uL of 0.4 uM P1 adapters to 190 uL of 1X annealing buffer... *this is your 0.02 uM working dilution*.  
+  
  17. Run in a thermal cycler at 16 C for 35 min followed by 10 min at 65C (to inactivate the ligase enzyme).
   >Samples are now ligated and can be pooled prior to size selection. 
  
