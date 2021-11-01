@@ -281,7 +281,8 @@ CGAGATCGGAAGAGCGAGAACAA
   
 4. Vortex and spin down the tubes. Now place them on a heat block at 97.1 C for 2 minutes and 30 seconds (150 seconds total). 
   
-5. Turn off the heat block and allow to cool to room temperature. Alternatively, the adapter annealing can be performed in a thermocyler by incubating at 97.5 C for 2.5 minutes, then cooling at a rate of not greater than 3 C per minute until the solution reaches a temperature of 21°C after which the annealed adapters should be held at 4 C.
+5. Turn off the heat block and allow to cool to room temperature. 
+>Alternatively, the adapter annealing can be performed in a thermocyler by incubating at 97.5 C for 2.5 minutes, then cooling at a rate of not greater than 3 C per minute until the solution reaches a temperature of 21°C after which the annealed adapters should be held at 4 C.
   
 6. While we are waiting for the adapters to cool, we can clean our restriction digested DNA from the previous module using Serapure beads. We will use a 1.8 X concetration of beads to sample, so we need to add 108 uL of Serapure solution to the 60 uL of restriction digests. Transfer the restriction digest from PCR tubes to 1.5 mL microcentrifuge tubes. 
   
@@ -370,7 +371,7 @@ Primer 1: AAT GAT ACG GCG ACC ACC GAG ATC TAC ACT CTT TCC CTA CAC GAC G
 Primer 2 (indexed): CAA GCA GAA GAC GGC ATA CGA GAT CGT GAT GTG ACT GGA GTT CAG ACG TGT GC
 ```
   
-31. Alliquot 18 uL the master mix into 16 clean PCR tubes and then add 2 uL of Blue Pippin size-selected sample to 15 of the tubes. The 16th PCR tube will be our negative control.
+31. Aliquot 18 uL of the master mix into 16 clean PCR tubes and then add 2 uL of Blue Pippin size-selected sample to 15 of the tubes. The 16th PCR tube will be our negative control.
 
 32. Mix and spin down the samples, then run using the 'Ilumina-PCR' program on the thermal cycler. 
   
