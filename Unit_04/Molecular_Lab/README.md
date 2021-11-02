@@ -360,8 +360,8 @@ CGAGATCGGAAGAGCGAGAACAA
   
 37. Prepare a PCR Master Mix with the following recipe: 
     * 6 uL PCR-grade water (96 uL for 16 rxn Master Mix)
-    * 1 uL PCR 1 universal primer (16 uL for 16 rxn Master Mix)
-    * 1 uL PCR 2 indexed primer (16 uL for 16 rxn Master Mix)
+    * 1 uL 10 uM PCR 1 universal primer (16 uL for 16 rxn Master Mix)
+    * 1 uL 10 uM PCR 2 indexed primer (16 uL for 16 rxn Master Mix)
     * 10 uL Q5 PCR Master Mix (160 uL for 16 rxn Master Mix)
 
 ddRADseq primer sequences are (5' to 3'): 
@@ -374,9 +374,10 @@ Primer 2 (indexed): CAA GCA GAA GAC GGC ATA CGA GAT CGT GAT GTG ACT GGA GTT CAG 
   
 31. Aliquot 18 uL of the master mix into 16 clean PCR tubes and then add 2.5 uL of Blue Pippin size-selected sample to 15 of the tubes. Add any leftover size-selected sample to the 15th tube. The 16th PCR tube will be our negative control.
 
-32. Mix and spin down the samples, then run using the 'Ilumina-PCR' program on the thermal cycler. 
+32. Mix and spin down the samples, then run using the 'Ilumina-PCR' program on the thermal cycler.
+>The cycling profile is 98 C for 30 seconds, followed by 12 cycles of 98 C for 10 seconds, 65 C for 30 seconds and 72 C for 45 seconds, ending with 72 C for 5 minutes and holding at 4-10 C.   
   
-33. Once completed, pool all of the PCRs into a single 1.5 mL tube (except the negative control). Add 540 uL of SearPure bead solution to the 1.5 mL tube. This is a 1.8X concentration. 
+33. Once completed, pool all of the PCRs into a single 1.5 mL tube (except the negative control). Add 540 uL of SearPure bead solution to the 1.5 mL tube. This is a ~1.8X concentration of beads to PCR product. 
 
 34. After adding the Serapure beads incubate at room temperature for 5 mins.
 
