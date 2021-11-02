@@ -317,9 +317,9 @@ CGAGATCGGAAGAGCGAGAACAA
  17. Run in a thermal cycler at 16 C for 35 min followed by 10 min at 65C (to inactivate the ligase enzyme).
   >Samples are now ligated and can be pooled prior to size selection. 
  
-18. Pool all ten samples together in a single 1.5 mL tube. This should result in a total volume of ~240 uL.
+18. Pool all ten samples together in a single 1.5 mL tube. This should result in a total volume of ~400 uL.
   
-19. Add 400 uL of Serapure bead solution to the pooled sample and mix. 
+19. Add 720 uL of Serapure bead solution to the pooled sample and mix. 
   
 20. After adding the Serapure beads incubate at room temperature for 5 mins.
 
@@ -356,13 +356,13 @@ CGAGATCGGAAGAGCGAGAACAA
   
 35. Allow the Blue Pippin to run, this should take ~1.5 hours. 
   
-36. Remove the size-selected sample from the Blue Pippin Cartridge Sample Well(s) and place in a clean 1.5 mL tube. 
+36. Remove the ~40 uL of size-selected sample from the Blue Pippin Cartridge Sample Well(s) and place in a clean 1.5 mL tube. 
   
 37. Prepare a PCR Master Mix with the following recipe: 
-    * 6 uL PCR-grade water (96 uL for 16 rxns)
-    * 1 uL TruSeq primer 1 (16 uL for 16 rxns)
-    * 1 uL TruSeq primer 2 (16 uL for 16 rxns)
-    * 10 uL Q5 PCR Master Mix (160 uL for 16 rxns)
+    * 6 uL PCR-grade water (96 uL for 16 rxn Master Mix)
+    * 1 uL PCR 1 universal primer (16 uL for 16 rxn Master Mix)
+    * 1 uL PCR 2 indexed primer (16 uL for 16 rxn Master Mix)
+    * 10 uL Q5 PCR Master Mix (160 uL for 16 rxn Master Mix)
 
 ddRADseq primer sequences are (5' to 3'): 
   
@@ -372,7 +372,7 @@ Primer 1: AAT GAT ACG GCG ACC ACC GAG ATC TAC ACT CTT TCC CTA CAC GAC G
 Primer 2 (indexed): CAA GCA GAA GAC GGC ATA CGA GAT CGT GAT GTG ACT GGA GTT CAG ACG TGT GC
 ```
   
-31. Aliquot 18 uL of the master mix into 16 clean PCR tubes and then add 2 uL of Blue Pippin size-selected sample to 15 of the tubes. The 16th PCR tube will be our negative control.
+31. Aliquot 18 uL of the master mix into 16 clean PCR tubes and then add 2.5 uL of Blue Pippin size-selected sample to 15 of the tubes. Add any leftover size-selected sample to the 15th tube. The 16th PCR tube will be our negative control.
 
 32. Mix and spin down the samples, then run using the 'Ilumina-PCR' program on the thermal cycler. 
   
