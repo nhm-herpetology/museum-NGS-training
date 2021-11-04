@@ -372,37 +372,37 @@ Primer 1: AAT GAT ACG GCG ACC ACC GAG ATC TAC ACT CTT TCC CTA CAC GAC G
 Primer 2 (indexed): CAA GCA GAA GAC GGC ATA CGA GAT CGT GAT GTG ACT GGA GTT CAG ACG TGT GC
 ```
   
-31. Aliquot 18 uL of the master mix into 16 clean PCR tubes and then add 2.5 uL of Blue Pippin size-selected sample to 15 of the tubes. Add any leftover size-selected sample to the 15th tube. The 16th PCR tube will be our negative control.
+38. Aliquot 18 uL of the master mix into 16 clean PCR tubes and then add 2.5 uL of Blue Pippin size-selected sample to 15 of the tubes. Add any leftover size-selected sample to the 15th tube. The 16th PCR tube will be our negative control.
 
-32. Mix and spin down the samples, then run using the 'Ilumina-PCR' program on the thermal cycler.
+39. Mix and spin down the samples, then run using the 'Ilumina-PCR' program on the thermal cycler.
 >The cycling profile is 98 C for 30 seconds, followed by 12 cycles of 98 C for 10 seconds, 65 C for 30 seconds and 72 C for 45 seconds, ending with 72 C for 5 minutes and holding at 4-10 C.   
   
-33. Once completed, pool all of the PCRs into a single 1.5 mL tube (except the negative control). Add 540 uL of SearPure bead solution to the 1.5 mL tube. This is a ~1.8X concentration of beads to PCR product. 
+40. Once completed, pool all of the PCRs into a single 1.5 mL tube (except the negative control). Add 540 uL of SearPure bead solution to the 1.5 mL tube. This is a ~1.8X concentration of beads to PCR product. 
 
-34. After adding the Serapure beads incubate at room temperature for 5 mins.
+41. After adding the Serapure beads incubate at room temperature for 5 mins.
 
-35. Place 1.5 mL tube on magnet rack. Allow beads to seperate (~5 min)
+42. Place 1.5 mL tube on magnet rack. Allow beads to seperate (~5 min)
 
-36. Remove supernatent with a P1000 pipetter and discard. Remove any remaining supernatent with a P100 or P200 pipetter.
+43. Remove supernatent with a P1000 pipetter and discard. Remove any remaining supernatent with a P100 or P200 pipetter.
 
-37. Add 500 uL of 70% ethanol and let stand for 1 min (Wash No. 1)
+44. Add 500 uL of 70% ethanol and let stand for 1 min (Wash No. 1)
 
-38. Remove supernatent as in Step 13.
+45. Remove supernatent as in Step 13.
 
-39. Add 500 uL of 70% ethanol and let stand for 1 min (Wash No. 2)
+46. Add 500 uL of 70% ethanol and let stand for 1 min (Wash No. 2)
   
-40. Remove supernatent as in Step 13.
+47. Remove supernatent as in Step 13.
   
-41. Allow beads to sit until there is no residual ethanol on the sides of the tube. This usually takes about 2-3 mins. 
+48. Allow beads to sit until there is no residual ethanol on the sides of the tube. This usually takes about 2-3 mins. 
 
-42. Add 16 uL 10 mM Tris to dried beads and resuspend the beads in solution by removing the tube from the magnet rack. This may require gently flicking the tube to get the beads back into solution. You may then need to centrifuge the tube to return the beads to the solution to the bottom of the tube. 
+49. Add 16 uL 10 mM Tris to dried beads and resuspend the beads in solution by removing the tube from the magnet rack. This may require gently flicking the tube to get the beads back into solution. You may then need to centrifuge the tube to return the beads to the solution to the bottom of the tube. 
 
-43. Place 1.5 mL tube on magnet rack. Allow beads to seperate (~5 min)
+50. Place 1.5 mL tube on magnet rack. Allow beads to seperate (~5 min)
 >The cleaned, enriched Illumina library is now ready for quantification.
 
-44. Transfer 15 uL of the shotgun ddRADseq pool into a clean 1.5 mL tube.
+51. Transfer 15 uL of the shotgun ddRADseq pool into a clean 1.5 mL tube.
   
-45. Repeat for as many samples as you want to mulitplex in sets of ten using a unique PCR index/barcode for each set.   
+52. Repeat for as many samples as you want to mulitplex in sets of ten using a unique PCR index/barcode for each set.   
   
 </details>
 
