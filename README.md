@@ -1,3 +1,5 @@
+![museum-NGS](https://github.com/nhm-herpetology/museum-NGS-training/blob/main/museum-NGS.jpg)
+
 # Introduction to short read NGS: Library construction, UCE capture and ddRADseq
 Herpetology Group at the Natural History Museum, London | 
 **Instructor: Jeff Streicher**
